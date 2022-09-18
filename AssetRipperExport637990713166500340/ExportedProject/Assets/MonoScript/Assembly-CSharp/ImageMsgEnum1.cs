@@ -1,0 +1,9 @@
+public enum ImageMsgEnum1
+{
+	ZOMBIE_CLOSE = 1,
+	KILL_MANY_ZOMBIE = 2,
+	KILL_MANY2_ZOMBIE = 3,
+	HEADSHOOT_MISSKILL = 4,
+	HEADSHOOT = 5,
+	NO_AMMO = 6
+}

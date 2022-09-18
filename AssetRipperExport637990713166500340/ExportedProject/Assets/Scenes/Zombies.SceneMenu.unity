@@ -1,0 +1,2134 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &19
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 31}
+  - component: {fileID: 43}
+  m_Layer: 0
+  m_Name: CameraClear
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &20
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 32}
+  - component: {fileID: 44}
+  - component: {fileID: 54}
+  - component: {fileID: 56}
+  - component: {fileID: 53}
+  - component: {fileID: 60}
+  m_Layer: 0
+  m_Name: Main Camera
+  m_TagString: MainCamera
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &21
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 33}
+  - component: {fileID: 46}
+  - component: {fileID: 50}
+  - component: {fileID: 61}
+  - component: {fileID: 62}
+  m_Layer: 8
+  m_Name: imgTxt
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &22
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 34}
+  - component: {fileID: 63}
+  m_Layer: 8
+  m_Name: Textures
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &23
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 35}
+  - component: {fileID: 64}
+  m_Layer: 8
+  m_Name: Textures
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &24
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 36}
+  - component: {fileID: 47}
+  - component: {fileID: 51}
+  - component: {fileID: 65}
+  - component: {fileID: 66}
+  m_Layer: 8
+  m_Name: txtBestKillValue
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!1 &25
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 37}
+  - component: {fileID: 48}
+  - component: {fileID: 52}
+  - component: {fileID: 67}
+  m_Layer: 8
+  m_Name: imgBackground
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &26
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 38}
+  - component: {fileID: 68}
+  m_Layer: 8
+  m_Name: TUI
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &27
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 39}
+  - component: {fileID: 69}
+  m_Layer: 0
+  m_Name: Fonts
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &28
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 40}
+  - component: {fileID: 45}
+  - component: {fileID: 70}
+  m_Layer: 8
+  m_Name: TUICamera
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &29
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 41}
+  - component: {fileID: 72}
+  - component: {fileID: 71}
+  m_Layer: 8
+  m_Name: TUIControl
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &30
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 42}
+  m_Layer: 8
+  m_Name: Cfg
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &31
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 19}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 10000, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &32
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 20}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 1, z: -10}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &33
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 21}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -86.68588, z: 10}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 41}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &34
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 22}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 42}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &35
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 23}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 42}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &36
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 24}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -4.271057, y: -55.319885, z: -10}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 41}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &37
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 25}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 10}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 41}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &38
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 26}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 42}
+  - {fileID: 40}
+  - {fileID: 41}
+  m_Father: {fileID: 0}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &39
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 27}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -7.0675926, y: 2.773717, z: -154.57031}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 42}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &40
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 28}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 38}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &41
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 29}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 37}
+  - {fileID: 33}
+  - {fileID: 36}
+  m_Father: {fileID: 38}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &42
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 30}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 39}
+  - {fileID: 35}
+  - {fileID: 34}
+  m_Father: {fileID: 38}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!20 &43
+Camera:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 19}
+  m_Enabled: 1
+  serializedVersion: 2
+  m_ClearFlags: 2
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0.019607844}
+  m_NormalizedViewPortRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+  near clip plane: 0.1
+  far clip plane: 0.5
+  field of view: 60
+  orthographic: 1
+  orthographic size: 1
+  m_Depth: -2
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 0
+  m_RenderingPath: -1
+  m_TargetTexture: {fileID: 0}
+  m_TargetDisplay: 0
+  m_TargetEye: 3
+  m_HDR: 0
+  m_AllowMSAA: 1
+  m_AllowDynamicResolution: 0
+  m_ForceIntoRT: 0
+  m_OcclusionCulling: 1
+  m_StereoConvergence: 10
+  m_StereoSeparation: 0.022
+--- !u!20 &44
+Camera:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 20}
+  m_Enabled: 0
+  serializedVersion: 2
+  m_ClearFlags: 1
+  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_NormalizedViewPortRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+  near clip plane: 0.3
+  far clip plane: 1000
+  field of view: 60
+  orthographic: 0
+  orthographic size: 100
+  m_Depth: -1
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967039
+  m_RenderingPath: -1
+  m_TargetTexture: {fileID: 0}
+  m_TargetDisplay: 0
+  m_TargetEye: 3
+  m_HDR: 0
+  m_AllowMSAA: 1
+  m_AllowDynamicResolution: 0
+  m_ForceIntoRT: 0
+  m_OcclusionCulling: 1
+  m_StereoConvergence: 10
+  m_StereoSeparation: 0.022
+--- !u!20 &45
+Camera:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 28}
+  m_Enabled: 1
+  serializedVersion: 2
+  m_ClearFlags: 4
+  m_BackGroundColor: {r: 1, g: 1, b: 1, a: 1}
+  m_NormalizedViewPortRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+  near clip plane: -128
+  far clip plane: 128
+  field of view: 60
+  orthographic: 1
+  orthographic size: 160
+  m_Depth: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 256
+  m_RenderingPath: -1
+  m_TargetTexture: {fileID: 0}
+  m_TargetDisplay: 0
+  m_TargetEye: 3
+  m_HDR: 0
+  m_AllowMSAA: 1
+  m_AllowDynamicResolution: 0
+  m_ForceIntoRT: 0
+  m_OcclusionCulling: 1
+  m_StereoConvergence: 10
+  m_StereoSeparation: 0.022
+--- !u!23 &46
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 21}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 1
+  m_Materials:
+  - {fileID: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!23 &47
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 24}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 1
+  m_Materials:
+  - {fileID: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!23 &48
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 25}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 1
+  m_Materials:
+  - {fileID: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!29 &49
+OcclusionCullingSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_OcclusionBakeSettings:
+    smallestOccluder: 5
+    smallestHole: 0.25
+    backfaceThreshold: 100
+  m_SceneGUID: 00000000000000000000000000000000
+  m_OcclusionCullingData: {fileID: 0}
+--- !u!33 &50
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 21}
+  m_Mesh: {fileID: 0}
+--- !u!33 &51
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 24}
+  m_Mesh: {fileID: 0}
+--- !u!33 &52
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 25}
+  m_Mesh: {fileID: 0}
+--- !u!81 &53
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 20}
+  m_Enabled: 1
+--- !u!92 &54
+Behaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 20}
+  m_Enabled: 1
+--- !u!104 &55
+RenderSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 8
+  m_Fog: 0
+  m_FogColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  m_FogMode: 3
+  m_FogDensity: 0.01
+  m_LinearFogStart: 0
+  m_LinearFogEnd: 300
+  m_AmbientSkyColor: {r: 0.2, g: 0.2, b: 0.2, a: 1}
+  m_AmbientEquatorColor: {r: 0.2, g: 0.2, b: 0.2, a: 1}
+  m_AmbientGroundColor: {r: 0.2, g: 0.2, b: 0.2, a: 1}
+  m_AmbientIntensity: 1
+  m_AmbientMode: 3
+  m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
+  m_SkyboxMaterial: {fileID: 0}
+  m_HaloStrength: 0.5
+  m_FlareStrength: 1
+  m_FlareFadeSpeed: 3
+  m_HaloTexture: {fileID: 0}
+  m_SpotCookie: {fileID: 10001, guid: 0000000000000000e000000000000000, type: 0}
+  m_DefaultReflectionMode: 0
+  m_DefaultReflectionResolution: 128
+  m_ReflectionBounces: 1
+  m_ReflectionIntensity: 1
+  m_CustomReflection: {fileID: 0}
+  m_Sun: {fileID: 0}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+--- !u!124 &56
+Behaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 20}
+  m_Enabled: 1
+--- !u!157 &58
+LightmapSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 11
+  m_GIWorkflowMode: 1
+  m_GISettings:
+    serializedVersion: 2
+    m_BounceScale: 1
+    m_IndirectOutputScale: 1
+    m_AlbedoBoost: 1
+    m_TemporalCoherenceThreshold: 1
+    m_EnvironmentLightingMode: 0
+    m_EnableBakedLightmaps: 1
+    m_EnableRealtimeLightmaps: 0
+  m_LightmapEditorSettings:
+    serializedVersion: 9
+    m_Resolution: 1
+    m_BakeResolution: 2
+    m_TextureWidth: 1024
+    m_TextureHeight: 1024
+    m_AO: 1
+    m_AOMaxDistance: 1
+    m_CompAOExponent: 1
+    m_CompAOExponentDirect: 0
+    m_Padding: 2
+    m_LightmapParameters: {fileID: 0}
+    m_LightmapsBakeMode: 1
+    m_TextureCompression: 1
+    m_FinalGather: 0
+    m_FinalGatherFiltering: 1
+    m_FinalGatherRayCount: 256
+    m_ReflectionCompression: 2
+    m_MixedBakeMode: 1
+    m_BakeBackend: 0
+    m_PVRSampling: 1
+    m_PVRDirectSampleCount: 32
+    m_PVRSampleCount: 500
+    m_PVRBounces: 2
+    m_PVRFilterTypeDirect: 0
+    m_PVRFilterTypeIndirect: 0
+    m_PVRFilterTypeAO: 0
+    m_PVRFilteringMode: 0
+    m_PVRCulling: 1
+    m_PVRFilteringGaussRadiusDirect: 1
+    m_PVRFilteringGaussRadiusIndirect: 5
+    m_PVRFilteringGaussRadiusAO: 2
+    m_PVRFilteringAtrousPositionSigmaDirect: 0.5
+    m_PVRFilteringAtrousPositionSigmaIndirect: 2
+    m_PVRFilteringAtrousPositionSigmaAO: 1
+    m_ShowResolutionOverlay: 1
+  m_LightingDataAsset: {fileID: 0}
+  m_UseShadowmask: 0
+--- !u!196 &59
+NavMeshSettings:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_BuildSettings:
+    serializedVersion: 2
+    agentTypeID: 0
+    agentRadius: 0.5
+    agentHeight: 2
+    agentSlope: 45
+    agentClimb: 0.4
+    ledgeDropHeight: 0
+    maxJumpAcrossDistance: 0
+    minRegionArea: 2
+    manualCellSize: 1
+    cellSize: 0.01
+    manualTileSize: 0
+    tileSize: 256
+    accuratePlacement: 0
+    debug:
+      m_Flags: 0
+  m_NavMeshData: {fileID: 0}
+--- !u!114 &60
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 20}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0de57c7036fe48c46adef78fc089c346, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_TUI: {fileID: 0}
+--- !u!114 &61
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 21}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d06c366976b57541acbcb3feb9300fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Static: 0
+  material: {fileID: 0}
+  color: {r: 1, g: 1, b: 1, a: 1}
+  frameName: menu_txt
+  flipX: 0
+  flipY: 0
+--- !u!114 &62
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 21}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 869da0ebadf44fd46802bf6d35e87dc3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_fCurAlpha: 0
+  m_fMinAlpha: 0.2
+  m_fMaxAlpha: 1
+  m_fSpeedInc: 3
+  m_fSpeedDec: 0.8
+  m_bAutoPlay: 1
+--- !u!114 &63
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 22}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 759a9fcb3cd8f4448bc04d0ed5d61c17, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  path: fixtextures/game_dialog
+  hd: 1
+  atlasPath: ZombieSniper/UI/Textures
+  atlasFile: game_dialog_ui
+  textureInfo:
+  - textureFile: ZombieSniper/UI/Textures/game_dialog_ui
+    frames:
+    - frameName: dialog
+      size: {x: 266, y: 137}
+      uv: {x: 0.00390625, y: 0.9921875, z: 0.5234375, w: 0.45703125}
+    - frameName: yes1
+      size: {x: 87, y: 27}
+      uv: {x: 0.5292969, y: 0.9921875, z: 0.69921875, w: 0.88671875}
+    - frameName: yes2
+      size: {x: 87, y: 27}
+      uv: {x: 0.7050781, y: 0.9921875, z: 0.875, w: 0.88671875}
+    - frameName: back2
+      size: {x: 87, y: 27}
+      uv: {x: 0.5292969, y: 0.875, z: 0.69921875, w: 0.76953125}
+    - frameName: back1
+      size: {x: 87, y: 27}
+      uv: {x: 0.7050781, y: 0.875, z: 0.875, w: 0.76953125}
+  textureInfoHD:
+  - textureFile: ZombieSniper/UI/Textures/game_dialog_ui@2x
+    frames:
+    - frameName: dialog
+      size: {x: 266, y: 137}
+      uv: {x: 0.001953125, y: 0.99609375, z: 0.5214844, w: 0.4609375}
+    - frameName: yes1
+      size: {x: 87, y: 27}
+      uv: {x: 0.52441406, y: 0.99609375, z: 0.69433594, w: 0.890625}
+    - frameName: yes2
+      size: {x: 87, y: 27}
+      uv: {x: 0.6972656, y: 0.99609375, z: 0.8671875, w: 0.890625}
+    - frameName: back2
+      size: {x: 87, y: 27}
+      uv: {x: 0.52441406, y: 0.8847656, z: 0.69433594, w: 0.7792969}
+    - frameName: back1
+      size: {x: 87, y: 27}
+      uv: {x: 0.6972656, y: 0.8847656, z: 0.8671875, w: 0.7792969}
+  material: {fileID: 2100000, guid: b7680cef4aa6c854d8cef1d9374c4bbf, type: 2}
+--- !u!114 &64
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 23}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 759a9fcb3cd8f4448bc04d0ed5d61c17, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  path: fixtextures/game_menu_ui
+  hd: 1
+  atlasPath: ZombieSniper/UI/Textures
+  atlasFile: game_menu_ui
+  textureInfo:
+  - textureFile: ZombieSniper/UI/Textures/game_menu_ui
+    frames:
+    - frameName: menu_ditu
+      size: {x: 480, y: 320}
+      uv: {x: 0.00390625, y: 0.99609375, z: 0.94140625, w: 0.37109375}
+    - frameName: menu_txt
+      size: {x: 244, y: 30}
+      uv: {x: 0.00390625, y: 0.36523438, z: 0.48046875, w: 0.30664062}
+  textureInfoHD:
+  - textureFile: ZombieSniper/UI/Textures/game_menu_ui@2x
+    frames:
+    - frameName: menu_ditu
+      size: {x: 480, y: 320}
+      uv: {x: 0.001953125, y: 0.9980469, z: 0.9394531, w: 0.37304688}
+    - frameName: menu_txt
+      size: {x: 244, y: 30}
+      uv: {x: 0.001953125, y: 0.3701172, z: 0.47851562, w: 0.31152344}
+  material: {fileID: 2100000, guid: b7680cef4aa6c854d8cef1d9374c4bbf, type: 2}
+--- !u!114 &65
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 24}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a39c44693ad8af4ca9fd2e4bef96ff9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Static: 0
+  material: {fileID: 0}
+  color: {r: 1, g: 1, b: 1, a: 1}
+  fontName: 037-20
+  characterSpacing: 0
+  lineSpacing: 0
+  horizontalAlignment: 2
+  verticalAlignment: 0
+  text: TAP SCREEN TO PLAY NOW
+--- !u!114 &66
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 24}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 869da0ebadf44fd46802bf6d35e87dc3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_fCurAlpha: 0
+  m_fMinAlpha: 0.2
+  m_fMaxAlpha: 1
+  m_fSpeedInc: 3
+  m_fSpeedDec: 0.8
+  m_bAutoPlay: 1
+--- !u!114 &67
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 25}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d06c366976b57541acbcb3feb9300fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Static: 1
+  material: {fileID: 0}
+  color: {r: 1, g: 1, b: 1, a: 1}
+  frameName: menu_ditu
+  flipX: 0
+  flipY: 0
+--- !u!114 &68
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 26}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 19a9f8a22f2160c44b2e01a5fa8f226f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  landscape: 1
+  layer: 8
+  depth: 0
+--- !u!114 &69
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 27}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f10923faccaeed642bdfadb28cebd127, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fontName: 037-20
+  fontPath: ZombieSniper/TUIFonts
+  fontInfo:
+    textureFile: ZombieSniper/TUIFonts/037-20
+    lineHeight: 20
+    chars:
+    - ch: ' '
+      size: {x: 1, y: 1}
+      uv: {x: 0.00390625, y: 0.96875, z: 0.005859375, w: 0.953125}
+      bearingX: 0
+      advanceX: 5.8789062
+      descentY: -0
+    - ch: '!'
+      size: {x: 4, y: 14}
+      uv: {x: 0.01171875, y: 0.96875, z: 0.01953125, w: 0.75}
+      bearingX: 1.5429688
+      advanceX: 6.3378906
+      descentY: -0
+    - ch: '"'
+      size: {x: 6, y: 6}
+      uv: {x: 0.025390625, y: 0.96875, z: 0.037109375, w: 0.875}
+      bearingX: 0.78125
+      advanceX: 6.6210938
+      descentY: 8.583984
+    - ch: '#'
+      size: {x: 15, y: 15}
+      uv: {x: 0.04296875, y: 0.96875, z: 0.072265625, w: 0.734375}
+      bearingX: 0.43945312
+      advanceX: 15.380859
+      descentY: -0.09765625
+    - ch: $
+      size: {x: 7, y: 14}
+      uv: {x: 0.078125, y: 0.96875, z: 0.091796875, w: 0.75}
+      bearingX: 2.7636719
+      advanceX: 11.7578125
+      descentY: 0.078125
+    - ch: '%'
+      size: {x: 16, y: 14}
+      uv: {x: 0.09765625, y: 0.96875, z: 0.12890625, w: 0.75}
+      bearingX: 0.6640625
+      advanceX: 16.484375
+      descentY: -0.15625
+    - ch: '&'
+      size: {x: 14, y: 14}
+      uv: {x: 0.13476562, y: 0.96875, z: 0.16210938, w: 0.75}
+      bearingX: 0.45898438
+      advanceX: 13.183594
+      descentY: -0.34179688
+    - ch: ''''
+      size: {x: 2, y: 6}
+      uv: {x: 0.16796875, y: 0.96875, z: 0.171875, w: 0.875}
+      bearingX: 0.78125
+      advanceX: 3.4375
+      descentY: 8.583984
+    - ch: (
+      size: {x: 5, y: 18}
+      uv: {x: 0.17773438, y: 0.96875, z: 0.1875, w: 0.6875}
+      bearingX: 1.5039062
+      advanceX: 6.435547
+      descentY: -3.3398438
+    - ch: )
+      size: {x: 5, y: 18}
+      uv: {x: 0.19335938, y: 0.96875, z: 0.203125, w: 0.6875}
+      bearingX: 0.703125
+      advanceX: 6.435547
+      descentY: -3.3398438
+    - ch: '*'
+      size: {x: 8, y: 7}
+      uv: {x: 0.20898438, y: 0.96875, z: 0.22460938, w: 0.859375}
+      bearingX: 1.5625
+      advanceX: 10
+      descentY: 6.7578125
+    - ch: +
+      size: {x: 12, y: 12}
+      uv: {x: 0.23046875, y: 0.96875, z: 0.25390625, w: 0.78125}
+      bearingX: 2.4804688
+      advanceX: 16.660156
+      descentY: -0
+    - ch: ','
+      size: {x: 5, y: 5}
+      uv: {x: 0.25976562, y: 0.96875, z: 0.26953125, w: 0.890625}
+      bearingX: 0.5371094
+      advanceX: 5.8789062
+      descentY: -1.8164062
+    - ch: '-'
+      size: {x: 5, y: 3}
+      uv: {x: 0.27539062, y: 0.96875, z: 0.28515625, w: 0.921875}
+      bearingX: 1.0351562
+      advanceX: 6.7578125
+      descentY: 4.1210938
+    - ch: .
+      size: {x: 3, y: 3}
+      uv: {x: 0.29101562, y: 0.96875, z: 0.296875, w: 0.921875}
+      bearingX: 1.4648438
+      advanceX: 5.8789062
+      descentY: -0
+    - ch: /
+      size: {x: 7, y: 16}
+      uv: {x: 0.30273438, y: 0.96875, z: 0.31640625, w: 0.71875}
+      bearingX: -0.859375
+      advanceX: 5.498047
+      descentY: -1.8554688
+    - ch: 0
+      size: {x: 11, y: 14}
+      uv: {x: 0.32226562, y: 0.96875, z: 0.34375, w: 0.75}
+      bearingX: 0.703125
+      advanceX: 11.7578125
+      descentY: -0.28320312
+    - ch: 1
+      size: {x: 5, y: 14}
+      uv: {x: 0.34960938, y: 0.96875, z: 0.359375, w: 0.75}
+      bearingX: 3.1152344
+      advanceX: 11.7578125
+      descentY: -0
+    - ch: 2
+      size: {x: 10, y: 14}
+      uv: {x: 0.36523438, y: 0.96875, z: 0.38476562, w: 0.75}
+      bearingX: 1.3964844
+      advanceX: 11.7578125
+      descentY: -0
+    - ch: 3
+      size: {x: 10, y: 14}
+      uv: {x: 0.390625, y: 0.96875, z: 0.41015625, w: 0.75}
+      bearingX: 0.68359375
+      advanceX: 11.7578125
+      descentY: -0.28320312
+    - ch: 4
+      size: {x: 11, y: 14}
+      uv: {x: 0.41601562, y: 0.96875, z: 0.4375, w: 0.75}
+      bearingX: 0.43945312
+      advanceX: 11.7578125
+      descentY: -0
+    - ch: 5
+      size: {x: 10, y: 14}
+      uv: {x: 0.44335938, y: 0.96875, z: 0.46289062, w: 0.75}
+      bearingX: 0.9765625
+      advanceX: 11.7578125
+      descentY: -0.28320312
+    - ch: 6
+      size: {x: 11, y: 14}
+      uv: {x: 0.46875, y: 0.96875, z: 0.49023438, w: 0.75}
+      bearingX: 0.5371094
+      advanceX: 11.7578125
+      descentY: -0.28320312
+    - ch: 7
+      size: {x: 10, y: 14}
+      uv: {x: 0.49609375, y: 0.96875, z: 0.515625, w: 0.75}
+      bearingX: 1.5429688
+      advanceX: 11.7578125
+      descentY: -0
+    - ch: 8
+      size: {x: 11, y: 14}
+      uv: {x: 0.5214844, y: 0.96875, z: 0.54296875, w: 0.75}
+      bearingX: 0.5371094
+      advanceX: 11.7578125
+      descentY: -0.26367188
+    - ch: 9
+      size: {x: 11, y: 14}
+      uv: {x: 0.5488281, y: 0.96875, z: 0.5703125, w: 0.75}
+      bearingX: 0.8203125
+      advanceX: 11.7578125
+      descentY: -0
+    - ch: ':'
+      size: {x: 4, y: 10}
+      uv: {x: 0.5761719, y: 0.96875, z: 0.5839844, w: 0.8125}
+      bearingX: 1.6210938
+      advanceX: 6.3378906
+      descentY: -0
+    - ch: ;
+      size: {x: 5, y: 12}
+      uv: {x: 0.58984375, y: 0.96875, z: 0.5996094, w: 0.78125}
+      bearingX: 0.78125
+      advanceX: 6.3378906
+      descentY: -1.8164062
+    - ch: <
+      size: {x: 12, y: 12}
+      uv: {x: 0.60546875, y: 0.96875, z: 0.62890625, w: 0.78125}
+      bearingX: 2.578125
+      advanceX: 16.660156
+      descentY: 0.26367188
+    - ch: =
+      size: {x: 12, y: 7}
+      uv: {x: 0.6347656, y: 0.96875, z: 0.6582031, w: 0.859375}
+      bearingX: 2.4804688
+      advanceX: 16.660156
+      descentY: 2.9003906
+    - ch: '>'
+      size: {x: 12, y: 12}
+      uv: {x: 0.6640625, y: 0.96875, z: 0.6875, w: 0.78125}
+      bearingX: 2.578125
+      advanceX: 16.660156
+      descentY: 0.26367188
+    - ch: '?'
+      size: {x: 10, y: 14}
+      uv: {x: 0.6933594, y: 0.96875, z: 0.7128906, w: 0.75}
+      bearingX: 0.8203125
+      advanceX: 10.917969
+      descentY: -0
+    - ch: '@'
+      size: {x: 19, y: 18}
+      uv: {x: 0.71875, y: 0.96875, z: 0.7558594, w: 0.6875}
+      bearingX: 0.87890625
+      advanceX: 20
+      descentY: -3.0175781
+    - ch: A
+      size: {x: 15, y: 14}
+      uv: {x: 0.76171875, y: 0.96875, z: 0.7910156, w: 0.75}
+      bearingX: -0.91796875
+      advanceX: 13.339844
+      descentY: -0
+    - ch: B
+      size: {x: 11, y: 14}
+      uv: {x: 0.796875, y: 0.96875, z: 0.8183594, w: 0.75}
+      bearingX: 0.78125
+      advanceX: 12.021484
+      descentY: -0
+    - ch: C
+      size: {x: 12, y: 14}
+      uv: {x: 0.82421875, y: 0.96875, z: 0.84765625, w: 0.75}
+      bearingX: 0.72265625
+      advanceX: 12.65625
+      descentY: -0.30273438
+    - ch: D
+      size: {x: 14, y: 14}
+      uv: {x: 0.8535156, y: 0.96875, z: 0.8808594, w: 0.75}
+      bearingX: 0.80078125
+      advanceX: 14.541016
+      descentY: -0
+    - ch: E
+      size: {x: 11, y: 14}
+      uv: {x: 0.88671875, y: 0.96875, z: 0.9082031, w: 0.75}
+      bearingX: 0.80078125
+      advanceX: 11.582031
+      descentY: -0
+    - ch: F
+      size: {x: 10, y: 14}
+      uv: {x: 0.9140625, y: 0.96875, z: 0.93359375, w: 0.75}
+      bearingX: 0.80078125
+      advanceX: 10.595703
+      descentY: -0
+    - ch: G
+      size: {x: 13, y: 14}
+      uv: {x: 0.9394531, y: 0.96875, z: 0.96484375, w: 0.75}
+      bearingX: 0.72265625
+      advanceX: 14.355469
+      descentY: -0.28320312
+    - ch: H
+      size: {x: 14, y: 14}
+      uv: {x: 0.25976562, y: 0.84375, z: 0.28710938, w: 0.625}
+      bearingX: 0.80078125
+      advanceX: 15
+      descentY: -0
+    - ch: I
+      size: {x: 4, y: 14}
+      uv: {x: 0.9707031, y: 0.96875, z: 0.9785156, w: 0.75}
+      bearingX: 0.87890625
+      advanceX: 5.5566406
+      descentY: -0
+    - ch: J
+      size: {x: 9, y: 14}
+      uv: {x: 0.6347656, y: 0.8125, z: 0.65234375, w: 0.59375}
+      bearingX: -0.41992188
+      advanceX: 8.564453
+      descentY: -0.28320312
+    - ch: K
+      size: {x: 12, y: 14}
+      uv: {x: 0.20898438, y: 0.734375, z: 0.23242188, w: 0.515625}
+      bearingX: 0.80078125
+      advanceX: 11.855469
+      descentY: -0
+    - ch: L
+      size: {x: 9, y: 14}
+      uv: {x: 0.5761719, y: 0.734375, z: 0.59375, w: 0.515625}
+      bearingX: 0.80078125
+      advanceX: 9.716797
+      descentY: -0
+    - ch: M
+      size: {x: 16, y: 14}
+      uv: {x: 0.00390625, y: 0.703125, z: 0.03515625, w: 0.484375}
+      bearingX: 0.6640625
+      advanceX: 17.597656
+      descentY: -0
+    - ch: N
+      size: {x: 14, y: 14}
+      uv: {x: 0.5996094, y: 0.734375, z: 0.6269531, w: 0.515625}
+      bearingX: 0.8203125
+      advanceX: 14.902344
+      descentY: -0
+    - ch: O
+      size: {x: 15, y: 14}
+      uv: {x: 0.6582031, y: 0.734375, z: 0.6875, w: 0.515625}
+      bearingX: 0.76171875
+      advanceX: 16.484375
+      descentY: -0.28320312
+    - ch: P
+      size: {x: 11, y: 14}
+      uv: {x: 0.078125, y: 0.703125, z: 0.099609375, w: 0.484375}
+      bearingX: 0.78125
+      advanceX: 11.064453
+      descentY: -0
+    - ch: Q
+      size: {x: 16, y: 14}
+      uv: {x: 0.10546875, y: 0.703125, z: 0.13671875, w: 0.484375}
+      bearingX: 0.72265625
+      advanceX: 16.484375
+      descentY: -0.32226562
+    - ch: R
+      size: {x: 11, y: 14}
+      uv: {x: 0.14257812, y: 0.703125, z: 0.1640625, w: 0.484375}
+      bearingX: 0.78125
+      advanceX: 11.777344
+      descentY: -0
+    - ch: S
+      size: {x: 9, y: 14}
+      uv: {x: 0.32226562, y: 0.703125, z: 0.33984375, w: 0.484375}
+      bearingX: 0.45898438
+      advanceX: 9.736328
+      descentY: -0.30273438
+    - ch: T
+      size: {x: 11, y: 14}
+      uv: {x: 0.34570312, y: 0.703125, z: 0.3671875, w: 0.484375}
+      bearingX: 0.13671875
+      advanceX: 10.458984
+      descentY: -0
+    - ch: U
+      size: {x: 13, y: 14}
+      uv: {x: 0.37304688, y: 0.703125, z: 0.3984375, w: 0.484375}
+      bearingX: 1.0351562
+      advanceX: 13.876953
+      descentY: -0.28320312
+    - ch: V
+      size: {x: 15, y: 14}
+      uv: {x: 0.40429688, y: 0.703125, z: 0.43359375, w: 0.484375}
+      bearingX: -0.078125
+      advanceX: 13.076172
+      descentY: -0
+    - ch: W
+      size: {x: 20, y: 14}
+      uv: {x: 0.43945312, y: 0.703125, z: 0.47851562, w: 0.484375}
+      bearingX: -0.22460938
+      advanceX: 18.68164
+      descentY: -0
+    - ch: X
+      size: {x: 14, y: 14}
+      uv: {x: 0.484375, y: 0.703125, z: 0.51171875, w: 0.484375}
+      bearingX: -0.9375
+      advanceX: 11.582031
+      descentY: -0
+    - ch: Y
+      size: {x: 12, y: 14}
+      uv: {x: 0.5175781, y: 0.703125, z: 0.5410156, w: 0.484375}
+      bearingX: -0.78125
+      advanceX: 9.443359
+      descentY: -0
+    - ch: Z
+      size: {x: 11, y: 14}
+      uv: {x: 0.546875, y: 0.703125, z: 0.5683594, w: 0.484375}
+      bearingX: 0.26367188
+      advanceX: 11.416016
+      descentY: -0
+    - ch: '['
+      size: {x: 6, y: 18}
+      uv: {x: 0.984375, y: 0.96875, z: 0.99609375, w: 0.6875}
+      bearingX: 0.95703125
+      advanceX: 6.435547
+      descentY: -3.9648438
+    - ch: \
+      size: {x: 5, y: 16}
+      uv: {x: 0.23828125, y: 0.734375, z: 0.24804688, w: 0.484375}
+      bearingX: 1.1425781
+      advanceX: 5.498047
+      descentY: -1.8554688
+    - ch: ']'
+      size: {x: 6, y: 18}
+      uv: {x: 0.6933594, y: 0.703125, z: 0.7050781, w: 0.421875}
+      bearingX: 0.13671875
+      advanceX: 6.435547
+      descentY: -3.9648438
+    - ch: ^
+      size: {x: 12, y: 6}
+      uv: {x: 0.76171875, y: 0.703125, z: 0.78515625, w: 0.609375}
+      bearingX: 4.0625
+      advanceX: 20
+      descentY: 8.779297
+    - ch: _
+      size: {x: 11, y: 2}
+      uv: {x: 0.7910156, y: 0.703125, z: 0.8125, w: 0.671875}
+      bearingX: 0
+      advanceX: 10
+      descentY: -4.716797
+    - ch: '`'
+      size: {x: 5, y: 4}
+      uv: {x: 0.025390625, y: 0.828125, z: 0.03515625, w: 0.765625}
+      bearingX: 2.5
+      advanceX: 10
+      descentY: 11.542969
+    - ch: a
+      size: {x: 10, y: 11}
+      uv: {x: 0.8183594, y: 0.703125, z: 0.8378906, w: 0.53125}
+      bearingX: 0.43945312
+      advanceX: 10.644531
+      descentY: -0.26367188
+    - ch: b
+      size: {x: 11, y: 14}
+      uv: {x: 0.84375, y: 0.703125, z: 0.8652344, w: 0.484375}
+      bearingX: 0.78125
+      advanceX: 12.216797
+      descentY: -0.22460938
+    - ch: c
+      size: {x: 9, y: 11}
+      uv: {x: 0.87109375, y: 0.703125, z: 0.8886719, w: 0.53125}
+      bearingX: 0.68359375
+      advanceX: 9.21875
+      descentY: -0.28320312
+    - ch: d
+      size: {x: 11, y: 14}
+      uv: {x: 0.89453125, y: 0.703125, z: 0.9160156, w: 0.484375}
+      bearingX: 0.64453125
+      advanceX: 12.119141
+      descentY: -0.28320312
+    - ch: e
+      size: {x: 10, y: 11}
+      uv: {x: 0.921875, y: 0.703125, z: 0.94140625, w: 0.53125}
+      bearingX: 0.64453125
+      advanceX: 10.458984
+      descentY: -0.28320312
+    - ch: f
+      size: {x: 7, y: 14}
+      uv: {x: 0.9472656, y: 0.703125, z: 0.9609375, w: 0.484375}
+      bearingX: 0.38085938
+      advanceX: 6.2402344
+      descentY: -0
+    - ch: g
+      size: {x: 11, y: 15}
+      uv: {x: 0.041015625, y: 0.6875, z: 0.0625, w: 0.453125}
+      bearingX: 0.64453125
+      advanceX: 12.119141
+      descentY: -4.4628906
+    - ch: h
+      size: {x: 11, y: 14}
+      uv: {x: 0.29296875, y: 0.671875, z: 0.31445312, w: 0.453125}
+      bearingX: 0.7421875
+      advanceX: 12.177734
+      descentY: -0
+    - ch: i
+      size: {x: 4, y: 14}
+      uv: {x: 0.9667969, y: 0.703125, z: 0.9746094, w: 0.484375}
+      bearingX: 0.83984375
+      advanceX: 4.9609375
+      descentY: -0
+    - ch: j
+      size: {x: 7, y: 18}
+      uv: {x: 0.16992188, y: 0.640625, z: 0.18359375, w: 0.359375}
+      bearingX: -2.65625
+      advanceX: 5.15625
+      descentY: -4.5410156
+    - ch: k
+      size: {x: 11, y: 14}
+      uv: {x: 0.7109375, y: 0.640625, z: 0.7324219, w: 0.421875}
+      bearingX: 0.72265625
+      advanceX: 10.917969
+      descentY: -0
+    - ch: l
+      size: {x: 4, y: 14}
+      uv: {x: 0.18945312, y: 0.640625, z: 0.19726562, w: 0.421875}
+      bearingX: 0.76171875
+      advanceX: 5.0390625
+      descentY: -0
+    - ch: m
+      size: {x: 15, y: 11}
+      uv: {x: 0.25390625, y: 0.578125, z: 0.28320312, w: 0.40625}
+      bearingX: 0.7421875
+      advanceX: 16.660156
+      descentY: -0
+    - ch: n
+      size: {x: 11, y: 11}
+      uv: {x: 0.7910156, y: 0.625, z: 0.8125, w: 0.453125}
+      bearingX: 0.7421875
+      advanceX: 12.177734
+      descentY: -0
+    - ch: o
+      size: {x: 11, y: 11}
+      uv: {x: 0.73828125, y: 0.5625, z: 0.7597656, w: 0.390625}
+      bearingX: 0.68359375
+      advanceX: 12.001953
+      descentY: -0.28320312
+    - ch: p
+      size: {x: 11, y: 15}
+      uv: {x: 0.203125, y: 0.46875, z: 0.22460938, w: 0.234375}
+      bearingX: 0.49804688
+      advanceX: 12.119141
+      descentY: -4.21875
+    - ch: q
+      size: {x: 11, y: 15}
+      uv: {x: 0.57421875, y: 0.46875, z: 0.5957031, w: 0.234375}
+      bearingX: 0.64453125
+      advanceX: 12.119141
+      descentY: -4.21875
+    - ch: r
+      size: {x: 7, y: 11}
+      uv: {x: 0.98046875, y: 0.640625, z: 0.9941406, w: 0.46875}
+      bearingX: 0.7421875
+      advanceX: 7.060547
+      descentY: -0
+    - ch: s
+      size: {x: 8, y: 11}
+      uv: {x: 0.765625, y: 0.5625, z: 0.78125, w: 0.390625}
+      bearingX: 0.49804688
+      advanceX: 8.300781
+      descentY: -0.28320312
+    - ch: t
+      size: {x: 7, y: 13}
+      uv: {x: 0.6328125, y: 0.546875, z: 0.6464844, w: 0.34375}
+      bearingX: 0.38085938
+      advanceX: 6.9433594
+      descentY: -0.28320312
+    - ch: u
+      size: {x: 11, y: 11}
+      uv: {x: 0.6015625, y: 0.46875, z: 0.6230469, w: 0.296875}
+      bearingX: 0.9375
+      advanceX: 12.177734
+      descentY: -0.28320312
+    - ch: v
+      size: {x: 11, y: 11}
+      uv: {x: 0.65234375, y: 0.46875, z: 0.6738281, w: 0.296875}
+      bearingX: -0.24414062
+      advanceX: 9.941406
+      descentY: -0
+    - ch: w
+      size: {x: 18, y: 11}
+      uv: {x: 0.068359375, y: 0.4375, z: 0.103515625, w: 0.265625}
+      bearingX: -0.22460938
+      advanceX: 16.660156
+      descentY: -0
+    - ch: x
+      size: {x: 12, y: 11}
+      uv: {x: 0.00390625, y: 0.4375, z: 0.02734375, w: 0.265625}
+      bearingX: -0.87890625
+      advanceX: 9.697266
+      descentY: -0
+    - ch: y
+      size: {x: 13, y: 15}
+      uv: {x: 0.109375, y: 0.4375, z: 0.13476562, w: 0.203125}
+      bearingX: -1.3769531
+      advanceX: 9.941406
+      descentY: -4.5214844
+    - ch: z
+      size: {x: 9, y: 11}
+      uv: {x: 0.8183594, y: 0.484375, z: 0.8359375, w: 0.3125}
+      bearingX: 0.1953125
+      advanceX: 9.21875
+      descentY: -0
+    - ch: '{'
+      size: {x: 8, y: 19}
+      uv: {x: 0.87109375, y: 0.484375, z: 0.88671875, w: 0.1875}
+      bearingX: 1.5429688
+      advanceX: 10
+      descentY: -4.0625
+    - ch: 
+      size: {x: 3, y: 21}
+      uv: {x: 0.921875, y: 0.484375, z: 0.9277344, w: 0.15625}
+      bearingX: 4.0039062
+      advanceX: 10
+      descentY: -4.716797
+    - ch: '}'
+      size: {x: 8, y: 19}
+      uv: {x: 0.140625, y: 0.4375, z: 0.15625, w: 0.140625}
+      bearingX: 1.3964844
+      advanceX: 10
+      descentY: -4.0625
+    - ch: ~
+      size: {x: 14, y: 4}
+      uv: {x: 0.3203125, y: 0.4375, z: 0.34765625, w: 0.375}
+      bearingX: 1.7382812
+      advanceX: 16.660156
+      descentY: 4.0820312
+  fontInfoHD:
+    textureFile: ZombieSniper/TUIFonts/037-20@2x
+    lineHeight: 20
+    chars:
+    - ch: ' '
+      size: {x: 0, y: 0}
+      uv: {x: 0.001953125, y: 0.984375, z: 0.0029296875, w: 0.9765625}
+      bearingX: 0
+      advanceX: 5.8789062
+      descentY: -0
+    - ch: '!'
+      size: {x: 4, y: 13}
+      uv: {x: 0.005859375, y: 0.984375, z: 0.013671875, w: 0.7734375}
+      bearingX: 1.5429688
+      advanceX: 6.3378906
+      descentY: -0
+    - ch: '"'
+      size: {x: 5, y: 5}
+      uv: {x: 0.016601562, y: 0.984375, z: 0.02734375, w: 0.8984375}
+      bearingX: 0.78125
+      advanceX: 6.6210938
+      descentY: 8.583984
+    - ch: '#'
+      size: {x: 15, y: 14}
+      uv: {x: 0.030273438, y: 0.984375, z: 0.059570312, w: 0.7578125}
+      bearingX: 0.43945312
+      advanceX: 15.380859
+      descentY: -0.09765625
+    - ch: $
+      size: {x: 7, y: 13}
+      uv: {x: 0.0625, y: 0.984375, z: 0.076171875, w: 0.7734375}
+      bearingX: 2.7636719
+      advanceX: 11.7578125
+      descentY: 0.078125
+    - ch: '%'
+      size: {x: 15, y: 14}
+      uv: {x: 0.07910156, y: 0.984375, z: 0.109375, w: 0.765625}
+      bearingX: 0.6640625
+      advanceX: 16.484375
+      descentY: -0.15625
+    - ch: '&'
+      size: {x: 13, y: 14}
+      uv: {x: 0.11230469, y: 0.984375, z: 0.13867188, w: 0.765625}
+      bearingX: 0.45898438
+      advanceX: 13.183594
+      descentY: -0.34179688
+    - ch: ''''
+      size: {x: 2, y: 5}
+      uv: {x: 0.14160156, y: 0.984375, z: 0.14550781, w: 0.8984375}
+      bearingX: 0.78125
+      advanceX: 3.4375
+      descentY: 8.583984
+    - ch: (
+      size: {x: 4, y: 17}
+      uv: {x: 0.1484375, y: 0.984375, z: 0.15722656, w: 0.7109375}
+      bearingX: 1.5039062
+      advanceX: 6.435547
+      descentY: -3.3398438
+    - ch: )
+      size: {x: 4, y: 17}
+      uv: {x: 0.16015625, y: 0.984375, z: 0.16894531, w: 0.7109375}
+      bearingX: 0.703125
+      advanceX: 6.435547
+      descentY: -3.3398438
+    - ch: '*'
+      size: {x: 7, y: 7}
+      uv: {x: 0.171875, y: 0.984375, z: 0.18652344, w: 0.875}
+      bearingX: 1.5625
+      advanceX: 10
+      descentY: 6.7578125
+    - ch: +
+      size: {x: 12, y: 12}
+      uv: {x: 0.18945312, y: 0.984375, z: 0.21289062, w: 0.796875}
+      bearingX: 2.4804688
+      advanceX: 16.660156
+      descentY: -0
+    - ch: ','
+      size: {x: 4, y: 5}
+      uv: {x: 0.21582031, y: 0.984375, z: 0.22460938, w: 0.90625}
+      bearingX: 0.5371094
+      advanceX: 5.8789062
+      descentY: -1.8164062
+    - ch: '-'
+      size: {x: 5, y: 2}
+      uv: {x: 0.22753906, y: 0.984375, z: 0.23730469, w: 0.9453125}
+      bearingX: 1.0351562
+      advanceX: 6.7578125
+      descentY: 4.1210938
+    - ch: .
+      size: {x: 3, y: 3}
+      uv: {x: 0.24023438, y: 0.984375, z: 0.24609375, w: 0.9375}
+      bearingX: 1.4648438
+      advanceX: 5.8789062
+      descentY: -0
+    - ch: /
+      size: {x: 6, y: 15}
+      uv: {x: 0.24902344, y: 0.984375, z: 0.26171875, w: 0.7421875}
+      bearingX: -0.859375
+      advanceX: 5.498047
+      descentY: -1.8554688
+    - ch: 0
+      size: {x: 10, y: 14}
+      uv: {x: 0.26464844, y: 0.984375, z: 0.28515625, w: 0.765625}
+      bearingX: 0.703125
+      advanceX: 11.7578125
+      descentY: -0.28320312
+    - ch: 1
+      size: {x: 5, y: 13}
+      uv: {x: 0.28808594, y: 0.984375, z: 0.29785156, w: 0.7734375}
+      bearingX: 3.1152344
+      advanceX: 11.7578125
+      descentY: -0
+    - ch: 2
+      size: {x: 9, y: 13}
+      uv: {x: 0.30078125, y: 0.984375, z: 0.31933594, w: 0.7734375}
+      bearingX: 1.3964844
+      advanceX: 11.7578125
+      descentY: -0
+    - ch: 3
+      size: {x: 10, y: 14}
+      uv: {x: 0.32226562, y: 0.984375, z: 0.34179688, w: 0.765625}
+      bearingX: 0.68359375
+      advanceX: 11.7578125
+      descentY: -0.28320312
+    - ch: 4
+      size: {x: 11, y: 13}
+      uv: {x: 0.34472656, y: 0.984375, z: 0.36621094, w: 0.7734375}
+      bearingX: 0.43945312
+      advanceX: 11.7578125
+      descentY: -0
+    - ch: 5
+      size: {x: 10, y: 14}
+      uv: {x: 0.36914062, y: 0.984375, z: 0.38867188, w: 0.765625}
+      bearingX: 0.9765625
+      advanceX: 11.7578125
+      descentY: -0.28320312
+    - ch: 6
+      size: {x: 10, y: 14}
+      uv: {x: 0.39160156, y: 0.984375, z: 0.41210938, w: 0.765625}
+      bearingX: 0.5371094
+      advanceX: 11.7578125
+      descentY: -0.28320312
+    - ch: 7
+      size: {x: 9, y: 13}
+      uv: {x: 0.41503906, y: 0.984375, z: 0.43359375, w: 0.7734375}
+      bearingX: 1.5429688
+      advanceX: 11.7578125
+      descentY: -0
+    - ch: 8
+      size: {x: 10, y: 14}
+      uv: {x: 0.43652344, y: 0.984375, z: 0.45703125, w: 0.765625}
+      bearingX: 0.5371094
+      advanceX: 11.7578125
+      descentY: -0.26367188
+    - ch: 9
+      size: {x: 10, y: 14}
+      uv: {x: 0.45996094, y: 0.984375, z: 0.48046875, w: 0.765625}
+      bearingX: 0.8203125
+      advanceX: 11.7578125
+      descentY: -0
+    - ch: ':'
+      size: {x: 3, y: 10}
+      uv: {x: 0.48339844, y: 0.984375, z: 0.49023438, w: 0.828125}
+      bearingX: 1.6210938
+      advanceX: 6.3378906
+      descentY: -0
+    - ch: ;
+      size: {x: 4, y: 12}
+      uv: {x: 0.49316406, y: 0.984375, z: 0.5019531, w: 0.796875}
+      bearingX: 0.78125
+      advanceX: 6.3378906
+      descentY: -1.8164062
+    - ch: <
+      size: {x: 12, y: 11}
+      uv: {x: 0.5048828, y: 0.984375, z: 0.5283203, w: 0.8046875}
+      bearingX: 2.578125
+      advanceX: 16.660156
+      descentY: 0.26367188
+    - ch: =
+      size: {x: 12, y: 6}
+      uv: {x: 0.53125, y: 0.984375, z: 0.5546875, w: 0.8828125}
+      bearingX: 2.4804688
+      advanceX: 16.660156
+      descentY: 2.9003906
+    - ch: '>'
+      size: {x: 12, y: 11}
+      uv: {x: 0.5576172, y: 0.984375, z: 0.5810547, w: 0.8046875}
+      bearingX: 2.578125
+      advanceX: 16.660156
+      descentY: 0.26367188
+    - ch: '?'
+      size: {x: 9, y: 14}
+      uv: {x: 0.5839844, y: 0.984375, z: 0.60253906, w: 0.765625}
+      bearingX: 0.8203125
+      advanceX: 10.917969
+      descentY: -0
+    - ch: '@'
+      size: {x: 18, y: 17}
+      uv: {x: 0.60546875, y: 0.984375, z: 0.64160156, w: 0.7109375}
+      bearingX: 0.87890625
+      advanceX: 20
+      descentY: -3.0175781
+    - ch: A
+      size: {x: 15, y: 13}
+      uv: {x: 0.64453125, y: 0.984375, z: 0.6738281, w: 0.7734375}
+      bearingX: -0.91796875
+      advanceX: 13.339844
+      descentY: -0
+    - ch: B
+      size: {x: 11, y: 13}
+      uv: {x: 0.6767578, y: 0.984375, z: 0.6982422, w: 0.7734375}
+      bearingX: 0.78125
+      advanceX: 12.021484
+      descentY: -0
+    - ch: C
+      size: {x: 11, y: 14}
+      uv: {x: 0.7011719, y: 0.984375, z: 0.7236328, w: 0.765625}
+      bearingX: 0.72265625
+      advanceX: 12.65625
+      descentY: -0.30273438
+    - ch: D
+      size: {x: 13, y: 13}
+      uv: {x: 0.7265625, y: 0.984375, z: 0.7529297, w: 0.7734375}
+      bearingX: 0.80078125
+      advanceX: 14.541016
+      descentY: -0
+    - ch: E
+      size: {x: 11, y: 13}
+      uv: {x: 0.7558594, y: 0.984375, z: 0.77734375, w: 0.7734375}
+      bearingX: 0.80078125
+      advanceX: 11.582031
+      descentY: -0
+    - ch: F
+      size: {x: 10, y: 13}
+      uv: {x: 0.78027344, y: 0.984375, z: 0.7998047, w: 0.7734375}
+      bearingX: 0.80078125
+      advanceX: 10.595703
+      descentY: -0
+    - ch: G
+      size: {x: 13, y: 14}
+      uv: {x: 0.8027344, y: 0.984375, z: 0.828125, w: 0.765625}
+      bearingX: 0.72265625
+      advanceX: 14.355469
+      descentY: -0.28320312
+    - ch: H
+      size: {x: 13, y: 13}
+      uv: {x: 0.8310547, y: 0.984375, z: 0.8574219, w: 0.7734375}
+      bearingX: 0.80078125
+      advanceX: 15
+      descentY: -0
+    - ch: I
+      size: {x: 4, y: 13}
+      uv: {x: 0.86035156, y: 0.984375, z: 0.86816406, w: 0.7734375}
+      bearingX: 0.87890625
+      advanceX: 5.5566406
+      descentY: -0
+    - ch: J
+      size: {x: 8, y: 14}
+      uv: {x: 0.87109375, y: 0.984375, z: 0.8876953, w: 0.765625}
+      bearingX: -0.41992188
+      advanceX: 8.564453
+      descentY: -0.28320312
+    - ch: K
+      size: {x: 11, y: 13}
+      uv: {x: 0.890625, y: 0.984375, z: 0.91308594, w: 0.7734375}
+      bearingX: 0.80078125
+      advanceX: 11.855469
+      descentY: -0
+    - ch: L
+      size: {x: 9, y: 13}
+      uv: {x: 0.9160156, y: 0.984375, z: 0.93359375, w: 0.7734375}
+      bearingX: 0.80078125
+      advanceX: 9.716797
+      descentY: -0
+    - ch: M
+      size: {x: 16, y: 13}
+      uv: {x: 0.93652344, y: 0.984375, z: 0.96777344, w: 0.7734375}
+      bearingX: 0.6640625
+      advanceX: 17.597656
+      descentY: -0
+    - ch: N
+      size: {x: 13, y: 13}
+      uv: {x: 0.9707031, y: 0.984375, z: 0.9970703, w: 0.7734375}
+      bearingX: 0.8203125
+      advanceX: 14.902344
+      descentY: -0
+    - ch: O
+      size: {x: 15, y: 14}
+      uv: {x: 0.21582031, y: 0.8828125, z: 0.24511719, w: 0.6640625}
+      bearingX: 0.76171875
+      advanceX: 16.484375
+      descentY: -0.28320312
+    - ch: P
+      size: {x: 10, y: 13}
+      uv: {x: 0.53125, y: 0.859375, z: 0.5517578, w: 0.6484375}
+      bearingX: 0.78125
+      advanceX: 11.064453
+      descentY: -0
+    - ch: Q
+      size: {x: 15, y: 14}
+      uv: {x: 0.171875, y: 0.7734375, z: 0.20214844, w: 0.5546875}
+      bearingX: 0.72265625
+      advanceX: 16.484375
+      descentY: -0.32226562
+    - ch: R
+      size: {x: 11, y: 13}
+      uv: {x: 0.5048828, y: 0.78125, z: 0.5263672, w: 0.5703125}
+      bearingX: 0.78125
+      advanceX: 11.777344
+      descentY: -0
+    - ch: S
+      size: {x: 9, y: 14}
+      uv: {x: 0.5546875, y: 0.78125, z: 0.5722656, w: 0.5625}
+      bearingX: 0.45898438
+      advanceX: 9.736328
+      descentY: -0.30273438
+    - ch: T
+      size: {x: 11, y: 13}
+      uv: {x: 0.001953125, y: 0.75, z: 0.0234375, w: 0.5390625}
+      bearingX: 0.13671875
+      advanceX: 10.458984
+      descentY: -0
+    - ch: U
+      size: {x: 12, y: 14}
+      uv: {x: 0.28808594, y: 0.75, z: 0.3125, w: 0.53125}
+      bearingX: 1.0351562
+      advanceX: 13.876953
+      descentY: -0.28320312
+    - ch: V
+      size: {x: 14, y: 13}
+      uv: {x: 0.64453125, y: 0.75, z: 0.67285156, w: 0.5390625}
+      bearingX: -0.078125
+      advanceX: 13.076172
+      descentY: -0
+    - ch: W
+      size: {x: 20, y: 13}
+      uv: {x: 0.7265625, y: 0.75, z: 0.765625, w: 0.5390625}
+      bearingX: -0.22460938
+      advanceX: 18.68164
+      descentY: -0
+    - ch: X
+      size: {x: 13, y: 13}
+      uv: {x: 0.7685547, y: 0.75, z: 0.7949219, w: 0.5390625}
+      bearingX: -0.9375
+      advanceX: 11.582031
+      descentY: -0
+    - ch: Y
+      size: {x: 11, y: 13}
+      uv: {x: 0.67578125, y: 0.75, z: 0.6982422, w: 0.5390625}
+      bearingX: -0.78125
+      advanceX: 9.443359
+      descentY: -0
+    - ch: Z
+      size: {x: 11, y: 13}
+      uv: {x: 0.34472656, y: 0.75, z: 0.36621094, w: 0.5390625}
+      bearingX: 0.26367188
+      advanceX: 11.416016
+      descentY: -0
+    - ch: '['
+      size: {x: 5, y: 18}
+      uv: {x: 0.48339844, y: 0.7734375, z: 0.49414062, w: 0.4921875}
+      bearingX: 0.95703125
+      advanceX: 6.435547
+      descentY: -3.9648438
+    - ch: \
+      size: {x: 4, y: 15}
+      uv: {x: 0.0625, y: 0.75, z: 0.07128906, w: 0.5078125}
+      bearingX: 1.1425781
+      advanceX: 5.498047
+      descentY: -1.8554688
+    - ch: ']'
+      size: {x: 5, y: 18}
+      uv: {x: 0.41503906, y: 0.75, z: 0.42578125, w: 0.46875}
+      bearingX: 0.13671875
+      advanceX: 6.435547
+      descentY: -3.9648438
+    - ch: ^
+      size: {x: 12, y: 5}
+      uv: {x: 0.8310547, y: 0.75, z: 0.8544922, w: 0.6640625}
+      bearingX: 4.0625
+      advanceX: 20
+      descentY: 8.779297
+    - ch: _
+      size: {x: 10, y: 2}
+      uv: {x: 0.890625, y: 0.75, z: 0.9111328, w: 0.71875}
+      bearingX: 0
+      advanceX: 10
+      descentY: -4.716797
+    - ch: '`'
+      size: {x: 4, y: 3}
+      uv: {x: 0.016601562, y: 0.875, z: 0.025390625, w: 0.8203125}
+      bearingX: 2.5
+      advanceX: 10
+      descentY: 11.542969
+    - ch: a
+      size: {x: 9, y: 11}
+      uv: {x: 0.9140625, y: 0.75, z: 0.9326172, w: 0.578125}
+      bearingX: 0.43945312
+      advanceX: 10.644531
+      descentY: -0.26367188
+    - ch: b
+      size: {x: 11, y: 13}
+      uv: {x: 0.9355469, y: 0.75, z: 0.95703125, w: 0.5390625}
+      bearingX: 0.78125
+      advanceX: 12.216797
+      descentY: -0.22460938
+    - ch: c
+      size: {x: 8, y: 11}
+      uv: {x: 0.95996094, y: 0.75, z: 0.9765625, w: 0.578125}
+      bearingX: 0.68359375
+      advanceX: 9.21875
+      descentY: -0.28320312
+    - ch: d
+      size: {x: 11, y: 14}
+      uv: {x: 0.07421875, y: 0.7421875, z: 0.095703125, w: 0.5234375}
+      bearingX: 0.64453125
+      advanceX: 12.119141
+      descentY: -0.28320312
+    - ch: e
+      size: {x: 9, y: 11}
+      uv: {x: 0.9794922, y: 0.75, z: 0.9980469, w: 0.578125}
+      bearingX: 0.64453125
+      advanceX: 10.458984
+      descentY: -0.28320312
+    - ch: f
+      size: {x: 7, y: 14}
+      uv: {x: 0.09863281, y: 0.7421875, z: 0.11230469, w: 0.5234375}
+      bearingX: 0.38085938
+      advanceX: 6.2402344
+      descentY: -0
+    - ch: g
+      size: {x: 10, y: 15}
+      uv: {x: 0.115234375, y: 0.7421875, z: 0.13574219, w: 0.5078125}
+      bearingX: 0.64453125
+      advanceX: 12.119141
+      descentY: -4.4628906
+    - ch: h
+      size: {x: 10, y: 13}
+      uv: {x: 0.26464844, y: 0.7421875, z: 0.28515625, w: 0.53125}
+      bearingX: 0.7421875
+      advanceX: 12.177734
+      descentY: -0
+    - ch: i
+      size: {x: 3, y: 13}
+      uv: {x: 0.20507812, y: 0.7734375, z: 0.21191406, w: 0.5625}
+      bearingX: 0.83984375
+      advanceX: 4.9609375
+      descentY: -0
+    - ch: j
+      size: {x: 7, y: 18}
+      uv: {x: 0.3154297, y: 0.7421875, z: 0.32910156, w: 0.4609375}
+      bearingX: -2.65625
+      advanceX: 5.15625
+      descentY: -4.5410156
+    - ch: k
+      size: {x: 10, y: 13}
+      uv: {x: 0.36914062, y: 0.7421875, z: 0.38964844, w: 0.53125}
+      bearingX: 0.72265625
+      advanceX: 10.917969
+      descentY: -0
+    - ch: l
+      size: {x: 4, y: 13}
+      uv: {x: 0.8574219, y: 0.75, z: 0.8652344, w: 0.5390625}
+      bearingX: 0.76171875
+      advanceX: 5.0390625
+      descentY: -0
+    - ch: m
+      size: {x: 15, y: 10}
+      uv: {x: 0.42871094, y: 0.7421875, z: 0.4580078, w: 0.578125}
+      bearingX: 0.7421875
+      advanceX: 16.660156
+      descentY: -0
+    - ch: n
+      size: {x: 10, y: 10}
+      uv: {x: 0.5751953, y: 0.7421875, z: 0.5957031, w: 0.578125}
+      bearingX: 0.7421875
+      advanceX: 12.177734
+      descentY: -0
+    - ch: o
+      size: {x: 11, y: 11}
+      uv: {x: 0.7011719, y: 0.7421875, z: 0.72265625, w: 0.5703125}
+      bearingX: 0.68359375
+      advanceX: 12.001953
+      descentY: -0.28320312
+    - ch: p
+      size: {x: 11, y: 15}
+      uv: {x: 0.79785156, y: 0.7421875, z: 0.81933594, w: 0.5078125}
+      bearingX: 0.49804688
+      advanceX: 12.119141
+      descentY: -4.21875
+    - ch: q
+      size: {x: 11, y: 15}
+      uv: {x: 0.026367188, y: 0.734375, z: 0.047851562, w: 0.5}
+      bearingX: 0.64453125
+      advanceX: 12.119141
+      descentY: -4.21875
+    - ch: r
+      size: {x: 7, y: 10}
+      uv: {x: 0.39257812, y: 0.7421875, z: 0.40625, w: 0.578125}
+      bearingX: 0.7421875
+      advanceX: 7.060547
+      descentY: -0
+    - ch: s
+      size: {x: 7, y: 11}
+      uv: {x: 0.4609375, y: 0.7421875, z: 0.47558594, w: 0.5703125}
+      bearingX: 0.49804688
+      advanceX: 8.300781
+      descentY: -0.28320312
+    - ch: t
+      size: {x: 7, y: 13}
+      uv: {x: 0.86816406, y: 0.7421875, z: 0.88183594, w: 0.5390625}
+      bearingX: 0.38085938
+      advanceX: 6.9433594
+      descentY: -0.28320312
+    - ch: u
+      size: {x: 10, y: 10}
+      uv: {x: 0.8847656, y: 0.6953125, z: 0.90527344, w: 0.53125}
+      bearingX: 0.9375
+      advanceX: 12.177734
+      descentY: -0.28320312
+    - ch: v
+      size: {x: 11, y: 10}
+      uv: {x: 0.13867188, y: 0.6875, z: 0.16015625, w: 0.5234375}
+      bearingX: -0.24414062
+      advanceX: 9.941406
+      descentY: -0
+    - ch: w
+      size: {x: 17, y: 10}
+      uv: {x: 0.5986328, y: 0.6875, z: 0.6328125, w: 0.5234375}
+      bearingX: -0.22460938
+      advanceX: 16.660156
+      descentY: -0
+    - ch: x
+      size: {x: 11, y: 10}
+      uv: {x: 0.21484375, y: 0.640625, z: 0.23730469, w: 0.4765625}
+      bearingX: -0.87890625
+      advanceX: 9.697266
+      descentY: -0
+    - ch: y
+      size: {x: 12, y: 15}
+      uv: {x: 0.8222656, y: 0.640625, z: 0.8466797, w: 0.40625}
+      bearingX: -1.3769531
+      advanceX: 9.941406
+      descentY: -4.5214844
+    - ch: z
+      size: {x: 9, y: 10}
+      uv: {x: 0.24023438, y: 0.640625, z: 0.2578125, w: 0.4765625}
+      bearingX: 0.1953125
+      advanceX: 9.21875
+      descentY: -0
+    - ch: '{'
+      size: {x: 7, y: 18}
+      uv: {x: 0.5292969, y: 0.625, z: 0.5439453, w: 0.3359375}
+      bearingX: 1.5429688
+      advanceX: 10
+      descentY: -4.0625
+    - ch: 
+      size: {x: 2, y: 20}
+      uv: {x: 0.4970703, y: 0.7734375, z: 0.5019531, w: 0.453125}
+      bearingX: 4.0039062
+      advanceX: 10
+      descentY: -4.716797
+    - ch: '}'
+      size: {x: 7, y: 18}
+      uv: {x: 0.39257812, y: 0.5546875, z: 0.40722656, w: 0.265625}
+      bearingX: 1.3964844
+      advanceX: 10
+      descentY: -4.0625
+    - ch: ~
+      size: {x: 13, y: 4}
+      uv: {x: 0.42871094, y: 0.5546875, z: 0.45507812, w: 0.4921875}
+      bearingX: 1.7382812
+      advanceX: 16.660156
+      descentY: 4.0820312
+  material: {fileID: 2100000, guid: 2c58240589aec6849ba026101bd4f549, type: 2}
+  file: 037-CAI978.ttf
+  size: 20
+--- !u!114 &70
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 28}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2839a61be0945e4889ba67f08619458, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &71
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 29}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39181cb6b42450b498322e5f5d084f6d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &72
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 29}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c68db47ed74a4140a8daefc2cf4763a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

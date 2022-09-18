@@ -1,0 +1,9 @@
+public enum WEAPON_TYPE
+{
+	NONE = 0,
+	SNIPER_RIFLE = 1,
+	AUTOSHOOT = 2,
+	BAZOOKA = 3,
+	THROWMINE = 4,
+	MACHINE_GUN = 5
+}

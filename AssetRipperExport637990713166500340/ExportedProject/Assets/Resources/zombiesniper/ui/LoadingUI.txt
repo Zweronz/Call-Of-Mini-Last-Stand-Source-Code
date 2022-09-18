@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<UI>
+	<UIElem>
+		<UIImage name="imgLoadingBackGround" rect="0,0,480,320" enable="false" visible="true" layer="6">
+			<Texture material="BlackUI" rect="0,0,1,1" />
+		</UIImage>
+		<UIText name="txtLoading" text="" rect="40,50,400,160" autoline="true" align="center" visible="true" layer="6" font="037_16" fontHD="037_32" color="255,255,255,255">
+		</UIText>
+		<UIImage name="imgLoading" rect="190,55,106,13" enable="false" visible="true" layer="6">
+			<Texture material="loading" rect="0,0,106,13" />
+		</UIImage>
+	</UIElem>	
+</UI>

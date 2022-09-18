@@ -1,0 +1,21 @@
+<root>
+	<global maxnum="200" maxtime="500"/>
+	
+	<formula>
+		<Para id="1" x1="0" x2="20" y1="6" y2="18" c="23" k="-5"/>
+		<Para id="2" x1="5" x2="20" y1="1" y2="3" c="5" k="-5"/>
+		<Para id="3" x1="6" x2="20" y1="1" y2="5" c="9" k="-5"/>
+		<Para id="4" x1="3" x2="20" y1="1" y2="7" c="9" k="-5"/>
+		<Para id="6" x1="5" x2="20" y1="1" y2="2" c="3" k="-5"/>
+		<Para id="7" x1="0.1" x2="20" y1="5" y2="6" c="10" k="-5"/>
+	</formula>
+	
+	<logicwave>
+		<wave id="1" zombieid="91" formulaid="1" startpoint="0" starttime="5,5" looptime="20,30"/>
+		<wave id="2" zombieid="95" formulaid="2" startpoint="0" starttime="0,0" looptime="30,40"/>
+		<wave id="3" zombieid="96" formulaid="3" startpoint="0" starttime="0,0" looptime="20,30"/>
+		<wave id="4" zombieid="97" formulaid="4" startpoint="0" starttime="0,0" looptime="20,30"/>
+		<wave id="5" zombieid="911" formulaid="5" startpoint="0" starttime="0,0" looptime="20,30"/>
+		<wave id="7" zombieid="91" formulaid="7" startpoint="0" starttime="10,10" looptime="0,0"/>
+	</logicwave>
+</root>

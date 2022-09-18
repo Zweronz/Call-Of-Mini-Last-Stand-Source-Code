@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<UI>
+	<UIElem>
+		<UIImage name="imgBackGround" rect="0,0,480,320" enable="false" visible="true">
+			<Texture material="bangzhudi" rect="0,0,480,320" />
+		</UIImage>
+		<UIImage name="imgHelpContext1" rect="45,30,388,256" enable="false" visible="true">
+			<Texture material="bangzhu1" rect="0,0,388,256" />
+		</UIImage>
+		<UIImage name="imgHelpContext2" rect="45,30,388,256" enable="false" visible="false">
+			<Texture material="bangzhu2" rect="0,0,388,256" />
+		</UIImage>
+		<UIImage name="imgHelpContext3" rect="45,30,388,256" enable="false" visible="false">
+			<Texture material="bangzhu3" rect="0,0,388,256" />
+		</UIImage>
+		<UIImage name="imgHelpContext4" rect="45,30,388,256" enable="false" visible="false">
+			<Texture material="bangzhu4" rect="0,0,388,256" />
+		</UIImage>
+
+		<UIButton name="btnPrev" type="click" rect="5, 0, 40, 320" enable="true" visible="true">
+			<Normal material="bangzhujiantou1" rect="0, 0, 20, 56" />
+			<Press material="bangzhujiantou1" rect="0, 0, 20, 56" />
+			<Disable material="bangzhujiantou1" rect="0, 0, 20, 56" />
+		</UIButton>
+
+		<UIButton name="btnNext" type="click" rect="430, 0, 40, 320" enable="true" visible="true">
+			<Normal material="bangzhujiantou2" rect="0, 0, 20, 56" />
+			<Press material="bangzhujiantou2" rect="0, 0, 20, 56" />
+			<Disable material="bangzhujiantou2" rect="0, 0, 20, 56" />
+		</UIButton>
+		
+		<UIButton name="btnBack" type="click" rect="197, 28, 86, 27" enable="true" visible="true">
+			<Normal material="shop_ui_part1" rect="2, 478, 86, 27" />
+			<Press material="shop_ui_part1" rect="404, 456, 86, 27" />
+			<Disable material="shop_ui_part1" rect="404, 456, 86, 27" />
+		</UIButton>
+	</UIElem>
+</UI>

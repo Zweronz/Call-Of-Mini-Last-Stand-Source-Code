@@ -1,0 +1,61 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1676769082805398}
+  m_IsPrefabParent: 1
+  m_IsExploded: 0
+--- !u!1 &1676769082805398
+GameObject:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Component:
+  - 4: {fileID: 4897558327497153}
+  - 114: {fileID: 114865575310695512}
+  m_Layer: 0
+  m_Name: MultiEventCharCopter01
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4897558327497153
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1676769082805398}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+--- !u!114 &114865575310695512
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1676769082805398}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a3bd91a55c272b4bb913789d7ed2787, type: 3}
+  m_Name:
+  audioEffectRefs:
+  - {fileID: 1555935179222897, guid: 8309b62b922de9a4cbab8f473b76896e, type: 2}
+  - {fileID: 1947058051155768, guid: a8c2c7cf9a4273d40bb8a830aed043a6, type: 2}
+  - {fileID: 1425300503485693, guid: a5a99006d236fe548b52dae98ca0d97d, type: 2}
+  maxDelayTime: 4077
+  useDelayPlay: 1
+  delayTimeArray:
+  - 0
+  - 1
+  - 0.3271028

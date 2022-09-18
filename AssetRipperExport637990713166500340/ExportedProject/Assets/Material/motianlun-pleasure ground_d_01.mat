@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: motianlun-pleasure ground_d_01
+  m_Shader: {fileID: 4800000, guid: 2dd90f38de3ec0e4db342fb89827e0fa, type: 3}
+  m_SavedProperties:
+    serializedVersion: 2
+    m_TexEnvs:
+    - first:
+        name: _texBase
+      second:
+        m_Texture: {fileID: 2800000, guid: abbe1e297d596e84ea76ff3d26b78460, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _texLightmap
+      second:
+        m_Texture: {fileID: 2800000, guid: 6cf90a5cb68262446916395f80e7aa0d, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats: {}
+    m_Colors:
+    - first:
+        name: _Color
+      second: {r: 0.48627454, g: 0.48627454, b: 0.48627454, a: 1}

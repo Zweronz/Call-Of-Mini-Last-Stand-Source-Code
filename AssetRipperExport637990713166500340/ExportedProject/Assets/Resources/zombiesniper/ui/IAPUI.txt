@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<UI>
+	<UIElem>
+		<UIImage name="imgIAPBackGround1" rect="0,0,480,320" enable="false" visible="true" layer="1">
+			<Texture material="shop_ui_part1" rect="2,2,480,320" />
+		</UIImage>
+		<UIImage name="imgIAPBackGround2" rect="0,0,480,320" enable="false" visible="true" layer="3">
+			<Texture material="shop_ui_part3" rect="1,1,480,320" />
+		</UIImage>
+
+		<UIImage name="imgDataInfo" rect="15,279,156,28" enable="false" visible="true" layer="3">
+			<Texture material="shop_ui_part4" rect="2,424,156,28" />
+		</UIImage>
+		<UIText name="txtGold" text="0" rect="50,279,100,20" autoline="false" align="left" visible="true" layer="3" font="037_8" fontHD="037_16" color="202,135,21,255">
+		</UIText>
+		<UIText name="txtDollar" text="0" rect="120,279,100,20" autoline="false" align="left" visible="true" layer="3" font="037_8" fontHD="037_16" color="202,135,21,255">
+		</UIText>
+
+		<UIImage name="imgCutUP" rect="0,62,480,196" enable="false" visible="true" layer="1">
+			<Texture material="shop_ui_part4" rect="2,2,480,196" />
+		</UIImage>
+
+		<UIImage name="imgArrowLeft" rect="35,69,24,8" enable="false" visible="true" layer="1">
+			<Texture material="shop_ui_part1" rect="484,22,24,8" />
+		</UIImage>
+		<UIImage name="imgArrowRight" rect="410,247,24,8" enable="false" visible="true" layer="1">
+			<Texture material="shop_ui_part1" rect="484,52,24,8" />
+		</UIImage>
+
+		<UIImage name="imgPOPMask" rect="0,0,480,320" enable="false" visible="false" alpha="0.8" layer="6">
+			<Texture material="BlackUI" rect="0,0,1,1" />
+		</UIImage>
+		<UIImage name="imgPOPBack" rect="140,105,200,100" enable="false" visible="false" layer="6">
+			<Texture material="pause_pop_texture" rect="2,218,265,137" />
+		</UIImage>
+		<UIText name="txtPOPText" text="" rect="145,130,190,40" autoline="true" align="center" visible="false" layer="6" font="037_8" fontHD="037_16" color="202,135,21,255">
+		</UIText>
+		<UIButton name="btnPOPConfirm" type="click" rect="197, 100, 86, 27" enable="false" visible="false" layer="6">
+			<Normal material="shop_ui_part1" rect="2, 478, 86, 27" />
+			<Press material="shop_ui_part1" rect="404, 456, 86, 27" />
+			<Disable material="shop_ui_part1" rect="404, 456, 86, 27" />
+		</UIButton>
+
+		<UIButton name="btnBack" type="click" rect="10, 2, 65, 35" enable="true" visible="true" layer="5">
+			<Normal material="shop_ui_part5" rect="190, 116, 65, 35" />
+			<Press material="shop_ui_part5" rect="270, 106, 65, 35" />
+			<Disable material="shop_ui_part5" rect="270, 106, 65, 35" />
+		</UIButton>
+	</UIElem>	
+</UI>

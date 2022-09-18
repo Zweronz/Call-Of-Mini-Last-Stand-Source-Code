@@ -1,0 +1,534 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<UI>
+	<UIElem>
+		<UIImage name="imgSniperAim" rect="0,0,480,320" enable="false" visible="true" layer="4">
+			<Texture material="game_ui_part3" rect="2,2,480,320" />
+		</UIImage>
+		<UIImage name="imgAutoShootAim" rect="0,0,480,320" enable="false" visible="true" layer="4">
+			<Texture material="game_ui_part1" rect="2,2,480,320" />
+		</UIImage>
+		<UIImage name="imgRocketAim" rect="0,0,480,320" enable="false" visible="true" layer="4">
+			<Texture material="game_ui_part4" rect="1,1,480,320" />
+		</UIImage>
+
+		<UIImage name="imgAlarmScreenLeft" rect="25,0,-25,320" enable="false" visible="false" layer="4">
+			<Texture material="game_ui_part1" rect="484,2,25,320" />
+		</UIImage>
+		<UIImage name="imgAlarmScreenRight" rect="455,0,25,320" enable="false" visible="false" layer="4">
+			<Texture material="game_ui_part1" rect="484,2,25,320" />
+		</UIImage>
+		<UIImage name="imgAlarmScreenLeftScene2" rect="100,0,-100,320" enable="false" visible="false" layer="4">
+			<Texture material="game_ui_part1" rect="484,2,25,320" />
+		</UIImage>
+		<UIImage name="imgAlarmScreenRightScene2" rect="380,0,100,320" enable="false" visible="false" layer="4">
+			<Texture material="game_ui_part1" rect="484,2,25,320" />
+		</UIImage>
+		<UIImage name="imgAlarmScreenTopScene2" rect="190,30,100,480" enable="false" rotate="90" visible="false" layer="4">
+			<Texture material="game_ui_part1" rect="484,2,25,320" />
+		</UIImage>
+		<UIImage name="imgAlarmScreenBottomScene2" rect="190,-190,100,480" enable="false" rotate="-90" visible="false" layer="4">
+			<Texture material="game_ui_part1" rect="484,2,25,320" />
+		</UIImage>
+
+		<UIImage name="imgSniperAimLB" rect="0,0,29,25" enable="false" visible="true" layer="4">
+			<Texture material="game_ui_part1" rect="448,366,29,25" />
+		</UIImage> 
+		
+		<UIImage name="imgSniperAimRB" rect="451,0,29,25" enable="false" visible="true" layer="4">
+			<Texture material="game_ui_part1" rect="477,366,-29,25" />
+		</UIImage>
+		
+		<UIButton name="btnFire" type="click" rect="380, 20, 80, 80" enable="false" visible="false" layer="5">
+			<Normal material="game_ui_part1" rect="186,324,60,60" />
+			<Press material="game_ui_part1" rect="124,324,61,61" />
+			<Disable material="game_ui_part1" rect="124,324,61,61" />
+		</UIButton>
+		
+		<UIButton name="btnAC130" type="click" rect="400, 120, 56, 53" enable="false" visible="false" layer="5">
+			<Normal material="game_ui_part1" rect="306,323,56,53" />
+			<Press material="game_ui_part1" rect="248,324,57,52" />
+			<Disable material="game_ui_part1" rect="248,324,57,52" />
+		</UIButton>
+		<UIButton name="btnMachine" type="click" rect="380, 140, 63, 46" enable="false" visible="false" layer="5">
+			<Normal material="game_ui_part4" rect="281,457,63,46" />
+			<Press material="game_ui_part4" rect="345,457,63,46" />
+			<Disable material="game_ui_part4" rect="345,457,63,46" />
+		</UIButton>
+		<UIImage name="imgAC130Back" rect="467,150,13,31" enable="false" visible="false" layer="5">
+			<Texture material="game_ui_part1" rect="434,378,13,31" />
+		</UIImage>
+		
+		<UIImage name="imgScore" rect="15,287,201,34" enable="false" visible="false" layer="5">
+			<Texture material="game_ui_part3" rect="216,324,201,34" />
+		</UIImage> 
+		
+		<UIButton name="btnPauseOn" type="click" rect="-10, 289, 41, 30" enable="false" visible="false" layer="5">
+			<Normal material="game_ui_part1" rect="406, 346, 41, 30" />
+			<Press material="game_ui_part1" rect="406, 346, 41, 30" />
+			<Disable material="game_ui_part1" rect="406, 346, 41, 30" />
+		</UIButton>
+		
+		<UIButton name="btnPauseOff" type="click" rect="-10, 289, 41, 30" enable="false" visible="false" layer="5">
+			<Normal material="game_ui_part1" rect="364, 346, 41, 30" />
+			<Press material="game_ui_part1" rect="364, 346, 41, 30" />
+			<Disable material="game_ui_part1" rect="364, 346, 41, 30" />
+		</UIButton>
+		
+		<UIButton name="btnSkip" type="click" rect="28, 289, 116, 32" enable="false" visible="false" layer="5">
+			<Normal material="game_ui_part3" rect="120, 388, 116, 32" />
+			<Press material="game_ui_part3" rect="2, 380, 116, 32" />
+			<Disable material="game_ui_part3" rect="2, 380, 116, 32" />
+		</UIButton>
+
+		<UIButton name="btnSkip2" type="click" rect="28, 289, 116, 32" enable="false" visible="false" layer="5">
+			<Normal material="game_ui_part4" rect="290, 424, 116, 32" />
+			<Press material="game_ui_part4" rect="290, 391, 116, 32" />
+			<Disable material="game_ui_part4" rect="290, 391, 116, 32" />
+		</UIButton>
+
+		<UIButton name="btnGunBackGround" type="click" rect="365,260,120,59" enable="false" visible="false" layer="5">
+			<Normal material="game_ui_part1" rect="2,324,120,59" />
+			<Press material="game_ui_part1" rect="2,324,120,59" />
+			<Disable material="game_ui_part1" rect="2,324,120,59" />
+		</UIButton>
+
+		<UIImage name="weaponIcon" rect="365,265,120,59" enable="false" visible="false" layer="5">
+			<Texture material="BlackUI" rect="0,0,1,1" />
+		</UIImage>
+		
+		<UIImage name="imgGunBackGroundMask" rect="373,270,104,44" alpha = "0.8" enable="false" visible="false" layer="5">
+			<Texture material="BlackUI" rect="0,0,1,1" />
+		</UIImage>
+		
+		<UIImage name="imgWeapon1_on" rect="372, 262, 30, 19" enable="false" visible="false" layer="5">
+			<Texture material="game_ui_part1" rect="338, 378, 30, 19" />
+		</UIImage>
+		<UIImage name="imgWeapon1_off" rect="372, 262, 30, 19" enable="false" visible="false" layer="5">
+			<Texture material="game_ui_part1" rect="370, 378, 30, 19" />
+		</UIImage>
+		
+		<UIImage name="imgWeapon2_on" rect="411, 262, 30, 19" enable="false" visible="false" layer="5">
+			<Texture material="game_ui_part1" rect="306, 376, 30, 19" />
+		</UIImage>
+		<UIImage name="imgWeapon2_off" rect="411, 262, 30, 19" enable="false" visible="false" layer="5">
+			<Texture material="game_ui_part1" rect="248, 378, 30, 19" />
+		</UIImage>
+		
+		<UIImage name="imgWeapon3_on" rect="450, 262, 30, 19" enable="false" visible="false" layer="5">
+			<Texture material="game_ui_part1" rect="402, 378, 30, 19" />
+		</UIImage>
+		<UIImage name="imgWeapon3_off" rect="450, 262, 30, 19" enable="false" visible="false" layer="5">
+			<Texture material="game_ui_part1" rect="478, 366, 30, 19" />
+		</UIImage>
+		
+		<UIText name="txtGameTime" text="" rect="250,280,100,40" autoline="false" align="left" visible="false" layer="6" font="037_16" fontHD="037_32" color="202,135,21,255">
+		</UIText>
+
+		<UIImage name="imgBullet1" rect="435,105,60,19" enable="false" visible="false" layer="5">
+			<Texture material="game_ui_part1" rect="448,346,60,19" />
+		</UIImage>
+		
+		<UIImage name="imgAimCrossUp" rect="240,160,1,4" enable="false" visible="false" layer="5">
+			<Texture material="WhiteUI" rect="0,0,1,1" />
+		</UIImage>
+		<UIImage name="imgAimCrossDown" rect="240,160,1,4" enable="false" visible="false" layer="5">
+			<Texture material="WhiteUI" rect="0,0,1,1" />
+		</UIImage>
+		<UIImage name="imgAimCrossLeft" rect="240,160,4,1" enable="false" visible="false" layer="5">
+			<Texture material="WhiteUI" rect="0,0,1,1" />
+		</UIImage>
+		<UIImage name="imgAimCrossRight" rect="240,160,4,1" enable="false" visible="false" layer="5">
+			<Texture material="WhiteUI" rect="0,0,1,1" />
+		</UIImage>
+
+		<UIText name="txtOutOfRange" text="OUT OF RANGE!!" rect="140,230,200,25" autoline="false" align="center" visible="false" layer="6" font="037_16" fontHD="037_32" color="226,4,4,255">
+		</UIText>
+		
+		<UIImage name="imgWarnZombieClose" rect="97,215,287,69" enable="false" visible="false" layer="6">
+			<Texture material="game_ui_part2" rect="2,324,287,69" />
+		</UIImage>
+		<UIImage name="imgWarnKillMany" rect="97,238,288,46" enable="false" visible="false" layer="6">
+			<Texture material="game_ui_part4" rect="1,321,288,46" />
+		</UIImage>
+		<UIImage name="imgWarnAC130" rect="97,238,288,46" enable="false" visible="false" layer="6">
+			<Texture material="game_ui_part4" rect="1,406,288,46" />
+		</UIImage>
+		<UIImage name="imgWarnMissKill" rect="102,231,279,37" enable="false" visible="false" layer="6">
+			<Texture material="game_ui_part4" rect="1,453,279,37" />
+		</UIImage>
+		<UIImage name="imgWarnHeadShoot" rect="102,231,279,37" enable="false" visible="false" layer="6">
+			<Texture material="game_ui_part4" rect="1,368,279,37" />
+		</UIImage>
+		<UIImage name="imgWarnOutOfRange" rect="165,222,150,16" enable="false" visible="false" layer="6">
+			<Texture material="game_ui_part4" rect="290,338,150,16" />
+		</UIImage>
+		<UIImage name="imgWarnReloading" rect="196,222,88,16" enable="false" visible="false" layer="6">
+			<Texture material="game_ui_part4" rect="290,321,88,16" />
+		</UIImage>
+		<UIImage name="imgDontKillInoo" rect="138,222,208,17" enable="false" visible="false" layer="6">
+			<Texture material="game_ui_part4" rect="290,355,208,17" />
+		</UIImage>
+		<UIImage name="imgDontKillInooStr" rect="192,200,60,17" enable="false" visible="false" layer="6">
+			<Texture material="game_ui_part4" rect="291,373,60,17" />
+		</UIImage>
+
+		<UIImage name="imgGameResult" rect="0,0,480,320" enable="false" visible="false" layer="6">
+			<Texture material="game_ui_part2" rect="2,2,480,320" />
+		</UIImage>
+		
+		<UIImage name="imgGameResultTitle" rect="143,265,194,46" enable="false" visible="false" layer="6">
+			<Texture material="game_ui_part2" rect="290,324,194,46" />
+		</UIImage>
+		
+		<UIButton name="btnBack" type="click" rect="5, 55, 153, 38" enable="false" visible="false" layer="6">
+			<Normal material="game_ui_part2" rect="290, 372, 153, 38" />
+			<Press material="game_ui_part2" rect="156, 452, 150, 37" />
+			<Disable material="game_ui_part2" rect="156, 452, 150, 37" />
+		</UIButton>
+		
+		<UIButton name="btnRetry" type="click" rect="164, 55, 153, 38" enable="false" visible="false" layer="6">
+			<Normal material="game_ui_part2" rect="156, 412, 153, 38" />
+			<Press material="game_ui_part2" rect="2, 394, 153, 38" />
+			<Disable material="game_ui_part2" rect="2, 394, 153, 38" />
+		</UIButton>
+		
+		<UIButton name="btnGear" type="click" rect="322, 55, 153, 38" enable="false" visible="false" layer="6">
+			<Normal material="game_ui_part2" rect="2, 434, 153, 38" />
+			<Press material="game_ui_part2" rect="310, 412, 153, 38" />
+			<Disable material="game_ui_part2" rect="310, 412, 153, 38" />
+		</UIButton>
+		
+		<UIImage name="imgDataInfo" rect="45,240,252,26" enable="false" visible="false" layer="6">
+			<Texture material="game_ui_part3" rect="216,360,252,26" />
+		</UIImage>
+		
+		<UIText name="txtInnocents" text="0" rect="87,242,100,20" autoline="false" align="left" visible="false" layer="6" font="037_10" fontHD="037_20" color="202,135,21,255">
+		</UIText>
+		<UIText name="txtGold" text="0" rect="157,242,100,20" autoline="false" align="left" visible="false" layer="6" font="037_10" fontHD="037_20" color="202,135,21,255">
+		</UIText>
+		<UIText name="txtDollar" text="0" rect="235,242,100,20" autoline="false" align="left" visible="false" layer="6" font="037_10" fontHD="037_20" color="202,135,21,255">
+		</UIText>
+		
+		<UIImage name="imgResultBest" rect="327,248,38,11" enable="false" visible="false" layer="6">
+			<Texture material="game_ui_part2" rect="444,372,38,11" />
+		</UIImage>
+		<UIText name="txtResultBestNum" rect="387,240,100,20" autoline="false" align="left" visible="false" layer="6" font="037_8" fontHD="037_16" color="202,135,21,255">
+		</UIText>
+		<UIImage name="imgResultBestIcon" rect="312,248,12,12" enable="false" visible="false" layer="6">
+			<Texture material="game_ui_part3" rect="498,2,12,12" />
+		</UIImage>
+		
+		<UIImage name="imgResultZomKillIcon" rect="80,208,12,12" enable="false" visible="false" layer="6">
+			<Texture material="game_ui_part3" rect="498,2,12,12" />
+		</UIImage>
+		<UIText name="txtResultZomKill" rect="90,200,100,20" autoline="false" align="right" visible="false" layer="6" font="037_8" fontHD="037_16" color="202,27,21,255">
+		</UIText>
+		<UIText name="txtResultZomKillNum" rect="200,200,100,20" autoline="false" align="left" visible="false" layer="6" font="037_8" fontHD="037_16" color="202,27,21,255">
+		</UIText>
+		<UIText name="txtResultZomKillNumPrice" rect="250,200,100,20" autoline="false" align="left" visible="false" layer="6" font="037_8" fontHD="037_16" color="202,27,21,255">
+		</UIText>
+		<UIImage name="imgResultZomKillMoney" rect="265,208,12,12" enable="false" visible="false" layer="6">
+			<Texture material="game over_jbi" rect="0,0,12,12" />
+		</UIImage>
+		<UIText name="txtResultZomKillNumTotalPrice" rect="330,200,150,20" autoline="false" align="left" visible="false" layer="6" font="037_8" fontHD="037_16" color="202,27,21,255">
+		</UIText>
+		<UIImage name="imgResultZomKillTotalMoney" rect="345,208,12,12" enable="false" visible="false" layer="6">
+			<Texture material="game over_jbi" rect="0,0,12,12" />
+		</UIImage>
+		
+		<UIImage name="imgResultGiaKillIcon" rect="80,193,12,12" enable="false" visible="false" layer="6">
+			<Texture material="game_ui_part3" rect="498,2,12,12" />
+		</UIImage>
+		<UIText name="txtResultGiaKill" rect="90,185,100,20" autoline="false" align="right" visible="false" layer="6" font="037_8" fontHD="037_16" color="202,27,21,255">
+		</UIText>
+		<UIText name="txtResultGiaKillNum" rect="200,185,50,20" autoline="false" align="left" visible="false" layer="6" font="037_8" fontHD="037_16" color="202,27,21,255">
+		</UIText>
+		<UIText name="txtResultGiaKillNumPrice" rect="250,185,70,20" autoline="false" align="left" visible="false" layer="6" font="037_8" fontHD="037_16" color="202,27,21,255">
+		</UIText>
+		<UIImage name="imgResultGiaKillMoney" rect="265,193,12,12" enable="false" visible="false" layer="6">
+			<Texture material="game over_jbi" rect="0,0,12,12" />
+		</UIImage>
+		<UIText name="txtResultGiaKillNumTotalPrice" rect="330,185,150,20" autoline="false" align="left" visible="false" layer="6" font="037_8" fontHD="037_16" color="202,27,21,255">
+		</UIText>
+		<UIImage name="imgResultGiaKillTotalMoney" rect="345,193,12,12" enable="false" visible="false" layer="6">
+			<Texture material="game over_jbi" rect="0,0,12,12" />
+		</UIImage>
+		
+		<UIImage name="imgResultInoSaveIcon" rect="80,178,12,12" enable="false" visible="false" layer="6">
+			<Texture material="game_ui_part3" rect="484,16,12,12" />
+		</UIImage>
+		<UIText name="txtResultInoSave" rect="90,170,100,20" autoline="false" align="right" visible="false" layer="6" font="037_8" fontHD="037_16" color="202,27,21,255">
+		</UIText>
+		<UIText name="txtResultInoSaveNum" rect="200,170,50,20" autoline="false" align="left" visible="false" layer="6" font="037_8" fontHD="037_16" color="202,27,21,255">
+		</UIText>
+		<UIText name="txtResultInoSaveNumPrice" rect="250,170,70,20" autoline="false" align="left" visible="false" layer="6" font="037_8" fontHD="037_16" color="202,27,21,255">
+		</UIText>
+		<UIImage name="imgResultInoSaveMoney" rect="265,178,12,12" enable="false" visible="false" layer="6">
+			<Texture material="game over_jbi" rect="0,0,12,12" />
+		</UIImage>
+		<UIText name="txtResultInoSaveNumTotalPrice" rect="330,170,150,20" autoline="false" align="left" visible="false" layer="6" font="037_8" fontHD="037_16" color="202,27,21,255">
+		</UIText>
+		<UIImage name="imgResultInoSaveTotalMoney" rect="345,178,12,12" enable="false" visible="false" layer="6">
+			<Texture material="game over_jbi" rect="0,0,12,12" />
+		</UIImage>
+		
+		<UIImage name="imgResultInoKillIcon" rect="80,163,12,12" enable="false" visible="false" layer="6">
+			<Texture material="game_ui_part3" rect="484,2,12,12" />
+		</UIImage>
+		<UIText name="txtResultInoKill" rect="90,155,100,20" autoline="false" align="right" visible="false" layer="6" font="037_8" fontHD="037_16" color="202,27,21,255">
+		</UIText>
+		<UIText name="txtResultInoKillNum" rect="200,155,50,20" autoline="false" align="left" visible="false" layer="6" font="037_8" fontHD="037_16" color="202,27,21,255">
+		</UIText>
+		<UIText name="txtResultInoKillNumPrice" rect="250,155,70,20" autoline="false" align="left" visible="false" layer="6" font="037_8" fontHD="037_16" color="202,27,21,255">
+		</UIText>
+		<UIImage name="imgResultInoKillMoney" rect="265,163,12,12" enable="false" visible="false" layer="6">
+			<Texture material="game over_jbi" rect="0,0,12,12" />
+		</UIImage>
+		<UIText name="txtResultInoKillNumTotalPrice" rect="330,155,150,20" autoline="false" align="left" visible="false" layer="6" font="037_8" fontHD="037_16" color="202,27,21,255">
+		</UIText>
+		<UIImage name="imgResultInoKillTotalMoney" rect="345,163,12,12" enable="false" visible="false" layer="6">
+			<Texture material="game over_jbi" rect="0,0,12,12" />
+		</UIImage>
+		
+		<UIText name="txtResultTimeTotal" rect="140,135,150,20" autoline="false" align="left" visible="false" layer="6" font="037_8" fontHD="037_16" color="202,27,21,255">
+		</UIText>
+
+		<UIText name="txtResultTimeBonus" rect="185,135,150,20" autoline="false" align="right" visible="false" layer="6" font="037_8" fontHD="037_16" color="202,27,21,255">
+		</UIText>
+		<UIText name="txtResultTimeBonusNum" rect="368,135,50,20" autoline="false" align="left" visible="false" layer="6" font="037_8" fontHD="037_16" color="202,27,21,255">
+		</UIText>
+		<UIImage name="imgResultTimeBonusMoney" rect="345,143,12,12" enable="false" visible="false" layer="6">
+			<Texture material="game over_jbi" rect="0,0,12,12" />
+		</UIImage>
+
+		<UIText name="txtResultCash" rect="235,120,100,20" autoline="false" align="right" visible="false" layer="6" font="037_8" fontHD="037_16" color="202,27,21,255">
+		</UIText>
+		<UIText name="txtResultCashNum" rect="368,120,50,20" autoline="false" align="left" visible="false" layer="6" font="037_8" fontHD="037_16" color="202,27,21,255">
+		</UIText>
+		<UIImage name="imgResultCashMoney" rect="345,128,12,12" enable="false" visible="false" layer="6">
+			<Texture material="game over_jbi" rect="0,0,12,12" />
+		</UIImage>
+		
+		<UIImage name="imgResultAchBackGround" rect="46,95,390,20" enable="false" visible="false" layer="6">
+			<Texture material="BlackUI" rect="2,2,1,1" />
+		</UIImage>
+		<UIText name="txtResultAch" rect="35,93,100,20" autoline="false" align="right" visible="false" layer="6" font="037_8" fontHD="037_16" color="202,135,21,255">
+		</UIText>
+		<UIText name="txtResultAchContext" rect="140,93,480,20" autoline="false" align="left" visible="false" layer="6" font="037_8" fontHD="037_16" color="202,135,21,255">
+		</UIText>
+		
+		<UIImage name="imgGamePauseMask" rect="0,0,480,320" alpha="0.8" enable="false" visible="false" layer="7">
+			<Texture material="BlackUI" rect="0,0,1,1" />
+		</UIImage>
+		<UIImage name="imgGamePause" rect="58,65,364,215" enable="false" visible="false" layer="7">
+			<Texture material="pause_pop_texture" rect="2,2,364,215" />
+		</UIImage>
+		<UIImage name="imgGamePauseTitle" rect="200,288,79,19" enable="false" visible="false" layer="7">
+			<Texture material="pause_pop_texture" rect="422,218,79,19" />
+		</UIImage>
+		
+		<UIImage name="imgGamePauseMusic" rect="110,205,53,12" enable="false" visible="false" layer="7">
+			<Texture material="pause_pop_texture" rect="456,2,53,12" />
+		</UIImage>
+		<UIButton name="btnPauseMusicON" type="click" rect="220, 200, 76, 24" enable="false" visible="false" layer="7">
+			<Normal material="pause_pop_texture" rect="368, 140, 76, 24" />
+			<Press material="pause_pop_texture" rect="368, 114, 76, 24" />
+			<Disable material="pause_pop_texture" rect="368, 114, 76, 24" />
+		</UIButton>
+		<UIButton name="btnPauseMusicOFF" type="click" rect="320, 200, 76, 24" enable="false" visible="false" layer="7">
+			<Normal material="pause_pop_texture" rect="368, 192, 76, 24" />
+			<Press material="pause_pop_texture" rect="368, 166, 76, 24" />
+			<Disable material="pause_pop_texture" rect="368, 166, 76, 24" />
+		</UIButton>
+		
+		<UIImage name="imgGamePauseSound" rect="110,155,63,12" enable="false" visible="false" layer="7">
+			<Texture material="pause_pop_texture" rect="446,114,63,12" />
+		</UIImage>
+		<UIButton name="btnPauseSoundON" type="click" rect="220, 150, 76, 24" enable="false" visible="false" layer="7">
+			<Normal material="pause_pop_texture" rect="368, 140, 76, 24" />
+			<Press material="pause_pop_texture" rect="368, 114, 76, 24" />
+			<Disable material="pause_pop_texture" rect="368, 114, 76, 24" />
+		</UIButton>
+		<UIButton name="btnPauseSoundOFF" type="click" rect="320, 150, 76, 24" enable="false" visible="false" layer="7">
+			<Normal material="pause_pop_texture" rect="368, 192, 76, 24" />
+			<Press material="pause_pop_texture" rect="368, 166, 76, 24" />
+			<Disable material="pause_pop_texture" rect="368, 166, 76, 24" />
+		</UIButton>
+		
+		<UIButton name="btnPauseBack" type="click" rect="5, 55, 153, 38" enable="false" visible="false" layer="7">
+			<Normal material="game_ui_part2" rect="290, 372, 153, 38" />
+			<Press material="game_ui_part2" rect="156, 452, 150, 37" />
+			<Disable material="game_ui_part2" rect="156, 452, 150, 37" />
+		</UIButton>
+		
+		<UIButton name="btnPauseRetry" type="click" rect="164, 55, 153, 38" enable="false" visible="false" layer="7">
+			<Normal material="game_ui_part2" rect="156, 412, 153, 38" />
+			<Press material="game_ui_part2" rect="2, 394, 153, 38" />
+			<Disable material="game_ui_part2" rect="2, 394, 153, 38" />
+		</UIButton>
+		
+		<UIButton name="btnPauseResume" type="click" rect="322, 55, 153, 38" enable="false" visible="false" layer="7">
+			<Normal material="pause_pop_texture" rect="268, 218, 153, 38" />
+			<Press material="pause_pop_texture" rect="268, 258, 150, 37" />
+			<Disable material="pause_pop_texture" rect="268, 258, 150, 37" />
+		</UIButton>
+
+		<UIImage name="imgHelpClick" rect="0,0,49,49" enable="false" visible="false" layer="5">
+			<Texture material="BlackUI" rect="0,0,1,1" />
+		</UIImage>
+		
+		<UIImage name="imgHelpIcon" rect="0,0,40,40" enable="false" visible="false" layer="5">
+			<Texture material="BlackUI" rect="0,0,1,1" />
+		</UIImage>
+		
+		<UIText name="txtHelpDesc" text="" rect="110,130,260,120" autoline="true" align="center" visible="false" layer="5" font="037_10" fontHD="037_20" color="255,255,255,255">
+		</UIText>
+		
+		<UIText name="txtMainChar" text="Hello" rect="15,90,200,130" autoline="true" align="left" visible="false" layer="6" font="037_8" fontHD="037_16" color="202,135,21,255">
+		</UIText>
+
+		<UIImage name="imgDefenceLife" rect="217,5,46,46" enable="false" visible="false" layer="6">
+			<Texture material="game_ui_part4" rect="407,373,46,46" />
+		</UIImage>
+		
+		<UIImage name="imgDefenceLifeMask" rect="225,14,30,29" enable="false" visible="false" layer="6">
+			<Texture material="game_ui_part4" rect="454,373,30,29" />
+		</UIImage>
+		
+		<UIImage name="imgPOPMask" rect="0,0,480,320" enable="false" visible="false" alpha="0.8" layer="7">
+			<Texture material="BlackUI" rect="0,0,1,1" />
+		</UIImage>
+		<UIImage name="imgPOPBack" rect="108,105,265,137" enable="false" visible="false" layer="7">
+			<Texture material="pause_pop_texture" rect="2,218,265,137" />
+		</UIImage>
+		<UIText name="txtPOPText" text="Hello" rect="145,80,190,130" autoline="true" align="center" visible="false" layer="7" font="037_8" fontHD="037_16" color="202,135,21,255">
+		</UIText>
+		<UIButton name="btnPOPConfirm" type="click" rect="150, 120, 86, 27" enable="false" visible="false" layer="7">
+			<Normal material="pause_pop_texture" rect="368, 30, 86, 27" />
+			<Press material="pause_pop_texture" rect="368, 2, 86, 27" />
+			<Disable material="pause_pop_texture" rect="368, 2, 86, 27" />
+		</UIButton>
+		<UIButton name="btnPOPCancel" type="click" rect="250, 120, 86, 27" enable="false" visible="false" layer="7">
+			<Normal material="pause_pop_texture" rect="368, 86, 86, 27" />
+			<Press material="pause_pop_texture" rect="368, 58, 86, 27" />
+			<Disable material="pause_pop_texture" rect="368, 58, 86, 27" />
+		</UIButton>
+
+		<UIImage name="imgRod" rect="25,110,213,55" enable="false" visible="false" layer="7">
+			<Texture material="game_ui_part3" rect="2,324,213,55" />
+		</UIImage>
+		
+		<UIImage name="imgMovieUp" rect="0,280,480,40" enable="false" visible="false" layer="7">
+			<Texture material="BlackUI" rect="2,2,1,1" />
+		</UIImage>
+		<UIImage name="imgMovieDown" rect="0,0,480,40" enable="false" visible="false" layer="7">
+			<Texture material="BlackUI" rect="2,2,1,1" />
+		</UIImage>
+		
+		<UIImage name="fadeimage" rect="0,0,480,320" enable="false" visible="false" layer="7">
+			<Texture material="BlackUI" rect="2,2,1,1" />
+		</UIImage>
+
+		<UIImage name="preload1" rect="-10,0,1,1" enable="false" visible="false" layer="6">
+			<Texture material="game_ui_part1" rect="0,0,1,1" />
+		</UIImage>
+		<UIImage name="preload2" rect="-10,0,1,1" enable="false" visible="false" layer="6">
+			<Texture material="game_ui_part2" rect="0,0,1,1" />
+		</UIImage>
+		<UIImage name="preload3" rect="-10,0,1,1" enable="false" visible="false" layer="6">
+			<Texture material="game_ui_part3" rect="0,0,1,1" />
+		</UIImage>
+		<UIImage name="preload4" rect="-10,0,1,1" enable="false" visible="false" layer="6">
+			<Texture material="game_ui_part4" rect="0,0,1,1" />
+		</UIImage>
+	</UIElem>
+	<UIAnimation>
+		<Animation name="fadein" control_id="fadeimage" >
+			<Alpha time="1" range="-1" restore="false" loop ="false" reverse="false"/>
+		</Animation>
+		<Animation name="fadeout" control_id="fadeimage" >
+			<Alpha time="1" range="1" restore="false" loop ="false" reverse="false"/>
+		</Animation>
+		<Animation name="fadeready" control_id="fadeimage" >
+			<Alpha time="0.5" range="0" restore="false" loop ="false" reverse="false"/>
+		</Animation>
+		<Animation name="outofrange" control_id="txtOutOfRange" >
+			<Alpha time="1" range="-1" restore="false" loop ="false" reverse="false"/>
+		</Animation>
+		<Animation name="bulletInterval" control_id="imgBullet1" >
+			<Translate time="1" offset="-30,0"/>
+		</Animation>
+		<Animation name="helpDescFadeOut" control_id="txtHelpDesc" >
+			<Alpha time="1" range="-1" restore="false" loop ="false" reverse="false"/>
+		</Animation>
+		<Animation name="gameui_movein" control_id="btnFire,btnAC130,imgAC130Back,btnMachine" >
+			<Translate time="0.5" offset="-100,0" restore="false" loop ="false" reverse="false"/>
+		</Animation>
+
+		<Animation name="gameui_weapon_movein" control_id="btnGunBackGround,weaponIcon,imgWeapon1_on,imgWeapon1_off,imgWeapon2_on,imgWeapon2_off,imgWeapon3_on,imgWeapon3_off" >
+			<Translate time="0.5" offset="-100,0" restore="false" loop ="false" reverse="false"/>
+		</Animation>
+
+		<Animation name="gameui_weaponmask" control_id="imgGunBackGroundMask" >
+			<Cliping time="1" offset="0,-44" restore="false" loop ="false" reverse="false"/>
+		</Animation>
+		<Animation name="gameui_alarmscreen_left" control_id="imgAlarmScreenLeft" >
+			<Alpha time="1" range="-1" restore="false" loop ="true" reverse="false"/>
+		</Animation>
+		<Animation name="gameui_alarmscreen_right" control_id="imgAlarmScreenRight" >
+			<Alpha time="1" range="-1" restore="false" loop ="true" reverse="false"/>
+		</Animation>
+		<Animation name="gameui_ac130moveout" control_id="btnAC130,imgAC130Back,btnMachine" >
+			<Translate time="1" offset="100,0" restore="false" loop ="false" reverse="false"/>
+		</Animation>
+		
+		<Animation name="gameui_moviefadein" control_id="fadeimage" >
+			<Alpha time="0.05" range="-1" restore="false" loop ="false" reverse="false"/>
+		</Animation>
+		<Animation name="gameui_moviefadeout" control_id="fadeimage" >
+			<Alpha time="0.05" range="1" restore="false" loop ="false" reverse="false"/>
+		</Animation>
+
+		<Animation name="gameui_movieup" control_id="imgMovieUp" >
+			<Translate time="0.05" offset="0,-40" restore="false" loop ="false" reverse="false"/>
+		</Animation>
+		<Animation name="gameui_moviedown" control_id="imgMovieDown" >
+			<Translate time="0.05" offset="0,40" restore="false" loop ="false" reverse="false"/>
+		</Animation>
+		
+		<Animation name="imgWarnZombieClose_fadeout" control_id="imgWarnZombieClose" >
+			<Alpha time="5" range="-1" restore="false" loop ="false" reverse="false"/>
+		</Animation>
+		<Animation name="imgWarnKillMany_fadeout" control_id="imgWarnKillMany" >
+			<Alpha time="2" range="-1" restore="false" loop ="false" reverse="false"/>
+		</Animation>
+		<Animation name="imgWarnAC130_fadeout" control_id="imgWarnAC130" >
+			<Alpha time="2" range="-1" restore="false" loop ="false" reverse="false"/>
+		</Animation>
+		<Animation name="imgWarnMissKill_fadeout" control_id="imgWarnMissKill" >
+			<Alpha time="2" range="-1" restore="false" loop ="false" reverse="false"/>
+		</Animation>
+		<Animation name="imgWarnHeadShoot_fadeout" control_id="imgWarnHeadShoot" >
+			<Alpha time="2" range="-1" restore="false" loop ="false" reverse="false"/>
+		</Animation>
+		<Animation name="imgWarnOutOfRange_fadeout" control_id="imgWarnOutOfRange" >
+			<Alpha time="2" range="-1" restore="false" loop ="false" reverse="false"/>
+		</Animation>
+		<Animation name="imgWarnReloading_fadeout" control_id="imgWarnReloading" >
+			<Alpha time="2" range="-1" restore="false" loop ="false" reverse="false"/>
+		</Animation>
+		<Animation name="imgDontKillInoo_fadeout" control_id="imgDontKillInoo" >
+			<Alpha time="2" range="-1" restore="false" loop ="false" reverse="false"/>
+		</Animation>
+		<Animation name="imgDontKillInooStr_fadeout" control_id="imgDontKillInooStr" >
+			<Alpha time="2" range="-1" restore="false" loop ="false" reverse="false"/>
+		</Animation>
+
+		<Animation name="imgimgDefenceLife_fadein" control_id="imgDefenceLife,imgDefenceLifeMask" >
+			<Alpha time="2" range="1" restore="false" loop ="false" reverse="false"/>
+		</Animation>
+		<Animation name="imgimgDefenceLife_fadeout" control_id="imgDefenceLife,imgDefenceLifeMask" >
+			<Alpha time="2" range="-1" restore="false" loop ="false" reverse="false"/>
+		</Animation>
+	</UIAnimation>
+</UI>

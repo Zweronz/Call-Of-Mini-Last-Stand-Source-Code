@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<UI>
+	<UIElem>
+		<UIImage name="imgOptionBack" rect="0,0,480,320" enable="false" visible="true" layer="1">
+			<Texture material="option_ui_texture" rect="2,2,480,320" />
+		</UIImage>
+		<UIImage name="imgGamePause" rect="58,70,364,215" enable="false" visible="true" layer="6">
+			<Texture material="pause_pop_texture" rect="2,2,364,215" />
+		</UIImage>
+		<UIImage name="imgGamePauseTitle" rect="185,288,112,19" enable="false" visible="true" layer="6">
+			<Texture material="option_ui_texture" rect="330,392,112,19" />
+		</UIImage>
+		
+		<UIImage name="imgGamePauseMusic" rect="141,230,53,12" enable="false" visible="true" layer="6">
+			<Texture material="pause_pop_texture" rect="456,2,53,12" />
+		</UIImage>
+		<UIButton name="btnPauseMusicON" type="click" rect="210, 225, 76, 24" enable="false" visible="true" layer="6">
+			<Normal material="pause_pop_texture" rect="368, 140, 76, 24" />
+			<Press material="pause_pop_texture" rect="368, 114, 76, 24" />
+			<Disable material="pause_pop_texture" rect="368, 114, 76, 24" />
+		</UIButton>
+		<UIButton name="btnPauseMusicOFF" type="click" rect="300, 225, 76, 24" enable="false" visible="true" layer="6">
+			<Normal material="pause_pop_texture" rect="368, 192, 76, 24" />
+			<Press material="pause_pop_texture" rect="368, 166, 76, 24" />
+			<Disable material="pause_pop_texture" rect="368, 166, 76, 24" />
+		</UIButton>
+		
+		<UIImage name="imgGamePauseSound" rect="131,193,63,12" enable="false" visible="true" layer="6">
+			<Texture material="pause_pop_texture" rect="446,114,63,12" />
+		</UIImage>
+		<UIButton name="btnPauseSoundON" type="click" rect="210, 187, 76, 24" enable="false" visible="true" layer="6">
+			<Normal material="pause_pop_texture" rect="368, 140, 76, 24" />
+			<Press material="pause_pop_texture" rect="368, 114, 76, 24" />
+			<Disable material="pause_pop_texture" rect="368, 114, 76, 24" />
+		</UIButton>
+		<UIButton name="btnPauseSoundOFF" type="click" rect="300, 187, 76, 24" enable="false" visible="true" layer="6">
+			<Normal material="pause_pop_texture" rect="368, 192, 76, 24" />
+			<Press material="pause_pop_texture" rect="368, 166, 76, 24" />
+			<Disable material="pause_pop_texture" rect="368, 166, 76, 24" />
+		</UIButton>
+
+		<UIImage name="imgGamePauseTutorial" rect="110,155,84,12" enable="false" visible="true" layer="6">
+			<Texture material="option_ui_texture" rect="330,412,84,12" />
+		</UIImage>
+		<UIButton name="btnPauseTutorialON" type="click" rect="210, 150, 76, 24" enable="false" visible="true" layer="6">
+			<Normal material="pause_pop_texture" rect="368, 140, 76, 24" />
+			<Press material="pause_pop_texture" rect="368, 114, 76, 24" />
+			<Disable material="pause_pop_texture" rect="368, 114, 76, 24" />
+		</UIButton>
+		<UIButton name="btnPauseTutorialOFF" type="click" rect="300, 150, 76, 24" enable="false" visible="true" layer="6">
+			<Normal material="pause_pop_texture" rect="368, 192, 76, 24" />
+			<Press material="pause_pop_texture" rect="368, 166, 76, 24" />
+			<Disable material="pause_pop_texture" rect="368, 166, 76, 24" />
+		</UIButton>
+
+		<UIImage name="imgGamePauseCutscenes" rect="97,145,1,1" enable="false" visible="false" layer="6">
+			<Texture material="option_ui_texture" rect="2,402,97,12" />
+		</UIImage>
+		<UIButton name="btnPauseCutscenesON" type="click" rect="210, 140, 1, 1" enable="false" visible="false" layer="6">
+			<Normal material="pause_pop_texture" rect="368, 140, 1, 1" />
+			<Press material="pause_pop_texture" rect="368, 114, 1, 1" />
+			<Disable material="pause_pop_texture" rect="368, 114, 1, 1" />
+		</UIButton>
+		<UIButton name="btnPauseCutscenesOFF" type="click" rect="300, 140, 1, 1" enable="false" visible="false" layer="6">
+			<Normal material="pause_pop_texture" rect="368, 192, 1, 1" />
+			<Press material="pause_pop_texture" rect="368, 166, 1, 1" />
+			<Disable material="pause_pop_texture" rect="368, 166, 1, 1" />
+		</UIButton>
+		
+		<UIButton name="btnOptionReview" type="click" rect="84, 100, 86, 27" enable="true" visible="true" layer="6">
+			<Normal material="option_ui_texture" rect="418, 364, 86, 27" />
+			<Press material="option_ui_texture" rect="330, 364, 86, 27" />
+			<Disable material="option_ui_texture" rect="330, 364, 86, 27" />
+		</UIButton>
+		<UIButton name="btnOptionSupport" type="click" rect="197, 100, 86, 27" enable="true" visible="true" layer="6">
+			<Normal material="option_ui_texture" rect="242, 364, 86, 27" />
+			<Press material="option_ui_texture" rect="154, 364, 86, 27" />
+			<Disable material="option_ui_texture" rect="154, 364, 86, 27" />
+		</UIButton>
+		<UIButton name="btnOptionCredit" type="click" rect="310, 100, 86, 27" enable="true" visible="true" layer="6">
+			<Normal material="option_ui_texture" rect="242, 392, 86, 27" />
+			<Press material="option_ui_texture" rect="154, 392, 86, 27" />
+			<Disable material="option_ui_texture" rect="154, 392, 86, 27" />
+		</UIButton>
+		
+		<UIButton name="btnPauseBack" type="click" rect="25, 55, 153, 38" enable="true" visible="true" layer="6">
+			<Normal material="option_ui_texture" rect="156, 324, 153, 38" />
+			<Press material="option_ui_texture" rect="2, 324, 153, 38" />
+			<Disable material="option_ui_texture" rect="2, 324, 153, 38" />
+		</UIButton>
+		
+		<UIButton name="btnOptionHelp" type="click" rect="302, 55, 153, 38" enable="true" visible="true" layer="6">
+			<Normal material="option_ui_texture" rect="310, 324, 153, 38" />
+			<Press material="option_ui_texture" rect="2, 364, 150, 37" />
+			<Disable material="option_ui_texture" rect="2, 364, 150, 37" />
+		</UIButton>
+	</UIElem>
+</UI>

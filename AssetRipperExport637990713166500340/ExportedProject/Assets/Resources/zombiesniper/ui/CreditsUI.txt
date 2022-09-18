@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<UI>
+	<UIElem>
+		<UIImage name="imgBackGround" rect="0,0,480,320" enable="false" visible="true">
+			<Texture material="credits" rect="0,0,480,320" />
+		</UIImage>
+
+		<UIButton name="btnBack" type="click" rect="197, 48, 86, 27" enable="true" visible="true">
+			<Normal material="shop_ui_part1" rect="2, 478, 86, 27" />
+			<Press material="shop_ui_part1" rect="404, 456, 86, 27" />
+			<Disable material="shop_ui_part1" rect="404, 456, 86, 27" />
+		</UIButton>
+	</UIElem>
+</UI>

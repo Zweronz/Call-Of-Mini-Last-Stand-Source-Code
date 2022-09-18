@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<UI>
+	<UIElem>
+		<UIImage name="imgWeaponShopBackGround1" rect="0,0,480,320" enable="false" visible="true" layer="1">
+			<Texture material="shop_ui_part1" rect="2,2,480,320" />
+		</UIImage>
+		<UIImage name="imgWeaponShopBackGround2" rect="0,0,480,320" enable="false" visible="true" layer="3">
+			<Texture material="shop_ui_part3" rect="1,1,480,320" />
+		</UIImage>
+		
+		<UIImage name="imgDataInfo" rect="5,289,252,26" enable="false" visible="true" layer="3">
+			<Texture material="game_ui_part3" rect="216,360,252,26" />
+		</UIImage>
+		
+		<UIText name="txtInnocents" text="0" rect="45,289,100,20" autoline="false" align="left" visible="true" layer="3" font="037_8" fontHD="037_16" color="202,135,21,255">
+		</UIText>
+		<UIText name="txtGold" text="0" rect="120,289,100,20" autoline="false" align="left" visible="true" layer="3" font="037_8" fontHD="037_16" color="202,135,21,255">
+		</UIText>
+		<UIText name="txtDollar" text="0" rect="195,289,100,20" autoline="false" align="left" visible="true" layer="3" font="037_8" fontHD="037_16" color="202,135,21,255">
+		</UIText>
+		
+		<UIButton name="btnGetMoreCash" type="click" rect="285, 278, 173, 38" enable="true" visible="true" layer="5">
+			<Normal material="shop_ui_part4" rect="176, 384, 173, 38" />
+			<Press material="shop_ui_part4" rect="2, 384, 173, 38" />
+			<Disable material="shop_ui_part4" rect="2, 384, 173, 38" />
+		</UIButton>
+		
+		<UIImage name="imgCutUP" rect="0,62,480,196" enable="false" visible="true" layer="1">
+			<Texture material="shop_ui_part4" rect="2,2,480,196" />
+		</UIImage>
+
+		<UIImage name="imgArrowLeft" rect="35,69,24,8" enable="false" visible="true" layer="1">
+			<Texture material="shop_ui_part1" rect="484,22,24,8" />
+		</UIImage>
+		<UIImage name="imgArrowRight" rect="410,247,24,8" enable="false" visible="true" layer="1">
+			<Texture material="shop_ui_part1" rect="484,52,24,8" />
+		</UIImage>
+		
+		<UIButton name="btnWeapon4on" type="click" rect="240, 250, 78, 28" enable="true" visible="true" layer="2">
+			<Normal material="shop_ui_part5" rect="390, 86, 78, 28" />
+			<Press material="shop_ui_part5" rect="390, 86, 78, 28" />
+			<Disable material="shop_ui_part5" rect="390, 86, 78, 28" />
+		</UIButton>
+		<UIButton name="btnWeapon4off" type="click" rect="233, 243, 92, 40" enable="true" visible="true" layer="3">
+			<Normal material="shop_ui_part5" rect="96, 86, 92, 40" />
+			<Press material="shop_ui_part5" rect="96, 86, 92, 40" />
+			<Disable material="shop_ui_part5" rect="96, 86, 92, 40" />
+		</UIButton>
+		
+		<UIButton name="btnWeapon3on" type="click" rect="165, 250, 78, 28" enable="true" visible="true" layer="2">
+			<Normal material="shop_ui_part5" rect="310, 76, 78, 28" />
+			<Press material="shop_ui_part5" rect="310, 76, 78, 28" />
+			<Disable material="shop_ui_part5" rect="310, 76, 78, 28" />
+		</UIButton>
+		<UIButton name="btnWeapon3off" type="click" rect="158, 243, 92, 40" enable="true" visible="true" layer="3">
+			<Normal material="shop_ui_part5" rect="394, 44, 92, 40" />
+			<Press material="shop_ui_part5" rect="394, 44, 92, 40" />
+			<Disable material="shop_ui_part5" rect="394, 44, 92, 40" />
+		</UIButton>
+		
+		<UIButton name="btnWeapon2on" type="click" rect="90, 250, 78, 28" enable="true" visible="true" layer="2">
+			<Normal material="shop_ui_part5" rect="190, 86, 78, 28" />
+			<Press material="shop_ui_part5" rect="190, 86, 78, 28" />
+			<Disable material="shop_ui_part5" rect="190, 86, 78, 28" />
+		</UIButton>
+		
+		<UIButton name="btnWeapon2off" type="click" rect="83, 243, 92, 40" enable="true" visible="true" layer="3">
+			<Normal material="shop_ui_part5" rect="2, 86, 92, 40" />
+			<Press material="shop_ui_part5" rect="2, 86, 92, 40" />
+			<Disable material="shop_ui_part5" rect="2, 86, 92, 40" />
+		</UIButton>
+		
+		<UIButton name="btnWeapon1on" type="click" rect="15, 250, 78, 28" enable="true" visible="true" layer="2">
+			<Normal material="shop_ui_part5" rect="310, 46, 78, 28" />
+			<Press material="shop_ui_part5" rect="310, 46, 78, 28" />
+			<Disable material="shop_ui_part5" rect="310, 46, 78, 28" />
+		</UIButton>
+		<UIButton name="btnWeapon1off" type="click" rect="8, 243, 92, 40" enable="true" visible="true" layer="3">
+			<Normal material="shop_ui_part5" rect="394, 2, 92, 40" />
+			<Press material="shop_ui_part5" rect="394, 2, 92, 40" />
+			<Disable material="shop_ui_part5" rect="394, 2, 92, 40" />
+		</UIButton>
+		
+		<UIButton name="btnBack" type="click" rect="10, 2, 65, 35" enable="true" visible="true" layer="5">
+			<Normal material="shop_ui_part5" rect="190, 116, 65, 35" />
+			<Press material="shop_ui_part5" rect="270, 106, 65, 35" />
+			<Disable material="shop_ui_part5" rect="270, 106, 65, 35" />
+		</UIButton>
+		
+		<UIImage name="imgShopTip1" rect="83,265,17,17" enable="false" visible="true" layer="6">
+			<Texture material="tixing" rect="0,0,17,17" />
+		</UIImage>
+		<UIText name="txtShopTip1" text="55" rect="82,268,20,14" autoline="false" align="center" visible="true" layer="6" font="037_8" fontHD="037_16" color="255,255,255,255">
+		</UIText>
+		
+		<UIImage name="imgShopTip2" rect="158,265,17,17" enable="false" visible="true" layer="6">
+			<Texture material="tixing" rect="0,0,17,17" />
+		</UIImage>
+		<UIText name="txtShopTip2" text="55" rect="157,268,20,14" autoline="false" align="center" visible="true" layer="6" font="037_8" fontHD="037_16" color="255,255,255,255">
+		</UIText>
+		
+		<UIImage name="imgShopTip3" rect="233,265,17,17" enable="false" visible="true" layer="6">
+			<Texture material="tixing" rect="0,0,17,17" />
+		</UIImage>
+		<UIText name="txtShopTip3" text="55" rect="232,268,20,14" autoline="false" align="center" visible="true" layer="6" font="037_8" fontHD="037_16" color="255,255,255,255">
+		</UIText>
+		
+		<UIImage name="imgShopTip4" rect="308,265,17,17" enable="false" visible="true" layer="6">
+			<Texture material="tixing" rect="0,0,17,17" />
+		</UIImage>
+		<UIText name="txtShopTip4" text="55" rect="308,268,20,14" autoline="false" align="center" visible="true" layer="6" font="037_8" fontHD="037_16" color="255,255,255,255">
+		</UIText>
+		
+		<UIImage name="imgBuyWeaponMask" rect="0,0,480,320" alpha="0.8" enable="false" visible="false" layer="6">
+			<Texture material="BlackUI" rect="2,2,1,1" />
+		</UIImage>
+		<UIImage name="imgBuyWeapon" rect="58,90,364,179" enable="false" visible="false" layer="6">
+			<Texture material="shop_ui_part3" rect="1,321,364,179" />
+		</UIImage>
+		<UIImage name="imgBuyBack1" rect="95,160,133,80" enable="false" visible="false" layer="6">
+			<Texture material="shop_ui_part1" rect="2,324,133,80" />
+		</UIImage>
+		<UIImage name="imgBuyIcon" rect="87,163,146,78" enable="false" visible="false" layer="6">
+			<Texture material="BlackUI" rect="2,2,1,1" />
+		</UIImage>
+		<UIText name="txtBuyInfoName" text="" rect="95,160,120,20" autoline="false" align="right" visible="false" layer="6" font="037_8" fontHD="037_16" color="255,163,5,255">
+		</UIText>
+		<UIText name="txtBuyInfoDmg" text="DMG:" rect="200,220,100,20" autoline="false" align="right" visible="false" layer="6" font="037_8" fontHD="037_16" color="255,163,5,255">
+		</UIText>
+		<UIText name="txtBuyInfoDmgValue" text="0" rect="320,220,100,20" autoline="false" align="left" visible="false" layer="6" font="037_8" fontHD="037_16" color="255,163,5,255">
+		</UIText>
+		<UIText name="txtBuyInfoRT" text="LOAD:" rect="200,205,100,20" autoline="false" align="right" visible="false" layer="6" font="037_8" fontHD="037_16" color="255,163,5,255">
+		</UIText>
+		<UIText name="txtBuyInfoRTValue" text="0" rect="320,205,100,20" autoline="false" align="left" visible="false" layer="6" font="037_8" fontHD="037_16" color="255,163,5,255">
+		</UIText>
+		<UIText name="txtBuyInfoGC" text="AMMO:" rect="200,190,100,20" autoline="false" align="right" visible="false" layer="6" font="037_8" fontHD="037_16" color="255,163,5,255">
+		</UIText>
+		<UIText name="txtBuyInfoGCValue" text="0" rect="320,190,100,20" autoline="false" align="left" visible="false" layer="6" font="037_8" fontHD="037_16" color="255,163,5,255">
+		</UIText>
+		<UIText name="txtBuyInfoSS" text="RPM:" rect="200,175,100,20" autoline="false" align="right" visible="false" layer="6" font="037_8" fontHD="037_16" color="255,163,5,255">
+		</UIText>
+		<UIText name="txtBuyInfoSSValue" text="0" rect="320,175,100,20" autoline="false" align="left" visible="false" layer="6" font="037_8" fontHD="037_16" color="255,163,5,255">
+		</UIText>
+		<UIText name="txtBuyInfoSW" text="AOE:" rect="200,175,100,20" autoline="false" align="right" visible="false" layer="6" font="037_8" fontHD="037_16" color="255,163,5,255">
+		</UIText>
+		<UIText name="txtBuyInfoSWValue" text="0" rect="320,175,100,20" autoline="false" align="left" visible="false" layer="6" font="037_8" fontHD="037_16" color="255,163,5,255">
+		</UIText>
+		<UIText name="txtBuyInfoSZ" text="SCOPE:" rect="200,160,100,20" autoline="false" align="right" visible="false" layer="6" font="037_8" fontHD="037_16" color="255,163,5,255">
+		</UIText>
+		<UIText name="txtBuyInfoSZValue" text="0" rect="320,160,100,20" autoline="false" align="left" visible="false" layer="6" font="037_8" fontHD="037_16" color="255,163,5,255">
+		</UIText>
+		<UIText name="txtBuyInfoSR" text="RNG:" rect="200,145,100,20" autoline="false" align="right" visible="false" layer="6" font="037_8" fontHD="037_16" color="255,163,5,255">
+		</UIText>
+		<UIText name="txtBuyInfoSRValue" text="0" rect="320,145,100,20" autoline="false" align="left" visible="false" layer="6" font="037_8" fontHD="037_16" color="255,163,5,255">
+		</UIText>
+		<UIText name="txtBuyInfoDesc" text="123 123 123 123 123 123 123 123 123 123 123 123 123 123 123 123 123 123 123 123 123 123 123 123 123 123 123 123" rect="80,65,300,50" autoline="true" align="left" visible="false" layer="6" font="037_8" fontHD="037_16" color="255,163,5,255">
+		</UIText>
+		
+		<UIText name="txtPowerInfoReserve" text="0" rect="250,220,150,20" autoline="false" align="left" visible="false" layer="6" font="037_8" fontHD="037_16" color="255,163,5,255">
+		</UIText>
+		<UIText name="txtPowerInfoDesc" text="0" rect="250,140,150,80" autoline="true" align="left" visible="false" layer="6" font="037_8" fontHD="037_16" color="255,163,5,255">
+		</UIText>
+		
+		<UIImage name="imgPowerInfoStar1" rect="250,230,11,9" enable="false" visible="false" layer="6">
+			<Texture material="shop_ui_part1" rect="496,62,11,9" />
+		</UIImage>
+		<UIImage name="imgPowerInfoStar2" rect="260,230,11,9" enable="false" visible="false" layer="6">
+			<Texture material="shop_ui_part1" rect="496,62,11,9" />
+		</UIImage>
+		<UIImage name="imgPowerInfoStar3" rect="270,230,11,9" enable="false" visible="false" layer="6">
+			<Texture material="shop_ui_part1" rect="496,62,11,9" />
+		</UIImage>
+		<UIImage name="imgPowerInfoStar4" rect="280,230,11,9" enable="false" visible="false" layer="6">
+			<Texture material="shop_ui_part1" rect="496,62,11,9" />
+		</UIImage>
+		<UIImage name="imgPowerInfoStar5" rect="290,230,11,9" enable="false" visible="false" layer="6">
+			<Texture material="shop_ui_part1" rect="496,62,11,9" />
+		</UIImage>
+
+		<UIImage name="imgPriceIcon" rect="145,147,12,12" enable="false" visible="false" layer="6">
+			<Texture material="game over_jbi" rect="0,0,12,12" />
+		</UIImage>
+		<UIText name="txtPriceNum" text="0" rect="160,140,100,20" autoline="false" align="left" visible="false" layer="6" font="037_8" fontHD="037_16" color="255,163,5,255">
+		</UIText>
+		<UIButton name="btnBuyConfirm" type="click" rect="260, 105, 127, 42" enable="false" visible="false" layer="6">
+			<Normal material="shop_ui_part1" rect="264, 404, 127, 42" />
+			<Press material="shop_ui_part1" rect="136, 404, 127, 42" />
+			<Disable material="shop_ui_part1" rect="136, 404, 127, 42" />
+		</UIButton>
+		<UIButton name="btnBuyCancel" type="click" rect="90, 105, 127, 42" enable="false" visible="false" layer="6">
+			<Normal material="shop_ui_part1" rect="130, 448, 127, 42" />
+			<Press material="shop_ui_part1" rect="2, 406, 127, 42" />
+			<Disable material="shop_ui_part1" rect="2, 406, 127, 42" />
+		</UIButton>
+		
+		<UIImage name="imgWarnWeaponMask" rect="0,0,480,320" alpha="0.8" enable="false" visible="false" layer="6">
+			<Texture material="BlackUI" rect="2,2,1,1" />
+		</UIImage>
+		<UIImage name="imgWarnWeapon" rect="30,70,420,183" enable="false" visible="false" layer="6">
+			<Texture material="shop_ui_part4" rect="2,200,422,183" />
+		</UIImage>
+		<UIButton name="btnWarnConfirm" type="click" rect="176, 83, 127, 42" enable="false" visible="false" layer="6">
+			<Normal material="shop_ui_part1" rect="130, 448, 127, 42" />
+			<Press material="shop_ui_part1" rect="2, 406, 127, 42" />
+			<Disable material="shop_ui_part1" rect="2, 406, 127, 42" />
+		</UIButton>
+		<UIText name="txtWarnContext" text="Hello World" rect="135,110,230,80" autoline="true" align="center" visible="false" layer="6" font="037_8" fontHD="037_16" color="255,21,21,255">
+		</UIText>
+		
+		<UIImage name="imgPOPMask" rect="0,0,480,320" enable="false" visible="false" alpha="0.8" layer="6">
+			<Texture material="BlackUI" rect="0,0,1,1" />
+		</UIImage>
+		<UIImage name="imgPOPBack" rect="108,105,265,137" enable="false" visible="false" layer="6">
+			<Texture material="pause_pop_texture" rect="2,218,265,137" />
+		</UIImage>
+		<UIText name="txtPOPText" text="Hello" rect="145,80,190,130" autoline="true" align="center" visible="false" layer="6" font="037_8" fontHD="037_16" color="202,135,21,255">
+		</UIText>
+		<UIButton name="btnPOPCancel" type="click" rect="150, 120, 86, 27" enable="false" visible="false" layer="6">
+			<Normal material="shop_ui_part1" rect="2, 478, 86, 27" />
+			<Press material="shop_ui_part1" rect="404, 456, 86, 27" />
+			<Disable material="shop_ui_part1" rect="404, 456, 86, 27" />
+		</UIButton>
+		<UIButton name="btnPOPConfirm" type="click" rect="250, 120, 86, 27" enable="false" visible="false" layer="6">
+			<Normal material="shop_ui_part1" rect="316, 456, 86, 27" />
+			<Press material="shop_ui_part1" rect="2, 450, 86, 27" />
+			<Disable material="shop_ui_part1" rect="2, 450, 86, 27" />
+		</UIButton>
+		
+		<UIImage name="fadeimage" rect="0,0,480,320" enable="false" visible="false" layer="6">
+			<Texture material="BlackUI" rect="2,2,1,1" />
+		</UIImage>
+		
+	</UIElem>
+	<UIAnimation>
+		<Animation name="buypopout" control_id="imgBuyWeapon" >
+			<Scale time="0.2" range="-1" restore="false" loop ="false" reverse="false"/>
+		</Animation>
+		<Animation name="buypopin" control_id="imgBuyWeapon" >
+			<Scale time="0.2" range="1" restore="false" loop ="false" reverse="false"/>
+		</Animation>
+		
+		<Animation name="warnpopout" control_id="imgWarnWeapon" >
+			<Scale time="0.2" range="-1" restore="false" loop ="false" reverse="false"/>
+		</Animation>
+		<Animation name="warnpopin" control_id="imgWarnWeapon" >
+			<Scale time="0.2" range="1" restore="false" loop ="false" reverse="false"/>
+		</Animation>
+	</UIAnimation>
+</UI>

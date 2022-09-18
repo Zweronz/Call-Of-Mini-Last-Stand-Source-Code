@@ -1,0 +1,17 @@
+public enum ACTION_ENUM
+{
+	NONE = 0,
+	IDLE = 1,
+	WALK = 2,
+	RUN = 3,
+	ATTACK = 4,
+	HURT = 5,
+	HEAR = 6,
+	DEAD = 7,
+	DEAD_HEAD = 8,
+	DEAD_BOOM = 9,
+	DEAD_LEFT = 10,
+	DEAD_RIGHT = 11,
+	DEAD_BACK = 12,
+	COUNT = 13
+}

@@ -1,0 +1,544 @@
+<root>
+	<Zombie>
+		<node id="1" type="1" aitype="2" size="0.4" life="20" movespeed="1.0" atkSpeed="1" damage="1" atkRange="0.8" warnRange="10" freezeTime="0.5"/>
+		<node id="2" type="2" aitype="2" size="0.4" life="40" movespeed="0.9" atkSpeed="1" damage="1" atkRange="0.8" warnRange="10" freezeTime="0.5"/>
+		<node id="3" type="3" aitype="2" size="0.6" life="200" movespeed="0.8" atkSpeed="0.5" damage="1" atkRange="0.8" warnRange="10" freezeTime="0.3"/>
+		<node id="4" type="4" aitype="2" size="0.6" life="500" movespeed="0.9" atkSpeed="0.5" damage="1" atkRange="0.8" warnRange="10" freezeTime="0.3"/>
+		<node id="5" type="5" aitype="2" size="0.8" life="1500" movespeed="0.7" atkSpeed="1" damage="20" atkRange="1.5" warnRange="10" freezeTime="0"/>
+		<node id="6" type="6" aitype="3" size="0.4" life="1" movespeed="2.0" atkSpeed="1" damage="1" atkRange="1" warnRange="12" freezeTime="0"/>
+		<node id="7" type="7" aitype="4" size="0.4" life="10" movespeed="1.1" atkSpeed="1" damage="0" atkRange="1" warnRange="0" freezeTime="0.3"/>
+		<node id="8" type="8" aitype="4" size="0.4" life="10" movespeed="1.1" atkSpeed="1" damage="0" atkRange="1" warnRange="0" freezeTime="0.3"/>
+		<node id="9" type="9" aitype="4" size="0.4" life="10" movespeed="1.1" atkSpeed="1" damage="0" atkRange="1" warnRange="0" freezeTime="0.3"/>
+		<node id="10" type="10" aitype="4" size="0.4" life="10" movespeed="1.1" atkSpeed="1" damage="0" atkRange="1" warnRange="0" freezeTime="0.4"/>
+
+		<node id="11" type="1" aitype="1" size="0.4" life="20" movespeed="0.8" atkSpeed="1" damage="1" atkRange="0.8" warnRange="8" freezeTime="0.5"/>
+		<node id="21" type="2" aitype="1" size="0.4" life="50" movespeed="0.8" atkSpeed="1" damage="1" atkRange="0.8" warnRange="8" freezeTime="0.5"/>
+		<node id="31" type="3" aitype="1" size="0.6" life="100" movespeed="0.8" atkSpeed="0.5" damage="1" atkRange="0.8" warnRange="8" freezeTime="0.3"/>
+		<node id="41" type="4" aitype="1" size="0.6" life="150" movespeed="0.8" atkSpeed="0.5" damage="1" atkRange="0.8" warnRange="8" freezeTime="0.3"/>
+		<node id="51" type="5" aitype="1" size="0.8" life="1500" movespeed="0.6" atkSpeed="1" damage="10" atkRange="1.5" warnRange="8" freezeTime="0"/>
+
+		
+		<node id="100" type="7" aitype="4" size="0.4" life="10" movespeed="4" atkSpeed="1" damage="10" atkRange="1" warnRange="0" freezeTime="0.4"/>
+		<node id="101" type="8" aitype="4" size="0.4" life="10" movespeed="4" atkSpeed="1" damage="10" atkRange="1" warnRange="0" freezeTime="0.4"/>
+		<node id="102" type="9" aitype="4" size="0.4" life="10" movespeed="3" atkSpeed="1" damage="10" atkRange="1" warnRange="0" freezeTime="0.4"/>		
+		<node id="103" type="1" aitype="2" size="0.4" life="10" movespeed="1.5" atkSpeed="1" damage="1" atkRange="1" warnRange="8" freezeTime="0.4"/>
+		
+		<node id="1001" type="1" aitype="1" size="0.4" life="10" movespeed="0.8" atkSpeed="1" damage="1" atkRange="1" warnRange="8" freezeTime="0.4"/>
+		<node id="1002" type="7" aitype="4" size="0.4" life="10" movespeed="1" atkSpeed="1" damage="1" atkRange="1" warnRange="8" freezeTime="0.4"/>
+  </Zombie>
+	
+	<ZombieGroup>
+		<Group id="100">
+      <node zombieid="11" time="0" />
+      <node zombieid="1" time="0" />
+		</Group>
+		<Group id="101">
+      <node zombieid="1" time="0" />
+      <node zombieid="11" time="0" />
+		</Group>
+		<Group id="102">
+      <node zombieid="11" time="0" />
+      <node zombieid="6" time="0" />
+      <node zombieid="11" time="0" />
+		</Group>
+		<Group id="103">
+      <node zombieid="11" time="0" />
+      <node zombieid="11" time="0" />
+		</Group>
+
+		<Group id="1">
+      <node zombieid="1" time="0" />
+      <node zombieid="11" time="3" />
+		</Group>
+		<Group id="2">
+      <node zombieid="1" time="0" />
+      <node zombieid="1" time="2" />
+      <node zombieid="11" time="3" />
+		</Group>
+		<Group id="3">
+      <node zombieid="1" time="0" />
+      <node zombieid="1" time="3" />
+      <node zombieid="11" time="4" />
+      <node zombieid="11" time="6" />
+		</Group>
+		<Group id="4">
+      <node zombieid="21" time="0" />
+      <node zombieid="2" time="2" />
+		</Group>
+		<Group id="5">
+      <node zombieid="2" time="0" />
+      <node zombieid="2" time="1" />
+      <node zombieid="21" time="2" />
+		</Group>
+		<Group id="6">
+      <node zombieid="2" time="0" />
+      <node zombieid="2" time="2" />
+      <node zombieid="21" time="3" />
+      <node zombieid="21" time="5" />
+		</Group>
+		<Group id="7">
+      <node zombieid="3" time="0" />
+      <node zombieid="31" time="1" />
+		</Group>
+		<Group id="8">
+      <node zombieid="3" time="0" />
+      <node zombieid="3" time="1" />
+      <node zombieid="31" time="2" />
+		</Group>
+		<Group id="9">
+      <node zombieid="3" time="0" />
+      <node zombieid="3" time="1" />
+      <node zombieid="31" time="2" />
+      <node zombieid="31" time="3" />
+		</Group>
+		<Group id="10">
+      <node zombieid="4" time="0" />
+      <node zombieid="41" time="1" />
+		</Group>
+		<Group id="11">
+      <node zombieid="41" time="0" />
+      <node zombieid="4" time="1" />
+      <node zombieid="4" time="2" />
+		</Group>
+		<Group id="12">
+      <node zombieid="4" time="0" />
+      <node zombieid="4" time="1" />
+      <node zombieid="41" time="0" />
+      <node zombieid="41" time="1" />
+		</Group>
+		<Group id="13">
+      <node zombieid="5" time="0" />
+		</Group>
+		<Group id="14">
+      <node zombieid="6" time="0" />
+		</Group>
+		<Group id="15">
+      <node zombieid="1" time="0" />
+		</Group>
+		<Group id="16">
+      <node zombieid="3" time="0" />	
+	    </Group>
+		<Group id="17">
+      <node zombieid="6" time="0" />
+      <node zombieid="6" time="2" />
+      <node zombieid="6" time="1" />
+      <node zombieid="6" time="0" />
+		</Group>
+
+		<Group id="18">
+      <node zombieid="7" time="0" />
+		</Group>
+		<Group id="19">
+      <node zombieid="8" time="0" />
+		</Group>
+		<Group id="20">
+      <node zombieid="9" time="0" />
+		</Group>
+		<Group id="21">
+      <node zombieid="10" time="0" />
+		</Group>
+
+
+	</ZombieGroup>
+	
+	<ZombieWave>
+  <node groupid="103" time="0" startzone="50" loop="0" /> 
+  <node groupid="100" time="0" startzone="101" loop="0" /> 
+  <node groupid="102" time="0" startzone="102" loop="0" /> 
+  <node groupid="100" time="0" startzone="103" loop="0" /> 
+  <node groupid="101" time="0" startzone="104" loop="0" /> 
+  <node groupid="100" time="0" startzone="105" loop="0" />
+
+		<node groupid="2" time="0:10" startzone="0" loop="0"/>
+		<node groupid="18" time="0:18" startzone="0" loop="60"/>
+		<node groupid="19" time="2:30" startzone="0" loop="37"/>
+		<node groupid="20" time="6:46" startzone="0" loop="67"/>
+		<node groupid="21" time="10:00" startzone="0" loop="60"/>
+		<node groupid="21" time="15:23" startzone="0" loop="55"/>
+		<node groupid="21" time="20:46" startzone="0" loop="47"/>
+		<node groupid="21" time="25:46" startzone="0" loop="33"/>
+	
+		<node groupid="1" time="0:35" startzone="0" loop="0"/>
+		<node groupid="2" time="0:35" startzone="0" loop="0"/>		
+		
+		<node groupid="2" time="1:00" startzone="0" loop="0" />
+		<node groupid="3" time="1:00" startzone="0" loop="0" />
+		<node groupid="14" time="1:00" startzone="0" loop="0" />
+
+		<node groupid="3" time="1:25" startzone="0" loop="0" />
+		<node groupid="1" time="1:25" startzone="0" loop="0" />
+		<node groupid="2" time="1:25" startzone="0" loop="0" />	
+
+		<node groupid="3" time="1:50" startzone="0" loop="0" />
+		<node groupid="1" time="1:50" startzone="0" loop="0" />
+		<node groupid="3" time="1:50" startzone="0" loop="0" />
+		<node groupid="14" time="1:50" startzone="0" loop="0" />
+		
+		<node groupid="3" time="2:15" startzone="0" loop="0"/>
+		<node groupid="3" time="2:15" startzone="0" loop="0"/>
+		<node groupid="3" time="2:15" startzone="0" loop="0"/>
+
+		<node groupid="3" time="2:40" startzone="0" loop="0"/>
+		<node groupid="2" time="2:40" startzone="0" loop="0"/>
+		<node groupid="3" time="2:40" startzone="0" loop="0"/>
+
+		<node groupid="6" time="3:01" startzone="6" loop="0"/>
+		<node groupid="3" time="3:03" startzone="6" loop="0"/>
+		<node groupid="3" time="3:06" startzone="6" loop="0"/>
+		<node groupid="17" time="3:09" startzone="6" loop="0"/>
+
+		<node groupid="6" time="3:25" startzone="0" loop="0"/>
+		<node groupid="5" time="3:25" startzone="0" loop="0"/>
+		<node groupid="3" time="3:25" startzone="0" loop="0"/>
+		<node groupid="14" time="3:25" startzone="0" loop="0"/>
+
+		<node groupid="4" time="3:50" startzone="6" loop="0"/>
+		<node groupid="3" time="3:50" startzone="0" loop="0"/>
+		<node groupid="5" time="3:50" startzone="0" loop="0"/>
+		<node groupid="5" time="3:50" startzone="0" loop="0"/>
+
+		<node groupid="6" time="4:15" startzone="0" loop="0"/>
+		<node groupid="5" time="4:15" startzone="0" loop="0"/>
+		<node groupid="3" time="4:15" startzone="0" loop="0"/>
+		<node groupid="3" time="4:15" startzone="0" loop="0"/>
+
+		<node groupid="6" time="4:40" startzone="0" loop="0"/>
+		<node groupid="5" time="4:40" startzone="0" loop="0"/>
+		<node groupid="4" time="4:40" startzone="0" loop="0"/>
+		<node groupid="3" time="4:40" startzone="0" loop="0"/>
+		<node groupid="1" time="4:40" startzone="6" loop="0"/>
+
+		<node groupid="14" time="5:05" startzone="0" loop="0"/>
+		<node groupid="15" time="5:05" startzone="0" loop="0"/>
+		<node groupid="5" time="5:05" startzone="0" loop="0"/>
+		<node groupid="6" time="5:05" startzone="0" loop="0"/>
+		<node groupid="5" time="5:05" startzone="0" loop="0"/>
+
+		<node groupid="6" time="5:30" startzone="0" loop="0"/>
+		<node groupid="6" time="5:30" startzone="0" loop="0"/>
+		<node groupid="6" time="5:30" startzone="0" loop="0"/>
+		<node groupid="5" time="5:30" startzone="0" loop="0"/>
+		<node groupid="6" time="5:30" startzone="6" loop="0"/>
+
+		<node groupid="7" time="6:01" startzone="0" loop="0"/>
+		<node groupid="16" time="6:02" startzone="0" loop="0"/>
+		<node groupid="14" time="6:03" startzone="0" loop="0"/>
+		<node groupid="6" time="6:04" startzone="0" loop="0"/>
+
+		<node groupid="9" time="6:25" startzone="0" loop="0"/>
+		<node groupid="4" time="6:25" startzone="0" loop="0"/>
+		<node groupid="14" time="6:25" startzone="0" loop="0"/>
+
+		<node groupid="8" time="6:50" startzone="0" loop="0"/>
+		<node groupid="6" time="6:50" startzone="0" loop="0"/>
+		<node groupid="6" time="6:50" startzone="0" loop="0"/>
+		<node groupid="3" time="6:50" startzone="0" loop="0"/>
+
+		<node groupid="8" time="7:15" startzone="0" loop="0"/>
+		<node groupid="6" time="7:15" startzone="0" loop="0"/>
+		<node groupid="6" time="7:15" startzone="0" loop="0"/>
+		<node groupid="6" time="7:15" startzone="0" loop="0"/>
+		<node groupid="2" time="7:15" startzone="0" loop="0"/>
+
+		<node groupid="9" time="7:40" startzone="0" loop="0"/>
+		<node groupid="4" time="7:40" startzone="0" loop="0"/>
+		<node groupid="14" time="7:40" startzone="0" loop="0"/>
+		<node groupid="7" time="7:40" startzone="0" loop="0"/>
+
+		<node groupid="16" time="8:05" startzone="0" loop="0"/>
+		<node groupid="7" time="8:05" startzone="0" loop="0"/>
+		<node groupid="9" time="8:05" startzone="0" loop="0"/>
+
+		<node groupid="13" time="8:30" startzone="0" loop="0"/>
+		<node groupid="17" time="8:30" startzone="0" loop="0"/>
+
+		<node groupid="10" time="8:55" startzone="0" loop="0"/>
+		<node groupid="8" time="8:55" startzone="0" loop="0"/>
+		<node groupid="1" time="8:55" startzone="0" loop="0"/>
+
+		<node groupid="11" time="9:20" startzone="0" loop="0"/>
+		<node groupid="6" time="9:20" startzone="0" loop="0"/>
+		<node groupid="4" time="9:20" startzone="0" loop="0"/>
+
+		<node groupid="10" time="9:45" startzone="0" loop="0"/>
+		<node groupid="9" time="9:45" startzone="0" loop="0"/>
+		<node groupid="4" time="9:45" startzone="0" loop="0"/>
+		<node groupid="14" time="9:45" startzone="0" loop="0"/>
+
+		<node groupid="11" time="10:10" startzone="0" loop="0"/>
+		<node groupid="7" time="10:10" startzone="0" loop="0"/>
+		<node groupid="16" time="10:10" startzone="0" loop="0"/>
+
+		<node groupid="12" time="10:35" startzone="0" loop="0"/>
+		<node groupid="5" time="10:35" startzone="0" loop="0"/>
+		<node groupid="14" time="10:35" startzone="0" loop="0"/>
+		<node groupid="14" time="10:35" startzone="0" loop="0"/>
+		<node groupid="14" time="10:35" startzone="0" loop="0"/>
+
+		<node groupid="10" time="11:00" startzone="0" loop="0"/>
+		<node groupid="10" time="11:00" startzone="0" loop="0"/>
+		<node groupid="6" time="11:00" startzone="0" loop="0"/>
+		<node groupid="3" time="11:00" startzone="0" loop="0"/>
+
+		<node groupid="17" time="11:25" startzone="0" loop="0"/>
+		<node groupid="17" time="11:25" startzone="0" loop="0"/>
+		<node groupid="17" time="11:25" startzone="0" loop="0"/>
+		<node groupid="17" time="11:25" startzone="0" loop="0"/>
+		<node groupid="17" time="11:25" startzone="0" loop="0"/>
+
+		<node groupid="14" time="11:50" startzone="0" loop="0"/>
+		<node groupid="23" time="11:50" startzone="0" loop="0"/>
+		<node groupid="16" time="11:50" startzone="0" loop="0"/>
+		<node groupid="13" time="11:50" startzone="0" loop="0"/>
+		<node groupid="9" time="11:50" startzone="0" loop="0"/>
+
+		<node groupid="13" time="12:15" startzone="0" loop="0"/>
+		<node groupid="13" time="12:15" startzone="0" loop="0"/>
+		<node groupid="13" time="12:15" startzone="0" loop="0"/>
+		<node groupid="6" time="12:15" startzone="0" loop="0"/>
+		<node groupid="6" time="12:15" startzone="0" loop="0"/>
+
+		<node groupid="10" time="12:40" startzone="0" loop="0"/>
+		<node groupid="10" time="12:40" startzone="0" loop="0"/>
+		<node groupid="8" time="12:40" startzone="0" loop="0"/>
+		<node groupid="6" time="12:40" startzone="0" loop="0"/>
+
+		<node groupid="11" time="13:05" startzone="0" loop="0"/>
+		<node groupid="10" time="13:05" startzone="0" loop="0"/>
+		<node groupid="5" time="13:05" startzone="0" loop="0"/>
+		<node groupid="16" time="13:05" startzone="0" loop="0"/>
+		<node groupid="2" time="13:05" startzone="0" loop="0"/>
+
+		<node groupid="13" time="13:30" startzone="0" loop="0"/>
+		<node groupid="13" time="13:30" startzone="0" loop="0"/>
+
+		<node groupid="10" time="13:55" startzone="0" loop="0"/>
+		<node groupid="10" time="13:55" startzone="0" loop="0"/>
+		<node groupid="10" time="13:55" startzone="0" loop="0"/>
+		<node groupid="6" time="13:55" startzone="0" loop="0"/>
+
+		<node groupid="11" time="14:20" startzone="0" loop="0"/>
+		<node groupid="10" time="14:20" startzone="0" loop="0"/>
+		<node groupid="9" time="14:20" startzone="0" loop="0"/>
+
+		<node groupid="11" time="14:45" startzone="0" loop="0"/>
+		<node groupid="9" time="14:45" startzone="0" loop="0"/>
+		<node groupid="9" time="14:45" startzone="0" loop="0"/>
+		<node groupid="6" time="14:45" startzone="0" loop="0"/>
+		<node groupid="5" time="14:45" startzone="0" loop="0"/>
+
+		<node groupid="13" time="15:10" startzone="0" loop="0"/>
+		<node groupid="10" time="15:10" startzone="0" loop="0"/>
+		<node groupid="9" time="15:10" startzone="0" loop="0"/>
+		<node groupid="16" time="15:10" startzone="0" loop="0"/>
+
+		<node groupid="13" time="15:35" startzone="0" loop="0"/>
+		<node groupid="11" time="15:35" startzone="0" loop="0"/>
+		<node groupid="16" time="15:35" startzone="0" loop="0"/>
+		<node groupid="16" time="15:35" startzone="0" loop="0"/>
+		<node groupid="16" time="15:35" startzone="0" loop="0"/>
+
+		<node groupid="9" time="16:00" startzone="0" loop="0"/>
+		<node groupid="9" time="16:00" startzone="0" loop="0"/>
+		<node groupid="9" time="16:00" startzone="0" loop="0"/>
+		<node groupid="9" time="16:00" startzone="0" loop="0"/>
+		<node groupid="8" time="16:00" startzone="0" loop="0"/>
+
+		<node groupid="13" time="16:25" startzone="0" loop="0"/>
+		<node groupid="13" time="16:25" startzone="0" loop="0"/>
+		<node groupid="9" time="16:25" startzone="0" loop="0"/>
+		<node groupid="14" time="16:25" startzone="0" loop="0"/>
+
+		<node groupid="11" time="16:50" startzone="0" loop="0"/>
+		<node groupid="11" time="16:50" startzone="0" loop="0"/>
+		<node groupid="8" time="16:50" startzone="0" loop="0"/>
+		<node groupid="7" time="16:50" startzone="0" loop="0"/>
+
+		<node groupid="13" time="17:15" startzone="0" loop="0"/>
+		<node groupid="13" time="17:15" startzone="0" loop="0"/>
+		<node groupid="9" time="17:15" startzone="0" loop="0"/>
+		<node groupid="6" time="17:15" startzone="0" loop="0"/>
+		<node groupid="6" time="17:15" startzone="0" loop="0"/>
+
+		<node groupid="11" time="17:40" startzone="0" loop="0"/>
+		<node groupid="11" time="17:40" startzone="0" loop="0"/>
+		<node groupid="9" time="17:40" startzone="0" loop="0"/>
+		<node groupid="6" time="17:40" startzone="0" loop="0"/>
+		<node groupid="6" time="17:40" startzone="0" loop="0"/>
+
+		<node groupid="13" time="18:05" startzone="0" loop="0"/>
+		<node groupid="12" time="18:05" startzone="0" loop="0"/>
+		<node groupid="6" time="18:05" startzone="0" loop="0"/>
+		<node groupid="8" time="18:05" startzone="0" loop="0"/>
+		<node groupid="6" time="18:05" startzone="0" loop="0"/>
+
+		<node groupid="12" time="18:30" startzone="0" loop="0"/>
+		<node groupid="12" time="18:30" startzone="0" loop="0"/>
+		<node groupid="7" time="18:30" startzone="0" loop="0"/>
+		<node groupid="3" time="18:30" startzone="0" loop="0"/>
+		<node groupid="15" time="18:30" startzone="0" loop="0"/>
+
+		<node groupid="12" time="18:55" startzone="0" loop="0"/>
+		<node groupid="11" time="18:55" startzone="0" loop="0"/>
+		<node groupid="10" time="18:55" startzone="0" loop="0"/>
+		<node groupid="5" time="18:55" startzone="0" loop="0"/>
+		<node groupid="14" time="18:55" startzone="0" loop="0"/>
+
+		<node groupid="13" time="19:20" startzone="0" loop="0"/>
+		<node groupid="13" time="19:20" startzone="0" loop="0"/>
+		<node groupid="13" time="19:20" startzone="0" loop="0"/>
+		<node groupid="6" time="19:20" startzone="0" loop="0"/>
+		<node groupid="4" time="19:20" startzone="0" loop="0"/>
+
+		<node groupid="12" time="19:45" startzone="0" loop="0"/>
+		<node groupid="10" time="19:45" startzone="0" loop="0"/>
+		<node groupid="9" time="19:45" startzone="0" loop="0"/>
+		<node groupid="10" time="19:45" startzone="0" loop="0"/>
+		<node groupid="4" time="19:45" startzone="0" loop="0"/>
+
+		<node groupid="12" time="20:10" startzone="0" loop="0"/>
+		<node groupid="10" time="20:10" startzone="0" loop="0"/>
+		<node groupid="10" time="20:10" startzone="0" loop="0"/>
+		<node groupid="10" time="20:10" startzone="0" loop="0"/>
+
+		<node groupid="13" time="20:35" startzone="0" loop="0"/>
+		<node groupid="11" time="20:35" startzone="0" loop="0"/>
+		<node groupid="12" time="20:35" startzone="0" loop="0"/>
+		<node groupid="14" time="20:35" startzone="0" loop="0"/>
+		<node groupid="5" time="20:35" startzone="0" loop="0"/>
+
+		<node groupid="12" time="21:00" startzone="0" loop="0"/>
+		<node groupid="10" time="21:00" startzone="0" loop="0"/>
+		<node groupid="10" time="21:00" startzone="0" loop="0"/>
+		<node groupid="10" time="21:00" startzone="0" loop="0"/>
+		<node groupid="7" time="21:00" startzone="0" loop="0"/>
+
+		<node groupid="13" time="21:25" startzone="0" loop="0"/>
+		<node groupid="13" time="21:25" startzone="0" loop="0"/>
+		<node groupid="12" time="21:25" startzone="0" loop="0"/>
+		<node groupid="6" time="21:25" startzone="0" loop="0"/>
+		<node groupid="5" time="21:25" startzone="0" loop="0"/>
+
+		<node groupid="12" time="21:50" startzone="0" loop="0"/>
+		<node groupid="12" time="21:50" startzone="0" loop="0"/>
+		<node groupid="11" time="21:50" startzone="0" loop="0"/>
+
+		<node groupid="12" time="22:15" startzone="0" loop="0"/>
+		<node groupid="12" time="22:15" startzone="0" loop="0"/>
+		<node groupid="11" time="22:15" startzone="0" loop="0"/>
+
+		<node groupid="13" time="22:40" startzone="0" loop="0"/>
+		<node groupid="11" time="22:40" startzone="0" loop="0"/>
+		<node groupid="11" time="22:40" startzone="0" loop="0"/>
+		<node groupid="16" time="22:40" startzone="0" loop="0"/>
+		<node groupid="11" time="22:40" startzone="0" loop="0"/>
+
+		<node groupid="12" time="23:05" startzone="0" loop="0"/>
+		<node groupid="10" time="23:05" startzone="0" loop="0"/>
+		<node groupid="9" time="23:05" startzone="0" loop="0"/>
+		<node groupid="12" time="23:05" startzone="0" loop="0"/>
+		<node groupid="4" time="23:05" startzone="0" loop="0"/>
+
+		<node groupid="13" time="23:30" startzone="0" loop="0"/>
+		<node groupid="13" time="23:30" startzone="0" loop="0"/>
+		<node groupid="13" time="23:30" startzone="0" loop="0"/>
+		<node groupid="13" time="23:30" startzone="0" loop="0"/>
+
+		<node groupid="12" time="23:55" startzone="0" loop="0"/>
+		<node groupid="12" time="23:55" startzone="0" loop="0"/>
+		<node groupid="12" time="23:55" startzone="0" loop="0"/>
+		<node groupid="5" time="23:55" startzone="0" loop="0"/>
+		<node groupid="17" time="23:55" startzone="0" loop="0"/>
+
+		<node groupid="13" time="24:20" startzone="0" loop="0"/>
+		<node groupid="11" time="24:20" startzone="0" loop="0"/>
+		<node groupid="11" time="24:20" startzone="0" loop="0"/>
+		<node groupid="16" time="24:20" startzone="0" loop="0"/>
+		<node groupid="11" time="24:20" startzone="0" loop="0"/>
+
+		<node groupid="13" time="24:45" startzone="0" loop="0"/>
+		<node groupid="13" time="24:45" startzone="0" loop="0"/>
+		<node groupid="9" time="24:45" startzone="0" loop="0"/>
+		<node groupid="9" time="24:45" startzone="0" loop="0"/>
+		<node groupid="9" time="24:45" startzone="0" loop="0"/>
+
+		<node groupid="13" time="25:10" startzone="0" loop="0"/>
+		<node groupid="13" time="25:10" startzone="0" loop="0"/>
+		<node groupid="13" time="25:10" startzone="0" loop="0"/>
+		<node groupid="13" time="25:10" startzone="0" loop="0"/>
+		<node groupid="8" time="25:10" startzone="0" loop="0"/>
+
+		<node groupid="12" time="25:35" startzone="0" loop="0"/>
+		<node groupid="12" time="25:35" startzone="0" loop="0"/>
+		<node groupid="12" time="25:35" startzone="0" loop="0"/>
+		<node groupid="7" time="25:35" startzone="0" loop="0"/>
+		<node groupid="6" time="25:35" startzone="0" loop="0"/>
+
+		<node groupid="12" time="26:00" startzone="0" loop="0"/>
+		<node groupid="12" time="26:00" startzone="0" loop="0"/>
+		<node groupid="12" time="26:00" startzone="0" loop="0"/>
+		<node groupid="8" time="26:00" startzone="0" loop="0"/>
+		<node groupid="4" time="26:00" startzone="0" loop="0"/>
+
+		<node groupid="12" time="26:25" startzone="0" loop="0"/>
+		<node groupid="10" time="26:25" startzone="0" loop="0"/>
+		<node groupid="12" time="26:25" startzone="0" loop="0"/>
+		<node groupid="10" time="26:25" startzone="0" loop="0"/>
+		<node groupid="9" time="26:25" startzone="0" loop="0"/>
+
+		<node groupid="13" time="26:50" startzone="0" loop="0"/>
+		<node groupid="13" time="26:50" startzone="0" loop="0"/>
+		<node groupid="13" time="26:50" startzone="0" loop="0"/>
+		<node groupid="13" time="26:50" startzone="0" loop="0"/>
+		<node groupid="9" time="26:25" startzone="0" loop="0"/>
+
+		<node groupid="13" time="27:15" startzone="0" loop="0"/>
+		<node groupid="11" time="27:15" startzone="0" loop="0"/>
+		<node groupid="11" time="27:15" startzone="0" loop="0"/>
+		<node groupid="11" time="27:15" startzone="0" loop="0"/>
+		<node groupid="10" time="27:15" startzone="0" loop="0"/>
+
+		<node groupid="9" time="27:40" startzone="0" loop="0"/>
+		<node groupid="12" time="27:40" startzone="0" loop="0"/>
+		<node groupid="12" time="27:40" startzone="0" loop="0"/>
+		<node groupid="16" time="27:40" startzone="0" loop="0"/>
+		<node groupid="12" time="27:40" startzone="0" loop="0"/>
+
+		<node groupid="12" time="28:05" startzone="0" loop="0"/>
+		<node groupid="12" time="28:05" startzone="0" loop="0"/>
+		<node groupid="12" time="28:05" startzone="0" loop="0"/>
+		<node groupid="7" time="28:05" startzone="0" loop="0"/>
+		<node groupid="8" time="28:05" startzone="0" loop="0"/>
+
+		<node groupid="12" time="28:30" startzone="0" loop="0"/>
+		<node groupid="12" time="28:30" startzone="0" loop="0"/>
+		<node groupid="12" time="28:30" startzone="0" loop="0"/>
+		<node groupid="8" time="28:30" startzone="0" loop="0"/>
+		<node groupid="8" time="28:30" startzone="0" loop="0"/>
+
+		<node groupid="11" time="28:55" startzone="0" loop="0"/>
+		<node groupid="11" time="28:55" startzone="0" loop="0"/>
+		<node groupid="12" time="28:55" startzone="0" loop="0"/>
+		<node groupid="12" time="28:55" startzone="0" loop="0"/>
+		<node groupid="16" time="28:55" startzone="0" loop="0"/>
+
+		<node groupid="13" time="29:20" startzone="0" loop="0"/>
+		<node groupid="13" time="29:20" startzone="0" loop="0"/>
+		<node groupid="17" time="29:20" startzone="0" loop="0"/>
+		<node groupid="17" time="29:20" startzone="0" loop="0"/>
+		<node groupid="13" time="29:20" startzone="0" loop="0"/>
+
+		<node groupid="13" time="29:45" startzone="0" loop="0"/>
+		<node groupid="13" time="29:45" startzone="0" loop="0"/>
+		<node groupid="12" time="29:45" startzone="0" loop="0"/>
+		<node groupid="12" time="29:45" startzone="0" loop="0"/>
+		<node groupid="7" time="29:45" startzone="0" loop="0"/>
+
+		<node groupid="13" time="30:10" startzone="0" loop="25"/>
+		<node groupid="13" time="30:10" startzone="0" loop="25"/>
+		<node groupid="13" time="30:10" startzone="0" loop="25"/>
+		<node groupid="13" time="30:10" startzone="0" loop="25"/>
+		<node groupid="13" time="30:10" startzone="0" loop="25"/>
+
+	</ZombieWave>
+</root>

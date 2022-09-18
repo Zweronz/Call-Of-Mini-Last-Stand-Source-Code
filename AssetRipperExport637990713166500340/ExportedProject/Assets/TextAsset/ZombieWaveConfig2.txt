@@ -1,0 +1,34 @@
+<root>
+	<Zombie>
+		<node id="1" type="1" aitype="2" size="0.4" life="20" movespeed="1.5" atkSpeed="1" damage="1" atkRange="0.8" warnRange="10" freezeTime="0.5"/>
+		<node id="2" type="5" aitype="2" size="0.8" life="900" movespeed="1.0" atkSpeed="1" damage="20" atkRange="1.5" warnRange="10" freezeTime="0"/>
+		<node id="3" type="11" aitype="5" size="0.4" life="150" movespeed="2.5" atkSpeed="1" damage="1" atkRange="1" warnRange="12" freezeTime="0"/>
+		<node id="4" type="7" aitype="4" size="0.8" life="20" movespeed="1.5" atkSpeed="1" damage="1" atkRange="1.5" warnRange="10" freezeTime="0"/>
+
+		<node id="11" type="1" aitype="1" size="0.4" life="20" movespeed="1.0" atkSpeed="1" damage="1" atkRange="0.8" warnRange="8" freezeTime="0.5"/>
+
+  </Zombie>
+  
+  <ZombieGroup>
+		<Group id="1">
+      <node zombieid="3" time="0.8" />
+		</Group>
+		<Group id="2">
+      <node zombieid="1" time="0.8" />
+		</Group>
+		<Group id="3">
+      <node zombieid="11" time="0" />
+		</Group>
+	</ZombieGroup>
+	
+	<ZombieWave>
+  	<node groupid="1" time="2:00" startzone="10" loop="0" /> 
+  	<node groupid="2" time="4:00" startzone="9" loop="0" /> 
+  	<node groupid="3" time="0" startzone="11" loop="0" /> 
+	<node groupid="3" time="0" startzone="12" loop="0" /> 
+  	<node groupid="3" time="0" startzone="13" loop="0" /> 
+	<node groupid="3" time="0" startzone="14" loop="0" /> 
+  	<node groupid="3" time="0" startzone="15" loop="0" /> 
+	<node groupid="3" time="0" startzone="16" loop="0" /> 
+  </ZombieWave>
+</root>
