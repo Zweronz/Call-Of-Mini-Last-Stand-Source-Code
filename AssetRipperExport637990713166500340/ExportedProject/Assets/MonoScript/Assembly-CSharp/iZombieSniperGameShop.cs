@@ -139,11 +139,8 @@ public class iZombieSniperGameShop : MonoBehaviour
 		{
 			if (m_GameState.m_nPlayerTotalGod < weaponInfo.m_nPrice)
 			{
-				//m_GameShopUI.ShowDialog(DialogEnum.Market, sMoneyIsNotEnough);
-				//return false;
-			m_GameState.m_nPlayerTotalGod += weaponInfo.m_nPrice;
-			m_GameShopUI.SetPlayerGodGold(m_GameState.m_nPlayerTotalGod);
-				return true;
+				m_GameShopUI.ShowDialog(DialogEnum.Market, sMoneyIsNotEnough);
+				return false;
 			}
 			m_GameState.m_nPlayerTotalGod -= weaponInfo.m_nPrice;
 			m_GameShopUI.SetPlayerGodGold(m_GameState.m_nPlayerTotalGod);
@@ -152,11 +149,8 @@ public class iZombieSniperGameShop : MonoBehaviour
 		{
 			if (m_GameState.m_nPlayerTotalCash < weaponInfo.m_nPrice)
 			{
-				//m_GameShopUI.ShowDialog(DialogEnum.Market, sMoneyIsNotEnough);
-				//return false;
-				m_GameState.m_nPlayerTotalCash += weaponInfo.m_nPrice;
-				m_GameShopUI.SetPlayerGold(m_GameState.m_nPlayerTotalCash);
-				return true;
+				m_GameShopUI.ShowDialog(DialogEnum.Market, sMoneyIsNotEnough);
+				return false;
 			}
 			m_GameState.m_nPlayerTotalCash -= weaponInfo.m_nPrice;
 			m_GameShopUI.SetPlayerGold(m_GameState.m_nPlayerTotalCash);
