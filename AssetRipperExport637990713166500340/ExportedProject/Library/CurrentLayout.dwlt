@@ -45,7 +45,7 @@ MonoBehaviour:
   m_MinSize: {x: 683, y: 492}
   m_MaxSize: {x: 14004, y: 14042}
   vertical: 0
-  controlID: 26
+  controlID: 125
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -212,7 +212,7 @@ MonoBehaviour:
   m_MinSize: {x: 406, y: 492}
   m_MaxSize: {x: 10002, y: 14042}
   vertical: 1
-  controlID: 27
+  controlID: 87
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -236,7 +236,7 @@ MonoBehaviour:
   m_MinSize: {x: 406, y: 221}
   m_MaxSize: {x: 8006, y: 4021}
   vertical: 0
-  controlID: 28
+  controlID: 53
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -385,19 +385,19 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
-    - Assets
+    - Assets/MonoScript/Assembly-CSharp
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets
+  - Assets/MonoScript/Assembly-CSharp
   m_LastFoldersGridSize: -1
   m_LastProjectPath: D:\mah stuff\jabos (d)\funni gamez\COMLS OPEN SOURCE\Call-Of-Mini-Last-Stand-Source-Code\AssetRipperExport637990713166500340\ExportedProject
   m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 79}
-    m_SelectedIDs: e42b0000
-    m_LastClickedID: 11236
-    m_ExpandedIDs: 00000000e42b0000b4360000c24d00003a4e0000b46100009c630000b870000000ca9a3bffffff7f
+    scrollPos: {x: 0, y: 423}
+    m_SelectedIDs: 343f0000
+    m_LastClickedID: 16180
+    m_ExpandedIDs: 00000000e42b0000143700001e4f0000a84f00008c630000786500001e73000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -425,7 +425,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000e42b0000b4360000c24d00003a4e0000b46100009c630000b8700000
+    m_ExpandedIDs: 00000000e42b0000143700001e4f0000a84f00008c630000786500001e730000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -542,24 +542,24 @@ MonoBehaviour:
     height: 695
   m_PersistentViewDataDictionary: {fileID: 0}
   m_TreeViewState:
-    scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 
+    scrollPos: {x: 0, y: 1402}
+    m_SelectedIDs: 220a0000
     m_LastClickedID: 0
-    m_ExpandedIDs: eab0fcfff2b1fcff08b4fcff12b4fcff1cb4fcfffcb4fcff08b5fcff14b5fcff1eb5fcff34b5fcff4cb5fcff54b5fcff5eb5fcff84b5fcff1af0fcff56f1fcff68f3fcff6ef3fcff74f3fcff50f4fcff58f4fcff60f4fcff66f4fcff78f4fcff8cf4fcff90f4fcff96f4fcffb8f4fcff7230fdff1058fdff5859fdff6e5bfdff785bfdff825bfdff625cfdff6e5cfdff7a5cfdff845cfdff9a5cfdffb25cfdffba5cfdffc45cfdffea5cfdff12e9fdff6c75feff5eaffeff5eb0feff74b2feff7eb2feff88b2feff68b3feff74b3feff80b3feff8ab3feffa0b3feffb8b3feffc0b3feffcab3fefff0b3feffd852ffffba54ffff7ab1ffffe8e4ffff6ce6ffffa8e7ffffa2fbffff00000000a677000082a8000020df0000a8df00000ce000006436010096f50100
+    m_ExpandedIDs: a2fbffff00000000d8780000c6790000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: HandSVD
-      m_OriginalName: HandSVD
+      m_Name: 
+      m_OriginalName: 
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: -184206
+      m_UserData: 0
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 0
+      m_OriginalEventType: 11
       m_IsRenamingFilename: 0
       m_ClientGUIView: {fileID: 4}
     m_SearchString: 
@@ -596,14 +596,14 @@ MonoBehaviour:
     height: 695
   m_PersistentViewDataDictionary: {fileID: 0}
   m_SceneLighting: 1
-  lastFramingTime: 5548.2252922
+  lastFramingTime: 127078.5252952
   m_2DMode: 0
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -65.57908, y: 10.012142, z: 34.940132}
+    m_Target: {x: 61.04682, y: -2.095213, z: -65.07775}
     speed: 2
-    m_Value: {x: -65.57908, y: 10.012142, z: 34.940132}
+    m_Value: {x: 61.04682, y: -2.095213, z: -65.07775}
   m_RenderMode: 0
   m_ValidateTrueMetals: 0
   m_SceneViewState:
@@ -627,13 +627,13 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
   m_Rotation:
-    m_Target: {x: -0.11781199, y: 0.10980979, z: -0.013108566, w: -0.98685884}
+    m_Target: {x: 0.06386163, y: 0.76900315, z: -0.07779538, w: 0.63127166}
     speed: 2
-    m_Value: {x: -0.11781199, y: 0.10980979, z: -0.013108566, w: -0.98685884}
+    m_Value: {x: 0.06386162, y: 0.76900303, z: -0.07779537, w: 0.6312716}
   m_Size:
-    m_Target: 28.03377
+    m_Target: 97.53457
     speed: 2
-    m_Value: 28.03377
+    m_Value: 97.53457
   m_Ortho:
     m_Target: 0
     speed: 2
