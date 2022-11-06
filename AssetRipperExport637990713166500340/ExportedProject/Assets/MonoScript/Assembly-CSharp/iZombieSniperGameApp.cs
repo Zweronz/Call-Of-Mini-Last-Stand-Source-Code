@@ -548,6 +548,10 @@ public class iZombieSniperGameApp
 		case PowerUpEnum.Telephone_Booth_Bullet:
 			return 1000;
 		case PowerUpEnum.LandMine:
+		if (Workarounds.isCheats)
+		{
+			return -9999;
+		}
 			return 1000;
 		case PowerUpEnum.AirStrike:
 			return 1;

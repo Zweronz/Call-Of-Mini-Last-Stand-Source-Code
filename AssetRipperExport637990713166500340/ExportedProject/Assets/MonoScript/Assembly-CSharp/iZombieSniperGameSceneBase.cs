@@ -24,6 +24,8 @@ public class iZombieSniperGameSceneBase
 		USED = 2
 	}
 
+	private bool ShouldLock;
+
 	public State m_State;
 
 	public iZombieSniperCamera m_CameraScript;
@@ -175,6 +177,20 @@ public class iZombieSniperGameSceneBase
 	public iZombieSniperCamera.CameraState m_CameraCurrState;
 
 	public bool m_isShowDefenceUI;
+
+	private Workarounds m_workArounds;
+
+	public Workarounds WorkArounds
+	{
+		get
+		{
+			if (m_workArounds == null)
+			{
+				m_workArounds = GameObject.Find("Workarounds").GetComponent<Workarounds>();
+			}
+			return m_workArounds;
+		}
+	}
 
 	public virtual void Initialize()
 	{
@@ -455,6 +471,8 @@ public class iZombieSniperGameSceneBase
 
 	public virtual void Update(float deltaTime)
 	{
+		if (Input.GetKeyDown(KeyCode.F1))
+		ShouldLock = !ShouldLock;
 		UpdateSwitchWeapon(deltaTime);
 		UpdateCrossAnim(deltaTime);
 		if (m_BulletPool != null)
@@ -501,7 +519,7 @@ public class iZombieSniperGameSceneBase
 				m_fGameOveringTime = 0f;
 				GameOver();
 			}
-			UITouchInner[] array = iPhoneInputMgr.MockTouches();
+			UITouchInner[] array = (Application.isMobilePlatform) ? iPhoneInputMgr.MockTouches() : WindowsInputMgr.MockTouches();
 			foreach (UITouchInner touch in array)
 			{
 				if (m_GameSceneUI.m_UIManagerRef.HandleInput(touch))
@@ -541,6 +559,7 @@ public class iZombieSniperGameSceneBase
 	{
 		m_fGameTimeTotal += deltaTime;
 		m_GameSceneUI.SetGameTime(m_fGameTimeTotal);
+		if (!Application.isMobilePlatform)
 		WindowsInput();
 	}
 
@@ -572,21 +591,24 @@ public class iZombieSniperGameSceneBase
 		}
 	}
 
-	public void CloseAim()
+	public void CloseAim(bool actuallyDoIt)
 	{
-		if (m_CameraScript.CloseAim())
+		if (!Application.isMobilePlatform && actuallyDoIt || Application.isMobilePlatform)
 		{
-			m_bAim = false;
-			m_GameSceneUI.ShowCross(true);
-			m_GameSceneUI.HideAimUI();
-			m_SoliderMesh.SetActiveRecursively(true);
-			if (m_SoliderMesh.GetComponent<Animation>()["Idle01"] != null)
+			if (m_CameraScript.CloseAim())
 			{
-				m_SoliderMesh.GetComponent<Animation>()["Idle01"].wrapMode = WrapMode.Loop;
-				m_SoliderMesh.GetComponent<Animation>()["Idle01"].layer = -1;
-				m_SoliderMesh.GetComponent<Animation>().CrossFade("Idle01");
+				m_bAim = false;
+				m_GameSceneUI.ShowCross(true);
+				m_GameSceneUI.HideAimUI();
+				m_SoliderMesh.SetActiveRecursively(true);
+				if (m_SoliderMesh.GetComponent<Animation>()["Idle01"] != null)
+				{
+					m_SoliderMesh.GetComponent<Animation>()["Idle01"].wrapMode = WrapMode.Loop;
+					m_SoliderMesh.GetComponent<Animation>()["Idle01"].layer = -1;
+					m_SoliderMesh.GetComponent<Animation>().CrossFade("Idle01");
+				}
+				PlayAudio("WeaponZoomOut");
 			}
-			PlayAudio("WeaponZoomOut");
 		}
 	}
 
@@ -1068,6 +1090,29 @@ public class iZombieSniperGameSceneBase
 		return v2ScreenPos + new Vector2(UnityEngine.Random.Range(0f - num, num), UnityEngine.Random.Range(0f, num));
 	}
 
+	public IEnumerator DoTheAim()
+	{
+		while (m_CurrWeapon.m_WeaponState == iWeapon.WeaponState.kReload)
+		{
+			yield return new WaitForEndOfFrame();
+		}
+		iWeaponInfoBase weaponInfoBase = m_GunCenter.GetWeaponInfoBase(m_CurrWeapon.m_nWeaponID);
+		if (!IsAim())
+		{
+			if (m_CameraScript.Aim(m_GameState.GetShootCenter()))
+			{
+				PlayAudio("WeaponZoomIn");
+				Aim(m_GameState.GetShootCenter());
+				m_SoliderMesh.SetActiveRecursively(false);
+				m_bAim = true;
+				m_GameSceneUI.ShowCross(false);
+				m_GameSceneUI.ShowAimUI((WEAPON_TYPE)weaponInfoBase.m_nWeaponType);
+			}
+			yield break;
+		}
+		CloseAim(true);
+	}
+
 	public void UpdateCurrWeapon(float deltaTime)
 	{
 		if (m_CurrWeapon == null)
@@ -1095,7 +1140,7 @@ public class iZombieSniperGameSceneBase
 				{
 					m_bAimAfterReload = true;
 				}
-				CloseAim();
+				CloseAim(true);
 				if (!weaponInfoBase.IsRocket() && !weaponInfoBase.IsThrowMine())
 				{
 					if (m_SoliderMesh.GetComponent<Animation>()["Reload01"] != null)
@@ -1887,43 +1932,46 @@ public class iZombieSniperGameSceneBase
 
 	private void WindowsInput()
 	{
-		if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.D))
+		if (!ShouldLock)
 		{
-			float num = 0f;
-			float num2 = 0f;
-			if (Input.GetKey(KeyCode.A))
-			{
-				num = -2f;
-			}
-			if (Input.GetKey(KeyCode.D))
-			{
-				num = 2f;
-			}
-			if (Input.GetKey(KeyCode.W))
-			{
-				num2 = 2f;
-			}
-			if (Input.GetKey(KeyCode.S))
-			{
-				num2 = -2f;
-			}
+			Cursor.lockState = CursorLockMode.Locked;
+			Cursor.visible = false;
+		}
+		else
+		{
+			Cursor.lockState = CursorLockMode.None;
+			Cursor.visible = true;
+		}
+		if (!ShouldLock)
+		{
 			if (!m_bAim)
 			{
-				m_CameraScript.YawCamera(num / (float)Screen.width);
-				m_CameraScript.PitchCamera(num2 / (float)Screen.height);
+				m_CameraScript.YawCamera(Input.GetAxis("Mouse X") / (float)Screen.width * 5);
+				m_CameraScript.PitchCamera(Input.GetAxis("Mouse Y") / (float)Screen.height * 5);
 			}
 			else
 			{
-				m_CameraScript.AimMove(num / (float)Screen.width, num2 / (float)Screen.height);
+				//m_CameraScript.AimMove(Input.GetAxis("Mouse X") / (float)Screen.width, Input.GetAxis("Mouse Y")  / (float)Screen.height * 5);
+				m_CameraScript.YawCamera(Input.GetAxis("Mouse X") / (float)Screen.width * 7);
+				m_CameraScript.PitchCamera(Input.GetAxis("Mouse Y") / (float)Screen.height * 7);
+			}
+		
+			if (Input.GetMouseButtonDown(0))
+			{
+				SetAutoShoot(true);
+			}
+			if (Input.GetMouseButtonUp(0))
+			{
+				SetAutoShoot(false);
 			}
 		}
-		if (Input.GetKeyDown(KeyCode.J))
+		if (Input.GetKeyDown(KeyCode.Tab))
 		{
-			SetAutoShoot(true);
+			SwitchWeapon();
 		}
-		if (Input.GetKeyUp(KeyCode.J))
+		if (Input.GetMouseButtonDown(1))
 		{
-			SetAutoShoot(false);
+			WorkArounds.DoTheCoroutine(DoTheAim());
 		}
 	}
 
@@ -2060,9 +2108,16 @@ public class iZombieSniperGameSceneBase
 		m_ltThrowMine.Remove(script);
 	}
 
-	public void AddHeadShootDeath(Vector3 v3Pos, Vector3 v3Dir)
+	public void AddHeadShootDeath(Vector3 v3Pos, Vector3 v3Dir, NpcType NT)
 	{
-		GameObject gameObject = (GameObject)UnityEngine.Object.Instantiate(m_PerfabManager.ZombiePop, v3Pos, Quaternion.LookRotation(v3Dir));
+		if (NT == NpcType.Zombie)
+		{
+			GameObject gameObject = (GameObject)UnityEngine.Object.Instantiate(m_PerfabManager.ZombiePop, v3Pos, Quaternion.LookRotation(v3Dir));
+		}
+		if (NT == NpcType.ZombieElite)
+		{
+			GameObject gameObject = (GameObject)UnityEngine.Object.Instantiate(m_PerfabManager.ZombieElitePop, v3Pos, Quaternion.LookRotation(v3Dir));
+		}
 	}
 
 	public virtual iZombieSniperGameHelp GetGameHelp()

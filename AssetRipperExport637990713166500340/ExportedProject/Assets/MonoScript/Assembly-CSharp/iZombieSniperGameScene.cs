@@ -598,7 +598,7 @@ public class iZombieSniperGameScene : iZombieSniperGameSceneBase
 				StartTurtorial();
 			}
 		}
-		UITouchInner[] array = iPhoneInputMgr.MockTouches();
+		UITouchInner[] array = (Application.isMobilePlatform) ? iPhoneInputMgr.MockTouches() : WindowsInputMgr.MockTouches();
 		for (int i = 0; i < array.Length; i++)
 		{
 			UITouchInner touch = array[i];
@@ -692,7 +692,7 @@ public class iZombieSniperGameScene : iZombieSniperGameSceneBase
 			UpdateAutoShoot(deltaTime);
 			m_GameHelp.Update(deltaTime);
 		}
-		UITouchInner[] array = iPhoneInputMgr.MockTouches();
+		UITouchInner[] array = (Application.isMobilePlatform) ? iPhoneInputMgr.MockTouches() : WindowsInputMgr.MockTouches();
 		for (int i = 0; i < array.Length; i++)
 		{
 			UITouchInner touch = array[i];
@@ -772,6 +772,7 @@ public class iZombieSniperGameScene : iZombieSniperGameSceneBase
 							RaycastHit hitInfo2;
 							if (Physics.Raycast(ray2, out hitInfo2, 1000f) && Vector3.Distance(hitInfo2.point, nPC2.m_ModelTransForm.position) <= 5f)
 							{
+								if (Application.isMobilePlatform)
 								Aim(touch.position);
 								m_GameHelp.FinishHelpState(GameHelpState.Step1);
 							}
@@ -779,7 +780,7 @@ public class iZombieSniperGameScene : iZombieSniperGameSceneBase
 					}
 					else if (m_GameHelp.IsCanCloseAim())
 					{
-						CloseAim();
+						CloseAim(true);
 						m_GameHelp.FinishHelpState(GameHelpState.Step4);
 					}
 				}
@@ -901,7 +902,7 @@ public class iZombieSniperGameScene : iZombieSniperGameSceneBase
 			UpdateCurrWeapon(deltaTime);
 			UpdateAutoShoot(deltaTime);
 		}
-		UITouchInner[] array = iPhoneInputMgr.MockTouches();
+		UITouchInner[] array = (Application.isMobilePlatform) ? iPhoneInputMgr.MockTouches() : WindowsInputMgr.MockTouches();
 		for (int i = 0; i < array.Length; i++)
 		{
 			UITouchInner touch = array[i];
@@ -958,11 +959,12 @@ public class iZombieSniperGameScene : iZombieSniperGameSceneBase
 					{
 						if (!m_bAim)
 						{
+							if (Application.isMobilePlatform)
 							Aim(touch.position);
 						}
 						else
 						{
-							CloseAim();
+							CloseAim(false);
 						}
 					}
 				}

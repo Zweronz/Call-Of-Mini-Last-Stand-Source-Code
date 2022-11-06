@@ -12,6 +12,8 @@
 		<node id="10" type="10" aitype="4" size="0.4" life="10" movespeed="1.1" atkSpeed="1" damage="0" atkRange="1" warnRange="0" freezeTime="0.4"/>
 
 		<node id="11" type="1" aitype="1" size="0.4" life="20" movespeed="0.8" atkSpeed="1" damage="1" atkRange="0.8" warnRange="8" freezeTime="0.5"/>
+		<node id="12" type="12" aitype="2" size="1" life="3000" movespeed="0.9" atkSpeed="2" damage="40" atkRange="2" warnRange="20" freezeTime="0"/>
+		<node id="13" type="13" aitype="2" size="0.45" life="75" movespeed="1.2" atkSpeed="1" damage="2" atkRange="1" warnRange="10" freezeTime="0.4"/>
 		<node id="21" type="2" aitype="1" size="0.4" life="50" movespeed="0.8" atkSpeed="1" damage="1" atkRange="0.8" warnRange="8" freezeTime="0.5"/>
 		<node id="31" type="3" aitype="1" size="0.6" life="100" movespeed="0.8" atkSpeed="0.5" damage="1" atkRange="0.8" warnRange="8" freezeTime="0.3"/>
 		<node id="41" type="4" aitype="1" size="0.6" life="150" movespeed="0.8" atkSpeed="0.5" damage="1" atkRange="0.8" warnRange="8" freezeTime="0.3"/>
@@ -137,6 +139,14 @@
 		<Group id="21">
       <node zombieid="10" time="0" />
 		</Group>
+		<Group id="22">
+      <node zombieid="12" time="0" />
+		</Group>
+		<Group id="23">
+      <node zombieid="13" time="0" />
+	  <node zombieid="13" time="0" />
+	  <node zombieid="13" time="0" />
+		</Group>
 
 
 	</ZombieGroup>
@@ -213,6 +223,7 @@
 		<node groupid="5" time="5:05" startzone="0" loop="0"/>
 		<node groupid="6" time="5:05" startzone="0" loop="0"/>
 		<node groupid="5" time="5:05" startzone="0" loop="0"/>
+		<node groupid="23" time="5:05" startzone="0" loop="0"/>
 
 		<node groupid="6" time="5:30" startzone="0" loop="0"/>
 		<node groupid="6" time="5:30" startzone="0" loop="0"/>
@@ -224,6 +235,7 @@
 		<node groupid="16" time="6:02" startzone="0" loop="0"/>
 		<node groupid="14" time="6:03" startzone="0" loop="0"/>
 		<node groupid="6" time="6:04" startzone="0" loop="0"/>
+		<node groupid="23" time="6:04" startzone="0" loop="0"/>
 
 		<node groupid="9" time="6:25" startzone="0" loop="0"/>
 		<node groupid="4" time="6:25" startzone="0" loop="0"/>
@@ -239,6 +251,8 @@
 		<node groupid="6" time="7:15" startzone="0" loop="0"/>
 		<node groupid="6" time="7:15" startzone="0" loop="0"/>
 		<node groupid="2" time="7:15" startzone="0" loop="0"/>
+		<node groupid="23" time="7:15" startzone="0" loop="0"/>
+		<node groupid="23" time="7:15" startzone="0" loop="0"/>
 
 		<node groupid="9" time="7:40" startzone="0" loop="0"/>
 		<node groupid="4" time="7:40" startzone="0" loop="0"/>
@@ -251,6 +265,9 @@
 
 		<node groupid="13" time="8:30" startzone="0" loop="0"/>
 		<node groupid="17" time="8:30" startzone="0" loop="0"/>
+		<node groupid="23" time="8:30" startzone="0" loop="0"/>
+		<node groupid="23" time="8:30" startzone="0" loop="0"/>
+		<node groupid="23" time="8:30" startzone="0" loop="0"/>
 
 		<node groupid="10" time="8:55" startzone="0" loop="0"/>
 		<node groupid="8" time="8:55" startzone="0" loop="0"/>
@@ -259,11 +276,13 @@
 		<node groupid="11" time="9:20" startzone="0" loop="0"/>
 		<node groupid="6" time="9:20" startzone="0" loop="0"/>
 		<node groupid="4" time="9:20" startzone="0" loop="0"/>
+		<node groupid="23" time="9:20" startzone="0" loop="0"/>
 
 		<node groupid="10" time="9:45" startzone="0" loop="0"/>
 		<node groupid="9" time="9:45" startzone="0" loop="0"/>
 		<node groupid="4" time="9:45" startzone="0" loop="0"/>
 		<node groupid="14" time="9:45" startzone="0" loop="0"/>
+		<node groupid="23" time="9:45" startzone="0" loop="0"/>
 
 		<node groupid="11" time="10:10" startzone="0" loop="0"/>
 		<node groupid="7" time="10:10" startzone="0" loop="0"/>
@@ -279,6 +298,8 @@
 		<node groupid="10" time="11:00" startzone="0" loop="0"/>
 		<node groupid="6" time="11:00" startzone="0" loop="0"/>
 		<node groupid="3" time="11:00" startzone="0" loop="0"/>
+		<node groupid="23" time="11:00" startzone="0" loop="0"/>
+		<node groupid="23" time="11:00" startzone="0" loop="0"/>
 
 		<node groupid="17" time="11:25" startzone="0" loop="0"/>
 		<node groupid="17" time="11:25" startzone="0" loop="0"/>
@@ -296,7 +317,13 @@
 		<node groupid="13" time="12:15" startzone="0" loop="0"/>
 		<node groupid="13" time="12:15" startzone="0" loop="0"/>
 		<node groupid="6" time="12:15" startzone="0" loop="0"/>
-		<node groupid="6" time="12:15" startzone="0" loop="0"/>
+		<node groupid="23" time="12:15" startzone="0" loop="0"/>
+		<node groupid="23" time="12:15" startzone="0" loop="0"/>
+		<node groupid="23" time="12:15" startzone="0" loop="0"/>
+		<node groupid="23" time="12:15" startzone="0" loop="0"/>
+		<node groupid="23" time="12:15" startzone="0" loop="0"/>
+		<node groupid="23" time="12:15" startzone="0" loop="0"/>
+		<node groupid="23" time="12:15" startzone="0" loop="0"/>
 
 		<node groupid="10" time="12:40" startzone="0" loop="0"/>
 		<node groupid="10" time="12:40" startzone="0" loop="0"/>
@@ -400,6 +427,7 @@
 		<node groupid="10" time="20:10" startzone="0" loop="0"/>
 		<node groupid="10" time="20:10" startzone="0" loop="0"/>
 		<node groupid="10" time="20:10" startzone="0" loop="0"/>
+		<node groupid="22" time="20:10" startzone="0" loop="0"/>
 
 		<node groupid="13" time="20:35" startzone="0" loop="0"/>
 		<node groupid="11" time="20:35" startzone="0" loop="0"/>
@@ -426,6 +454,7 @@
 		<node groupid="12" time="22:15" startzone="0" loop="0"/>
 		<node groupid="12" time="22:15" startzone="0" loop="0"/>
 		<node groupid="11" time="22:15" startzone="0" loop="0"/>
+		<node groupid="22" time="22:15" startzone="0" loop="0"/>
 
 		<node groupid="13" time="22:40" startzone="0" loop="0"/>
 		<node groupid="11" time="22:40" startzone="0" loop="0"/>
@@ -443,6 +472,7 @@
 		<node groupid="13" time="23:30" startzone="0" loop="0"/>
 		<node groupid="13" time="23:30" startzone="0" loop="0"/>
 		<node groupid="13" time="23:30" startzone="0" loop="0"/>
+		<node groupid="12" time="23:30" startzone="0" loop="0"/>
 
 		<node groupid="12" time="23:55" startzone="0" loop="0"/>
 		<node groupid="12" time="23:55" startzone="0" loop="0"/>
@@ -473,6 +503,7 @@
 		<node groupid="12" time="25:35" startzone="0" loop="0"/>
 		<node groupid="7" time="25:35" startzone="0" loop="0"/>
 		<node groupid="6" time="25:35" startzone="0" loop="0"/>
+		<node groupid="22" time="25:35" startzone="0" loop="0"/>
 
 		<node groupid="12" time="26:00" startzone="0" loop="0"/>
 		<node groupid="12" time="26:00" startzone="0" loop="0"/>
@@ -497,6 +528,7 @@
 		<node groupid="11" time="27:15" startzone="0" loop="0"/>
 		<node groupid="11" time="27:15" startzone="0" loop="0"/>
 		<node groupid="10" time="27:15" startzone="0" loop="0"/>
+		<node groupid="22" time="27:15" startzone="0" loop="0"/>
 
 		<node groupid="9" time="27:40" startzone="0" loop="0"/>
 		<node groupid="12" time="27:40" startzone="0" loop="0"/>
@@ -539,6 +571,11 @@
 		<node groupid="13" time="30:10" startzone="0" loop="25"/>
 		<node groupid="13" time="30:10" startzone="0" loop="25"/>
 		<node groupid="13" time="30:10" startzone="0" loop="25"/>
+		<node groupid="22" time="30:10" startzone="0" loop="25"/>
+		<node groupid="22" time="30:10" startzone="0" loop="25"/>
+		<node groupid="22" time="30:10" startzone="0" loop="25"/>
+		<node groupid="22" time="30:10" startzone="0" loop="25"/>
+		<node groupid="22" time="30:10" startzone="0" loop="25"/>
 
 	</ZombieWave>
 </root>

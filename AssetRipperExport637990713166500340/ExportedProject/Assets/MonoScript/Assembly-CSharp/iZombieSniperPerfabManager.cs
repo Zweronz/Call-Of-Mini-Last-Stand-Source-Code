@@ -29,7 +29,11 @@ public class iZombieSniperPerfabManager : MonoBehaviour
 
 	private GameObject m_Zombie;
 
+	private GameObject m_ZombieElite;
+
 	private GameObject m_ZombieFat;
+
+	private GameObject m_ZombieFatElite;
 
 	private GameObject m_ZombieDog;
 
@@ -42,6 +46,8 @@ public class iZombieSniperPerfabManager : MonoBehaviour
 	private GameObject m_ZombiePredator;
 
 	private GameObject m_ZombiePop;
+
+	private GameObject m_ZombieElitePop;
 
 	public Hashtable mapWeapon;
 
@@ -297,6 +303,18 @@ public class iZombieSniperPerfabManager : MonoBehaviour
 		}
 	}
 
+	public GameObject ZombieElite
+	{
+		get
+		{
+			if (m_ZombieElite == null)
+			{
+				m_ZombieElite = (GameObject)Resources.Load("ZombieSniper/Perfabs/NPC/ZombieEliteBone1");
+			}
+			return m_ZombieElite;
+		}
+	}
+
 	public GameObject ZombieFat
 	{
 		get
@@ -306,6 +324,18 @@ public class iZombieSniperPerfabManager : MonoBehaviour
 				m_ZombieFat = (GameObject)Resources.Load("ZombieSniper/Perfabs/NPC/ZombieFatBone1");
 			}
 			return m_ZombieFat;
+		}
+	}
+
+	public GameObject ZombieFatElite
+	{
+		get
+		{
+			if (m_ZombieFatElite == null)
+			{
+				m_ZombieFatElite = (GameObject)Resources.Load("ZombieSniper/Perfabs/NPC/ZombieFatEliteBone1");
+			}
+			return m_ZombieFatElite;
 		}
 	}
 
@@ -380,6 +410,19 @@ public class iZombieSniperPerfabManager : MonoBehaviour
 			return m_ZombiePop;
 		}
 	}
+
+	public GameObject ZombieElitePop
+	{
+		get
+		{
+			if (m_ZombieElitePop == null)
+			{
+				m_ZombieElitePop = (GameObject)Resources.Load("ZombieSniper/Perfabs/NPC/ZombieElitePop");
+			}
+			return m_ZombieElitePop;
+		}
+	}
+
 
 	public GameObject Innocents
 	{
@@ -554,6 +597,8 @@ public class iZombieSniperPerfabManager : MonoBehaviour
 		gameObject = ZombieNurse;
 		gameObject = ZombiePolice;
 		gameObject = ZombieSwat;
+		gameObject = ZombieFatElite;
+		gameObject = ZombieElite;
 		mapWeapon = new Hashtable();
 		mapWeapon.Add(1, "HandSVD");
 		mapWeapon.Add(2, "HandM110");
@@ -595,6 +640,9 @@ public class iZombieSniperPerfabManager : MonoBehaviour
 		mapWeapon.Add(38, "HandM202A1_02");
 		mapWeapon.Add(40, "HandM2BH");
 		mapWeapon.Add(41, "HandMine_Launcher");
+		mapWeapon.Add(42, "HandM4");
+		mapWeapon.Add(43, "HandGatlin");
+		mapWeapon.Add(44, "HandAUG");
 	}
 
 	public GameObject GetWeaponPerfab(int nWeaponID)

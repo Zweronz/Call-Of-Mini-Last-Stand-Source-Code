@@ -802,7 +802,7 @@ public class iZombieSniperGameState
 
 	public void LoadAnimInfo()
 	{
-		m_AnimInfoListTypeArray = new AnimInfoListType[12];
+		m_AnimInfoListTypeArray = new AnimInfoListType[14];
 		m_AnimInfoListTypeArray[1] = new AnimInfoListType(1);
 		m_AnimInfoListTypeArray[1].Add(1, new AnimInfo("Idle01", 1f, 24));
 		m_AnimInfoListTypeArray[1].Add(2, new AnimInfo("Forward01", 0.5f, 24));
@@ -952,6 +952,34 @@ public class iZombieSniperGameState
 		m_AnimInfoListTypeArray[11].Add(12, new AnimInfo("Death01", 1f, 24));
 		m_AnimInfoListTypeArray[11].Add(6, new AnimInfo("Idle01", 1f, 24));
 		m_AnimInfoListTypeArray[11].End();
+		m_AnimInfoListTypeArray[12] = new AnimInfoListType(12);
+		m_AnimInfoListTypeArray[12].Add(1, new AnimInfo("Idle01", 1f, 20));
+		m_AnimInfoListTypeArray[12].Add(2, new AnimInfo("Forward01", 0.5f, 20));
+		m_AnimInfoListTypeArray[12].Add(3, new AnimInfo("Forward05", 1f, 20));
+		m_AnimInfoListTypeArray[12].Add(4, new AnimInfo("Attack01", 1f, 20));
+		m_AnimInfoListTypeArray[12].Add(7, new AnimInfo("Death01", 1f, 20));
+		m_AnimInfoListTypeArray[12].Add(7, new AnimInfo("Death03", 1f, 20));
+		m_AnimInfoListTypeArray[12].Add(9, new AnimInfo("Death02", 1f, 20));
+		m_AnimInfoListTypeArray[12].Add(8, new AnimInfo("Death03", 1f, 20));
+		m_AnimInfoListTypeArray[12].Add(10, new AnimInfo("death05", 1f, 20));
+		m_AnimInfoListTypeArray[12].Add(11, new AnimInfo("death04", 1f, 20));
+		m_AnimInfoListTypeArray[12].Add(12, new AnimInfo("Death03", 1f, 20));
+		m_AnimInfoListTypeArray[12].Add(6, new AnimInfo("Rush01", 1f, 20));
+		m_AnimInfoListTypeArray[12].End();
+		m_AnimInfoListTypeArray[13] = new AnimInfoListType(13);
+		m_AnimInfoListTypeArray[13].Add(1, new AnimInfo("Idle01", 1f, 24));
+		m_AnimInfoListTypeArray[13].Add(2, new AnimInfo("Forward01", 0.5f, 24));
+		m_AnimInfoListTypeArray[13].Add(3, new AnimInfo("Run01", 1f, 24));
+		m_AnimInfoListTypeArray[13].Add(4, new AnimInfo("Attack01", 1f, 24));
+		m_AnimInfoListTypeArray[13].Add(7, new AnimInfo("Death03", 1f, 24));
+		m_AnimInfoListTypeArray[13].Add(9, new AnimInfo("Death01", 1f, 24));
+		m_AnimInfoListTypeArray[13].Add(9, new AnimInfo("Death02", 1f, 24));
+		m_AnimInfoListTypeArray[13].Add(8, new AnimInfo("Death04", 1f, 24));
+		m_AnimInfoListTypeArray[13].Add(10, new AnimInfo("Death06", 1f, 24));
+		m_AnimInfoListTypeArray[13].Add(11, new AnimInfo("Death05", 1f, 24));
+		m_AnimInfoListTypeArray[13].Add(12, new AnimInfo("Death07", 1f, 24));
+		m_AnimInfoListTypeArray[13].Add(6, new AnimInfo("Response01", 1f, 24));
+		m_AnimInfoListTypeArray[13].End();
 	}
 
 	public AnimInfo GetAnimInfo(int nNpcType, int nActionType, int nIndex = -1)

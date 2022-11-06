@@ -1,0 +1,39 @@
+fileFormatVersion: 1
+guid: 329802dc03f0d8848989a2280a717a07
+ModelImporter:
+  importerVersion: 7
+  meshes:
+    scaleFactor: 1
+    useFileUnits: 1
+    meshCompression: 0
+    generateColliders: 0
+    swapUVs: 1
+  tangentSpace:
+    normalImportMode: 0
+    tangentImportMode: 1
+    smoothingAngle: 60
+    splitTangents: 1
+  materials:
+    generation: 0
+  animations:
+    generation: 3
+    bakeAnimations: 0
+    animationCompression: 0
+    animationWrapMode: 0
+    splitAnimations: 1
+  nodeInfo:
+    Bone01:
+    - 100002
+    - 400002
+    - 13700000
+    Rifle:
+    - 100004
+    - 400004
+    //RootNode:
+    - 100006
+    - 400006
+    - 11100000
+AssetImporter:
+  importerVersion: 1
+  fileIDToRecycleName:
+    4300000: Rifle

@@ -280,7 +280,7 @@ public class iZombieSniperGameScene2 : iZombieSniperGameSceneBase
 			StartGame();
 			return;
 		}
-		UITouchInner[] array = iPhoneInputMgr.MockTouches();
+		UITouchInner[] array = (Application.isMobilePlatform) ? iPhoneInputMgr.MockTouches() : WindowsInputMgr.MockTouches();
 		foreach (UITouchInner touch in array)
 		{
 			if (!(m_GameSceneUI != null) || m_GameSceneUI.m_UIManagerRef.HandleInput(touch))
@@ -407,7 +407,7 @@ public class iZombieSniperGameScene2 : iZombieSniperGameSceneBase
 				m_CameraMove.Update(deltaTime);
 			}
 		}
-		UITouchInner[] array = iPhoneInputMgr.MockTouches();
+		UITouchInner[] array = (Application.isMobilePlatform) ? iPhoneInputMgr.MockTouches() : WindowsInputMgr.MockTouches();
 		for (int i = 0; i < array.Length; i++)
 		{
 			UITouchInner touch = array[i];
@@ -464,11 +464,12 @@ public class iZombieSniperGameScene2 : iZombieSniperGameSceneBase
 					{
 						if (!m_bAim)
 						{
+							if (Application.isMobilePlatform)
 							Aim(touch.position);
 						}
 						else
 						{
-							CloseAim();
+							CloseAim(false);
 						}
 					}
 				}
@@ -770,7 +771,7 @@ public class iZombieSniperGameScene2 : iZombieSniperGameSceneBase
 		{
 			if (IsAim())
 			{
-				CloseAim();
+				CloseAim(true);
 			}
 			SwitchWeaponTool();
 			m_GameSceneUI.ShowWeaponUI(false);

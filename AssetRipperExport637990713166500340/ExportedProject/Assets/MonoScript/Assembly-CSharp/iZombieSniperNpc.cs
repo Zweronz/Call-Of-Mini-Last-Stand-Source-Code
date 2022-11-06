@@ -1061,6 +1061,9 @@ public class iZombieSniperNpc
 		case NpcType.Zombie:
 			m_Model = (GameObject)Object.Instantiate(m_PerfabManager.Zombie, v3Pos, Quaternion.identity);
 			break;
+		case NpcType.ZombieElite:
+			m_Model = (GameObject)Object.Instantiate(m_PerfabManager.ZombieElite, v3Pos, Quaternion.identity);
+			break;
 		case NpcType.Giant:
 			m_Model = (GameObject)Object.Instantiate(m_PerfabManager.ZombieFat, v3Pos, Quaternion.identity);
 			break;
@@ -1078,6 +1081,9 @@ public class iZombieSniperNpc
 			break;
 		case NpcType.ZombiePredator:
 			m_Model = (GameObject)Object.Instantiate(m_PerfabManager.ZombiePredator, v3Pos, Quaternion.identity);
+			break;
+		case NpcType.GiantElite:
+			m_Model = (GameObject)Object.Instantiate(m_PerfabManager.ZombieFatElite, v3Pos, Quaternion.identity);
 			break;
 		}
 		if (m_Model == null)
@@ -1561,6 +1567,9 @@ public class iZombieSniperNpc
 		case NpcType.Giant:
 			m_GameScene.PlayAudio("MonZombieFatDeath");
 			break;
+		case NpcType.GiantElite:
+			m_GameScene.PlayAudio("MonZombieFatDeath");
+			break;
 		case NpcType.Innocents:
 		case NpcType.InnocentsDoctor:
 		case NpcType.InnocentsPastor:
@@ -1585,11 +1594,11 @@ public class iZombieSniperNpc
 		switch (mode)
 		{
 		case DeathMode.HeadBreak:
-			if (GetNpcType() == NpcType.Zombie)
+			if (GetNpcType() == NpcType.Zombie || GetNpcType() == NpcType.ZombieElite)
 			{
 				m_Model.SetActiveRecursively(false);
 				m_bNeedDestroy = true;
-				m_GameScene.AddHeadShootDeath(m_ModelTransForm.position, m_ModelTransForm.forward);
+				m_GameScene.AddHeadShootDeath(m_ModelTransForm.position, m_ModelTransForm.forward, GetNpcType());
 			}
 			break;
 		case DeathMode.MachineDead:
@@ -1909,17 +1918,17 @@ public class iZombieSniperNpc
 
 	public bool IsZombie()
 	{
-		return GetNpcType() == NpcType.Zombie || GetNpcType() == NpcType.ZombieNurse || GetNpcType() == NpcType.ZombiePolice || GetNpcType() == NpcType.ZombieSwat || GetNpcType() == NpcType.Giant || GetNpcType() == NpcType.ZombieDog || GetNpcType() == NpcType.ZombiePredator;
+		return GetNpcType() == NpcType.Zombie || GetNpcType() == NpcType.ZombieElite || GetNpcType() == NpcType.ZombieNurse || GetNpcType() == NpcType.ZombiePolice || GetNpcType() == NpcType.ZombieSwat || GetNpcType() == NpcType.Giant || GetNpcType() == NpcType.ZombieDog || GetNpcType() == NpcType.ZombiePredator;
 	}
 
 	public bool IsNormalZombie()
 	{
-		return GetNpcType() == NpcType.Zombie || GetNpcType() == NpcType.ZombieNurse || GetNpcType() == NpcType.ZombiePolice || GetNpcType() == NpcType.ZombieSwat || GetNpcType() == NpcType.ZombieDog || GetNpcType() == NpcType.ZombiePredator;
+		return GetNpcType() == NpcType.Zombie || GetNpcType() == NpcType.ZombieElite || GetNpcType() == NpcType.ZombieNurse || GetNpcType() == NpcType.ZombiePolice || GetNpcType() == NpcType.ZombieSwat || GetNpcType() == NpcType.ZombieDog || GetNpcType() == NpcType.ZombiePredator;
 	}
 
 	public bool IsGiantZombie()
 	{
-		return GetNpcType() == NpcType.Giant;
+		return GetNpcType() == NpcType.Giant || GetNpcType() == NpcType.GiantElite;
 	}
 
 	public bool IsZombieZombieDog()

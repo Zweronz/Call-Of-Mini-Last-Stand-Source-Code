@@ -20,7 +20,7 @@ public class iZombieSniperOptionUI : UIHelper
 	private new void Update()
 	{
 		base.Update();
-		UITouchInner[] array = iPhoneInputMgr.MockTouches();
+		UITouchInner[] array = (Application.isMobilePlatform) ? iPhoneInputMgr.MockTouches() : WindowsInputMgr.MockTouches();
 		foreach (UITouchInner touch in array)
 		{
 			if (m_UIManagerRef.HandleInput(touch))

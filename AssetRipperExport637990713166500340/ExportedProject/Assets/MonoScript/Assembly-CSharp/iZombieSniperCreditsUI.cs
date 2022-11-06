@@ -1,3 +1,4 @@
+using UnityEngine;
 public class iZombieSniperCreditsUI : UIHelper
 {
 	public new void Start()
@@ -11,7 +12,7 @@ public class iZombieSniperCreditsUI : UIHelper
 	public new void Update()
 	{
 		base.Update();
-		UITouchInner[] array = iPhoneInputMgr.MockTouches();
+		UITouchInner[] array = (Application.isMobilePlatform) ? iPhoneInputMgr.MockTouches() : WindowsInputMgr.MockTouches();
 		foreach (UITouchInner touch in array)
 		{
 			if (m_UIManagerRef.HandleInput(touch))

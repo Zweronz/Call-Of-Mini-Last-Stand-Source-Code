@@ -12,5 +12,7 @@ public enum NpcType
 	InnocentsPastor = 9,
 	InnocentsPlumber = 10,
 	ZombiePredator = 11,
-	Count = 12
+	GiantElite = 12,
+	ZombieElite = 13,
+	Count = 14
 }

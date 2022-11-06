@@ -50,6 +50,7 @@ public class iZombieSniperReadyUI : UIHelper
 	public new void Update()
 	{
 		base.Update();
+		DragIng(new Vector2(Input.mousePosition.x, Input.mousePosition.y));
 		if (m_GameReadyHelp != null)
 		{
 			m_GameReadyHelp.Update(Time.deltaTime);
@@ -110,7 +111,7 @@ public class iZombieSniperReadyUI : UIHelper
 		{
 			m_ArrowRight.Update(Time.deltaTime);
 		}
-		UITouchInner[] array = iPhoneInputMgr.MockTouches();
+		UITouchInner[] array = (Application.isMobilePlatform) ? iPhoneInputMgr.MockTouches() : WindowsInputMgr.MockTouches();
 		for (int i = 0; i < array.Length; i++)
 		{
 			UITouchInner touch = array[i];
@@ -157,18 +158,18 @@ public class iZombieSniperReadyUI : UIHelper
 				}
 				bool flag = true;
 				Rect rect2 = Utils.CalcScaleRect(new Rect(0f, 155f, 480f, 90f));
-				if (Utils.PtInRect(m_v2TouchPos, rect2) && m_GameReadyHelp == null && Mathf.Abs(touch.deltaPosition.x) - Mathf.Abs(touch.deltaPosition.y) > 0f)
+				if (Utils.PtInRect(m_v2TouchPos, rect2) && m_GameReadyHelp == null && Mathf.Abs(touch.position.x) - Mathf.Abs(touch.position.y) > 0f)
 				{
 					flag = false;
 					if (m_Stage != GameShopStage.DEFENCE)
 					{
-						float num = Mathf.Abs(touch.deltaPosition.x);
-						m_ShopCell.Move(num * 5f, num * 5f, (touch.deltaPosition.x > 0f) ? 1 : (-1));
+						float num = Mathf.Abs(touch.position.x);
+						m_ShopCell.Move(num * 5f, num * 5f, (touch.position.x > 0f) ? 1 : (-1));
 					}
 					else
 					{
-						float num2 = Mathf.Abs(touch.deltaPosition.x);
-						m_ShopPower.Move(num2 * 5f, num2 * 5f, (touch.deltaPosition.x > 0f) ? 1 : (-1));
+						float num2 = Mathf.Abs(touch.position.x);
+						m_ShopPower.Move(num2 * 5f, num2 * 5f, (touch.position.x > 0f) ? 1 : (-1));
 					}
 				}
 				if (flag && m_nDragWeaponReady != -1)

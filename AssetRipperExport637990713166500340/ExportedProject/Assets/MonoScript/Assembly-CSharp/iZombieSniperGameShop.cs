@@ -32,7 +32,7 @@ public class iZombieSniperGameShop : MonoBehaviour
 
 	private void Update()
 	{
-		UITouchInner[] array = iPhoneInputMgr.MockTouches();
+		UITouchInner[] array = (Application.isMobilePlatform) ? iPhoneInputMgr.MockTouches() : WindowsInputMgr.MockTouches();
 		for (int i = 0; i < array.Length; i++)
 		{
 			UITouchInner touch = array[i];
