@@ -5,7 +5,7 @@ using UnityEngine;
 public class KeepOnlyIfDebugBuild : MonoBehaviour {
 void Start()
 {
-	if(!Debug.isDebugBuild)
+	if(!Debug.isDebugBuild || Application.platform == RuntimePlatform.WindowsEditor)
 	{
 		Destroy(base.gameObject);
 	}

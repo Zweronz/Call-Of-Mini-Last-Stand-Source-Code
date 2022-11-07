@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Workarounds : MonoBehaviour {
-public static bool isCheats = true;
+public static bool isCheats = false;
 void Start()
 {
 	DontDestroyOnLoad(base.gameObject);

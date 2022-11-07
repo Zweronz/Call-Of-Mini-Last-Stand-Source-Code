@@ -63,6 +63,7 @@ public class TUIFont : MonoBehaviour
 			{
 				FontCharInfo fontCharInfo = fontInfo.chars[i];
 				TUIFontManager.FontChar fontChar = new TUIFontManager.FontChar(fontCharInfo.size, fontCharInfo.uv, fontCharInfo.bearingX, fontCharInfo.advanceX, fontCharInfo.descentY);
+				if (i!=92)
 				font.AddChar(fontCharInfo.ch[0], fontChar);
 			}
 			TUIFontManager.Instance().AddFont(fontName, font);
